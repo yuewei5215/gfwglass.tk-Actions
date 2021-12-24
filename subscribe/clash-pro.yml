@@ -5,140 +5,132 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: AU_80 |50.96Mb, server: 1.0.0.123, port: 80, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /s/ff5c0fb.fm.apple.com:30513, ws-headers: {Host: 1.0.0.123}}
-  - {name: AU_81 |60.43Mb, server: 1.0.0.100, port: 80, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /s/ff5c0fb.fm.apple.com:30513, ws-headers: {Host: 1.0.0.100}}
-  - {name: DE_606 |97.17Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: germany-dusseldorf.mah3Hoet.com}}
-  - {name: DE_657 |244.91Mb, server: 136.243.191.88, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: DE_658 |61.98Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 146.0.42.87}}
-  - {name: DE_659 |329.40Mb, server: 18.192.212.68, port: 21888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 18.192.212.68}}
-  - {name: GB_798 |58.47Mb, server: 109.74.194.189, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: NL_1067 |72.23Mb, server: 89.31.127.151, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
-  - {name: NL_1071 |59.98Mb, server: ned-server-01.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
-  - {name: RO_1157 |132.77Mb, server: 185.105.191.92, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US_1388 |118.18Mb, server: 104.17.170.210, port: 443, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: kycc, ws-headers: {Host: 104.17.170.210}}
-  - {name: 🇺🇸 US_1367 |500.28Mb, server: 135.125.248.215, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: DE_460 |97.17Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: germany-dusseldorf.mah3Hoet.com}}
+  - {name: DE_499 |244.91Mb, server: 136.243.191.88, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: DE_500 |61.98Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 146.0.42.87}}
+  - {name: DE_501 |329.40Mb, server: 18.192.212.68, port: 21888, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 18.192.212.68}}
+  - {name: GB_643 |58.47Mb, server: 109.74.194.189, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: NL_846 |59.98Mb, server: ned-server-01.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: NL_854 |72.23Mb, server: 89.31.127.151, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: RO_928 |132.77Mb, server: 185.105.191.92, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_1153 |118.18Mb, server: 104.17.170.210, port: 443, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: kycc, ws-headers: {Host: 104.17.170.210}}
+  - {name: 🇺🇸 US_2037 |141.14Mb, server: mf-do-ua-08.xncloud.xyz, port: 80, type: vmess, uuid: 8a23fd8b-30d5-3839-b831-b4eababaa3a0, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-08.xncloud.xyz}}
+  - {name: 🇺🇸 US_1133 |500.28Mb, server: 135.125.248.215, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - AU_80 |50.96Mb
-      - AU_81 |60.43Mb
-      - DE_606 |97.17Mb
-      - DE_657 |244.91Mb
-      - DE_658 |61.98Mb
-      - DE_659 |329.40Mb
-      - GB_798 |58.47Mb
-      - NL_1067 |72.23Mb
-      - NL_1071 |59.98Mb
-      - RO_1157 |132.77Mb
-      - 🇺🇸 US_1388 |118.18Mb
-      - 🇺🇸 US_1367 |500.28Mb
+      - DE_460 |97.17Mb
+      - DE_499 |244.91Mb
+      - DE_500 |61.98Mb
+      - DE_501 |329.40Mb
+      - GB_643 |58.47Mb
+      - NL_846 |59.98Mb
+      - NL_854 |72.23Mb
+      - RO_928 |132.77Mb
+      - 🇺🇸 US_1153 |118.18Mb
+      - 🇺🇸 US_2037 |141.14Mb
+      - 🇺🇸 US_1133 |500.28Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AU_80 |50.96Mb
-      - AU_81 |60.43Mb
-      - DE_606 |97.17Mb
-      - DE_657 |244.91Mb
-      - DE_658 |61.98Mb
-      - DE_659 |329.40Mb
-      - GB_798 |58.47Mb
-      - NL_1067 |72.23Mb
-      - NL_1071 |59.98Mb
-      - RO_1157 |132.77Mb
-      - 🇺🇸 US_1388 |118.18Mb
-      - 🇺🇸 US_1367 |500.28Mb
+      - DE_460 |97.17Mb
+      - DE_499 |244.91Mb
+      - DE_500 |61.98Mb
+      - DE_501 |329.40Mb
+      - GB_643 |58.47Mb
+      - NL_846 |59.98Mb
+      - NL_854 |72.23Mb
+      - RO_928 |132.77Mb
+      - 🇺🇸 US_1153 |118.18Mb
+      - 🇺🇸 US_2037 |141.14Mb
+      - 🇺🇸 US_1133 |500.28Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AU_80 |50.96Mb
-      - AU_81 |60.43Mb
-      - DE_606 |97.17Mb
-      - DE_657 |244.91Mb
-      - DE_658 |61.98Mb
-      - DE_659 |329.40Mb
-      - GB_798 |58.47Mb
-      - NL_1067 |72.23Mb
-      - NL_1071 |59.98Mb
-      - RO_1157 |132.77Mb
-      - 🇺🇸 US_1388 |118.18Mb
-      - 🇺🇸 US_1367 |500.28Mb
+      - DE_460 |97.17Mb
+      - DE_499 |244.91Mb
+      - DE_500 |61.98Mb
+      - DE_501 |329.40Mb
+      - GB_643 |58.47Mb
+      - NL_846 |59.98Mb
+      - NL_854 |72.23Mb
+      - RO_928 |132.77Mb
+      - 🇺🇸 US_1153 |118.18Mb
+      - 🇺🇸 US_2037 |141.14Mb
+      - 🇺🇸 US_1133 |500.28Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - AU_80 |50.96Mb
-      - AU_81 |60.43Mb
-      - DE_606 |97.17Mb
-      - DE_657 |244.91Mb
-      - DE_658 |61.98Mb
-      - DE_659 |329.40Mb
-      - GB_798 |58.47Mb
-      - NL_1067 |72.23Mb
-      - NL_1071 |59.98Mb
-      - RO_1157 |132.77Mb
-      - 🇺🇸 US_1388 |118.18Mb
-      - 🇺🇸 US_1367 |500.28Mb
+      - DE_460 |97.17Mb
+      - DE_499 |244.91Mb
+      - DE_500 |61.98Mb
+      - DE_501 |329.40Mb
+      - GB_643 |58.47Mb
+      - NL_846 |59.98Mb
+      - NL_854 |72.23Mb
+      - RO_928 |132.77Mb
+      - 🇺🇸 US_1153 |118.18Mb
+      - 🇺🇸 US_2037 |141.14Mb
+      - 🇺🇸 US_1133 |500.28Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - AU_80 |50.96Mb
-      - AU_81 |60.43Mb
-      - DE_606 |97.17Mb
-      - DE_657 |244.91Mb
-      - DE_658 |61.98Mb
-      - DE_659 |329.40Mb
-      - GB_798 |58.47Mb
-      - NL_1067 |72.23Mb
-      - NL_1071 |59.98Mb
-      - RO_1157 |132.77Mb
-      - 🇺🇸 US_1388 |118.18Mb
-      - 🇺🇸 US_1367 |500.28Mb
+      - DE_460 |97.17Mb
+      - DE_499 |244.91Mb
+      - DE_500 |61.98Mb
+      - DE_501 |329.40Mb
+      - GB_643 |58.47Mb
+      - NL_846 |59.98Mb
+      - NL_854 |72.23Mb
+      - RO_928 |132.77Mb
+      - 🇺🇸 US_1153 |118.18Mb
+      - 🇺🇸 US_2037 |141.14Mb
+      - 🇺🇸 US_1133 |500.28Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - AU_80 |50.96Mb
-      - AU_81 |60.43Mb
-      - DE_606 |97.17Mb
-      - DE_657 |244.91Mb
-      - DE_658 |61.98Mb
-      - DE_659 |329.40Mb
-      - GB_798 |58.47Mb
-      - NL_1067 |72.23Mb
-      - NL_1071 |59.98Mb
-      - RO_1157 |132.77Mb
-      - 🇺🇸 US_1388 |118.18Mb
-      - 🇺🇸 US_1367 |500.28Mb
+      - DE_460 |97.17Mb
+      - DE_499 |244.91Mb
+      - DE_500 |61.98Mb
+      - DE_501 |329.40Mb
+      - GB_643 |58.47Mb
+      - NL_846 |59.98Mb
+      - NL_854 |72.23Mb
+      - RO_928 |132.77Mb
+      - 🇺🇸 US_1153 |118.18Mb
+      - 🇺🇸 US_2037 |141.14Mb
+      - 🇺🇸 US_1133 |500.28Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AU_80 |50.96Mb
-      - AU_81 |60.43Mb
-      - DE_606 |97.17Mb
-      - DE_657 |244.91Mb
-      - DE_658 |61.98Mb
-      - DE_659 |329.40Mb
-      - GB_798 |58.47Mb
-      - NL_1067 |72.23Mb
-      - NL_1071 |59.98Mb
-      - RO_1157 |132.77Mb
-      - 🇺🇸 US_1388 |118.18Mb
-      - 🇺🇸 US_1367 |500.28Mb
+      - DE_460 |97.17Mb
+      - DE_499 |244.91Mb
+      - DE_500 |61.98Mb
+      - DE_501 |329.40Mb
+      - GB_643 |58.47Mb
+      - NL_846 |59.98Mb
+      - NL_854 |72.23Mb
+      - RO_928 |132.77Mb
+      - 🇺🇸 US_1153 |118.18Mb
+      - 🇺🇸 US_2037 |141.14Mb
+      - 🇺🇸 US_1133 |500.28Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -161,18 +153,17 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AU_80 |50.96Mb
-      - AU_81 |60.43Mb
-      - DE_606 |97.17Mb
-      - DE_657 |244.91Mb
-      - DE_658 |61.98Mb
-      - DE_659 |329.40Mb
-      - GB_798 |58.47Mb
-      - NL_1067 |72.23Mb
-      - NL_1071 |59.98Mb
-      - RO_1157 |132.77Mb
-      - 🇺🇸 US_1388 |118.18Mb
-      - 🇺🇸 US_1367 |500.28Mb
+      - DE_460 |97.17Mb
+      - DE_499 |244.91Mb
+      - DE_500 |61.98Mb
+      - DE_501 |329.40Mb
+      - GB_643 |58.47Mb
+      - NL_846 |59.98Mb
+      - NL_854 |72.23Mb
+      - RO_928 |132.77Mb
+      - 🇺🇸 US_1153 |118.18Mb
+      - 🇺🇸 US_2037 |141.14Mb
+      - 🇺🇸 US_1133 |500.28Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
