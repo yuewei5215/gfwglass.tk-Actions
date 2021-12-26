@@ -5,84 +5,68 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: AU_98 |50.96Mb, server: 1.0.0.123, port: 80, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /s/ff5c0fb.fm.apple.com:30513, ws-headers: {Host: 1.0.0.123}}
-  - {name: AU_99 |60.43Mb, server: 1.0.0.100, port: 80, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /s/ff5c0fb.fm.apple.com:30513, ws-headers: {Host: 1.0.0.100}}
-  - {name: DE_555 |93.78Mb, server: 136.243.191.88, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: DE_557 |63.47Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 146.0.42.87}}
-  - {name: 🇺🇸 US_1244 |230.60Mb, server: ff7.uuv2.co.uk, port: 443, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: kycc, ws-headers: {Host: ff7.uuv2.co.uk}}
+  - {name: DE_525 |93.78Mb, server: 136.243.191.88, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: DE_527 |63.47Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 146.0.42.87}}
+  - {name: 🇺🇸 US_1120 |230.60Mb, server: ff7.uuv2.co.uk, port: 443, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: kycc, ws-headers: {Host: ff7.uuv2.co.uk}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - AU_98 |50.96Mb
-      - AU_99 |60.43Mb
-      - DE_555 |93.78Mb
-      - DE_557 |63.47Mb
-      - 🇺🇸 US_1244 |230.60Mb
+      - DE_525 |93.78Mb
+      - DE_527 |63.47Mb
+      - 🇺🇸 US_1120 |230.60Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AU_98 |50.96Mb
-      - AU_99 |60.43Mb
-      - DE_555 |93.78Mb
-      - DE_557 |63.47Mb
-      - 🇺🇸 US_1244 |230.60Mb
+      - DE_525 |93.78Mb
+      - DE_527 |63.47Mb
+      - 🇺🇸 US_1120 |230.60Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AU_98 |50.96Mb
-      - AU_99 |60.43Mb
-      - DE_555 |93.78Mb
-      - DE_557 |63.47Mb
-      - 🇺🇸 US_1244 |230.60Mb
+      - DE_525 |93.78Mb
+      - DE_527 |63.47Mb
+      - 🇺🇸 US_1120 |230.60Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - AU_98 |50.96Mb
-      - AU_99 |60.43Mb
-      - DE_555 |93.78Mb
-      - DE_557 |63.47Mb
-      - 🇺🇸 US_1244 |230.60Mb
+      - DE_525 |93.78Mb
+      - DE_527 |63.47Mb
+      - 🇺🇸 US_1120 |230.60Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - AU_98 |50.96Mb
-      - AU_99 |60.43Mb
-      - DE_555 |93.78Mb
-      - DE_557 |63.47Mb
-      - 🇺🇸 US_1244 |230.60Mb
+      - DE_525 |93.78Mb
+      - DE_527 |63.47Mb
+      - 🇺🇸 US_1120 |230.60Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - AU_98 |50.96Mb
-      - AU_99 |60.43Mb
-      - DE_555 |93.78Mb
-      - DE_557 |63.47Mb
-      - 🇺🇸 US_1244 |230.60Mb
+      - DE_525 |93.78Mb
+      - DE_527 |63.47Mb
+      - 🇺🇸 US_1120 |230.60Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AU_98 |50.96Mb
-      - AU_99 |60.43Mb
-      - DE_555 |93.78Mb
-      - DE_557 |63.47Mb
-      - 🇺🇸 US_1244 |230.60Mb
+      - DE_525 |93.78Mb
+      - DE_527 |63.47Mb
+      - 🇺🇸 US_1120 |230.60Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -105,11 +89,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AU_98 |50.96Mb
-      - AU_99 |60.43Mb
-      - DE_555 |93.78Mb
-      - DE_557 |63.47Mb
-      - 🇺🇸 US_1244 |230.60Mb
+      - DE_525 |93.78Mb
+      - DE_527 |63.47Mb
+      - 🇺🇸 US_1120 |230.60Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -2762,7 +2744,6 @@ rules:
  - DOMAIN-SUFFIX,biliapi.com,🎯 全球直连
  - DOMAIN-SUFFIX,biliapi.net,🎯 全球直连
  - DOMAIN-SUFFIX,bilibili.com,🎯 全球直连
- - DOMAIN-SUFFIX,bilibili.tv,🎯 全球直连
  - DOMAIN-SUFFIX,biligame.com,🎯 全球直连
  - DOMAIN-SUFFIX,biligame.net,🎯 全球直连
  - DOMAIN-SUFFIX,bilivideo.com,🎯 全球直连
