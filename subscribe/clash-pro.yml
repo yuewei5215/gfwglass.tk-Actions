@@ -5,10 +5,11 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: DE_449 |56.95Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: germany-dusseldorf.mah3Hoet.com}}
-  - {name: GB_640 |54.78Mb, server: 109.74.194.189, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US_1127 |77.26Mb, server: ff7.uuv2.co.uk, port: 443, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: kycc, ws-headers: {Host: ff7.uuv2.co.uk}}
-  - {name: 🇺🇸 US_1136 |101.60Mb, server: 104.17.170.210, port: 443, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: kycc, ws-headers: {Host: 104.17.170.210}}
+  - {name: DE_439 |56.95Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: germany-dusseldorf.mah3Hoet.com}}
+  - {name: DE_493 |176.40Mb, server: 136.243.191.88, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: DE_494 |188.05Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: GB_643 |54.78Mb, server: 109.74.194.189, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_1135 |77.26Mb, server: ff7.uuv2.co.uk, port: 443, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: kycc, ws-headers: {Host: ff7.uuv2.co.uk}}
   - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
@@ -16,20 +17,22 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - DE_449 |56.95Mb
-      - GB_640 |54.78Mb
-      - 🇺🇸 US_1127 |77.26Mb
-      - 🇺🇸 US_1136 |101.60Mb
+      - DE_439 |56.95Mb
+      - DE_493 |176.40Mb
+      - DE_494 |188.05Mb
+      - GB_643 |54.78Mb
+      - 🇺🇸 US_1135 |77.26Mb
       - "NULL"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DE_449 |56.95Mb
-      - GB_640 |54.78Mb
-      - 🇺🇸 US_1127 |77.26Mb
-      - 🇺🇸 US_1136 |101.60Mb
+      - DE_439 |56.95Mb
+      - DE_493 |176.40Mb
+      - DE_494 |188.05Mb
+      - GB_643 |54.78Mb
+      - 🇺🇸 US_1135 |77.26Mb
       - "NULL"
   - name: 🌍 国外媒体
     type: select
@@ -37,40 +40,44 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE_449 |56.95Mb
-      - GB_640 |54.78Mb
-      - 🇺🇸 US_1127 |77.26Mb
-      - 🇺🇸 US_1136 |101.60Mb
+      - DE_439 |56.95Mb
+      - DE_493 |176.40Mb
+      - DE_494 |188.05Mb
+      - GB_643 |54.78Mb
+      - 🇺🇸 US_1135 |77.26Mb
       - "NULL"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_449 |56.95Mb
-      - GB_640 |54.78Mb
-      - 🇺🇸 US_1127 |77.26Mb
-      - 🇺🇸 US_1136 |101.60Mb
+      - DE_439 |56.95Mb
+      - DE_493 |176.40Mb
+      - DE_494 |188.05Mb
+      - GB_643 |54.78Mb
+      - 🇺🇸 US_1135 |77.26Mb
       - "NULL"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - DE_449 |56.95Mb
-      - GB_640 |54.78Mb
-      - 🇺🇸 US_1127 |77.26Mb
-      - 🇺🇸 US_1136 |101.60Mb
+      - DE_439 |56.95Mb
+      - DE_493 |176.40Mb
+      - DE_494 |188.05Mb
+      - GB_643 |54.78Mb
+      - 🇺🇸 US_1135 |77.26Mb
       - "NULL"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_449 |56.95Mb
-      - GB_640 |54.78Mb
-      - 🇺🇸 US_1127 |77.26Mb
-      - 🇺🇸 US_1136 |101.60Mb
+      - DE_439 |56.95Mb
+      - DE_493 |176.40Mb
+      - DE_494 |188.05Mb
+      - GB_643 |54.78Mb
+      - 🇺🇸 US_1135 |77.26Mb
       - "NULL"
   - name: 📢 谷歌FCM
     type: select
@@ -78,10 +85,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_449 |56.95Mb
-      - GB_640 |54.78Mb
-      - 🇺🇸 US_1127 |77.26Mb
-      - 🇺🇸 US_1136 |101.60Mb
+      - DE_439 |56.95Mb
+      - DE_493 |176.40Mb
+      - DE_494 |188.05Mb
+      - GB_643 |54.78Mb
+      - 🇺🇸 US_1135 |77.26Mb
       - "NULL"
   - name: 🎯 全球直连
     type: select
@@ -105,10 +113,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_449 |56.95Mb
-      - GB_640 |54.78Mb
-      - 🇺🇸 US_1127 |77.26Mb
-      - 🇺🇸 US_1136 |101.60Mb
+      - DE_439 |56.95Mb
+      - DE_493 |176.40Mb
+      - DE_494 |188.05Mb
+      - GB_643 |54.78Mb
+      - 🇺🇸 US_1135 |77.26Mb
       - "NULL"
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
