@@ -5,116 +5,124 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: DE_501 |52.30Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 146.0.42.87}}
-  - {name: GB_593 |80.42Mb, server: uk-manchester.eiw2eemo.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: uk-manchester.eiw2eemo.com}}
-  - {name: NL_863 |74.84Mb, server: 89.31.127.151, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
-  - {name: NL_864 |76.85Mb, server: ned-server-01.selfupay.com, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
-  - {name: NL_865 |79.19Mb, server: 89.31.127.151, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
-  - {name: NL_866 |85.51Mb, server: ned-server-01.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
-  - {name: NL_869 |102.20Mb, server: 89.31.127.151, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US_1177 |96.76Mb, server: ff7.uuv2.co.uk, port: 443, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: kycc, ws-headers: {Host: ff7.uuv2.co.uk}}
-  - {name: 🇺🇸 US_1183 |100.36Mb, server: 104.17.170.210, port: 443, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: kycc, ws-headers: {Host: 104.17.170.210}}
+  - {name: DE_497 |52.30Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 146.0.42.87}}
+  - {name: FR_580 |144.36Mb, server: s4.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, skip-cert-verify: true, udp: true}
+  - {name: GB_582 |80.42Mb, server: uk-manchester.eiw2eemo.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: uk-manchester.eiw2eemo.com}}
+  - {name: NL_840 |102.20Mb, server: 89.31.127.151, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: NL_841 |79.19Mb, server: 89.31.127.151, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: NL_842 |76.85Mb, server: ned-server-01.selfupay.com, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: NL_843 |74.84Mb, server: 89.31.127.151, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: NL_845 |85.51Mb, server: ned-server-01.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_1156 |96.76Mb, server: ff7.uuv2.co.uk, port: 443, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: kycc, ws-headers: {Host: ff7.uuv2.co.uk}}
+  - {name: 🇺🇸 US_1157 |100.36Mb, server: 104.17.170.210, port: 443, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: kycc, ws-headers: {Host: 104.17.170.210}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - DE_501 |52.30Mb
-      - GB_593 |80.42Mb
-      - NL_863 |74.84Mb
-      - NL_864 |76.85Mb
-      - NL_865 |79.19Mb
-      - NL_866 |85.51Mb
-      - NL_869 |102.20Mb
-      - 🇺🇸 US_1177 |96.76Mb
-      - 🇺🇸 US_1183 |100.36Mb
+      - DE_497 |52.30Mb
+      - FR_580 |144.36Mb
+      - GB_582 |80.42Mb
+      - NL_840 |102.20Mb
+      - NL_841 |79.19Mb
+      - NL_842 |76.85Mb
+      - NL_843 |74.84Mb
+      - NL_845 |85.51Mb
+      - 🇺🇸 US_1156 |96.76Mb
+      - 🇺🇸 US_1157 |100.36Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DE_501 |52.30Mb
-      - GB_593 |80.42Mb
-      - NL_863 |74.84Mb
-      - NL_864 |76.85Mb
-      - NL_865 |79.19Mb
-      - NL_866 |85.51Mb
-      - NL_869 |102.20Mb
-      - 🇺🇸 US_1177 |96.76Mb
-      - 🇺🇸 US_1183 |100.36Mb
+      - DE_497 |52.30Mb
+      - FR_580 |144.36Mb
+      - GB_582 |80.42Mb
+      - NL_840 |102.20Mb
+      - NL_841 |79.19Mb
+      - NL_842 |76.85Mb
+      - NL_843 |74.84Mb
+      - NL_845 |85.51Mb
+      - 🇺🇸 US_1156 |96.76Mb
+      - 🇺🇸 US_1157 |100.36Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE_501 |52.30Mb
-      - GB_593 |80.42Mb
-      - NL_863 |74.84Mb
-      - NL_864 |76.85Mb
-      - NL_865 |79.19Mb
-      - NL_866 |85.51Mb
-      - NL_869 |102.20Mb
-      - 🇺🇸 US_1177 |96.76Mb
-      - 🇺🇸 US_1183 |100.36Mb
+      - DE_497 |52.30Mb
+      - FR_580 |144.36Mb
+      - GB_582 |80.42Mb
+      - NL_840 |102.20Mb
+      - NL_841 |79.19Mb
+      - NL_842 |76.85Mb
+      - NL_843 |74.84Mb
+      - NL_845 |85.51Mb
+      - 🇺🇸 US_1156 |96.76Mb
+      - 🇺🇸 US_1157 |100.36Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_501 |52.30Mb
-      - GB_593 |80.42Mb
-      - NL_863 |74.84Mb
-      - NL_864 |76.85Mb
-      - NL_865 |79.19Mb
-      - NL_866 |85.51Mb
-      - NL_869 |102.20Mb
-      - 🇺🇸 US_1177 |96.76Mb
-      - 🇺🇸 US_1183 |100.36Mb
+      - DE_497 |52.30Mb
+      - FR_580 |144.36Mb
+      - GB_582 |80.42Mb
+      - NL_840 |102.20Mb
+      - NL_841 |79.19Mb
+      - NL_842 |76.85Mb
+      - NL_843 |74.84Mb
+      - NL_845 |85.51Mb
+      - 🇺🇸 US_1156 |96.76Mb
+      - 🇺🇸 US_1157 |100.36Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - DE_501 |52.30Mb
-      - GB_593 |80.42Mb
-      - NL_863 |74.84Mb
-      - NL_864 |76.85Mb
-      - NL_865 |79.19Mb
-      - NL_866 |85.51Mb
-      - NL_869 |102.20Mb
-      - 🇺🇸 US_1177 |96.76Mb
-      - 🇺🇸 US_1183 |100.36Mb
+      - DE_497 |52.30Mb
+      - FR_580 |144.36Mb
+      - GB_582 |80.42Mb
+      - NL_840 |102.20Mb
+      - NL_841 |79.19Mb
+      - NL_842 |76.85Mb
+      - NL_843 |74.84Mb
+      - NL_845 |85.51Mb
+      - 🇺🇸 US_1156 |96.76Mb
+      - 🇺🇸 US_1157 |100.36Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_501 |52.30Mb
-      - GB_593 |80.42Mb
-      - NL_863 |74.84Mb
-      - NL_864 |76.85Mb
-      - NL_865 |79.19Mb
-      - NL_866 |85.51Mb
-      - NL_869 |102.20Mb
-      - 🇺🇸 US_1177 |96.76Mb
-      - 🇺🇸 US_1183 |100.36Mb
+      - DE_497 |52.30Mb
+      - FR_580 |144.36Mb
+      - GB_582 |80.42Mb
+      - NL_840 |102.20Mb
+      - NL_841 |79.19Mb
+      - NL_842 |76.85Mb
+      - NL_843 |74.84Mb
+      - NL_845 |85.51Mb
+      - 🇺🇸 US_1156 |96.76Mb
+      - 🇺🇸 US_1157 |100.36Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_501 |52.30Mb
-      - GB_593 |80.42Mb
-      - NL_863 |74.84Mb
-      - NL_864 |76.85Mb
-      - NL_865 |79.19Mb
-      - NL_866 |85.51Mb
-      - NL_869 |102.20Mb
-      - 🇺🇸 US_1177 |96.76Mb
-      - 🇺🇸 US_1183 |100.36Mb
+      - DE_497 |52.30Mb
+      - FR_580 |144.36Mb
+      - GB_582 |80.42Mb
+      - NL_840 |102.20Mb
+      - NL_841 |79.19Mb
+      - NL_842 |76.85Mb
+      - NL_843 |74.84Mb
+      - NL_845 |85.51Mb
+      - 🇺🇸 US_1156 |96.76Mb
+      - 🇺🇸 US_1157 |100.36Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -137,15 +145,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_501 |52.30Mb
-      - GB_593 |80.42Mb
-      - NL_863 |74.84Mb
-      - NL_864 |76.85Mb
-      - NL_865 |79.19Mb
-      - NL_866 |85.51Mb
-      - NL_869 |102.20Mb
-      - 🇺🇸 US_1177 |96.76Mb
-      - 🇺🇸 US_1183 |100.36Mb
+      - DE_497 |52.30Mb
+      - FR_580 |144.36Mb
+      - GB_582 |80.42Mb
+      - NL_840 |102.20Mb
+      - NL_841 |79.19Mb
+      - NL_842 |76.85Mb
+      - NL_843 |74.84Mb
+      - NL_845 |85.51Mb
+      - 🇺🇸 US_1156 |96.76Mb
+      - 🇺🇸 US_1157 |100.36Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
