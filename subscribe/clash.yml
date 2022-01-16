@@ -5,108 +5,156 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: DE_464 |61.19Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
-  - {name: DE_514 |86.34Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}}
-  - {name: FR_604 |78.68Mb, server: s4.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, skip-cert-verify: true, udp: true}
-  - {name: GB_689 |60.11Mb, server: 109.74.194.189, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: GE_690 |72.71Mb, server: 185.252.223.203, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/243535322906, headers: {Host: 185.252.223.203}}}
-  - {name: LT_953 |54.17Mb, server: 1222ru.fans8.xyz, port: 80, type: vmess, uuid: 6c23fcf0-18e7-3cd0-a123-821fa514fb42, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 1222ru.fans8.xyz}}}
-  - {name: 🇷🇺 RU_1095 |56.31Mb, server: 45.89.229.126, port: 443, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /niaoyun, headers: {Host: 45.89.229.126}}}
-  - {name: 🇺🇸 US_2289 |104.42Mb, server: 144.126.218.238, port: 80, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /niaoyun, headers: {Host: 144.126.218.238}}}
+  - {name: DE_469 |61.19Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
+  - {name: DE_519 |71.64Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: DE_520 |66.52Mb, server: 136.243.191.88, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: DE_521 |86.34Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}}
+  - {name: FR_610 |78.68Mb, server: s4.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, skip-cert-verify: true, udp: true}
+  - {name: GB_688 |60.11Mb, server: 109.74.194.189, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: GE_694 |72.71Mb, server: 185.252.223.203, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/243535322906, headers: {Host: 185.252.223.203}}}
+  - {name: LT_935 |54.17Mb, server: 1222ru.fans8.xyz, port: 80, type: vmess, uuid: 6c23fcf0-18e7-3cd0-a123-821fa514fb42, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 1222ru.fans8.xyz}}}
+  - {name: NL_974 |78.81Mb, server: 89.31.127.151, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: NL_975 |156.28Mb, server: 89.31.127.151, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: NL_976 |83.12Mb, server: 89.31.127.151, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇺 RU_1078 |56.31Mb, server: 45.89.229.126, port: 443, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /niaoyun, headers: {Host: 45.89.229.126}}}
+  - {name: 🇺🇸 US_2266 |137.46Mb, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shuier, headers: {Host: 172.67.68.58}}}
+  - {name: 🇺🇸 US_2280 |104.42Mb, server: 144.126.218.238, port: 80, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /niaoyun, headers: {Host: 144.126.218.238}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - DE_464 |61.19Mb
-      - DE_514 |86.34Mb
-      - FR_604 |78.68Mb
-      - GB_689 |60.11Mb
-      - GE_690 |72.71Mb
-      - LT_953 |54.17Mb
-      - 🇷🇺 RU_1095 |56.31Mb
-      - 🇺🇸 US_2289 |104.42Mb
+      - DE_469 |61.19Mb
+      - DE_519 |71.64Mb
+      - DE_520 |66.52Mb
+      - DE_521 |86.34Mb
+      - FR_610 |78.68Mb
+      - GB_688 |60.11Mb
+      - GE_694 |72.71Mb
+      - LT_935 |54.17Mb
+      - NL_974 |78.81Mb
+      - NL_975 |156.28Mb
+      - NL_976 |83.12Mb
+      - 🇷🇺 RU_1078 |56.31Mb
+      - 🇺🇸 US_2266 |137.46Mb
+      - 🇺🇸 US_2280 |104.42Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DE_464 |61.19Mb
-      - DE_514 |86.34Mb
-      - FR_604 |78.68Mb
-      - GB_689 |60.11Mb
-      - GE_690 |72.71Mb
-      - LT_953 |54.17Mb
-      - 🇷🇺 RU_1095 |56.31Mb
-      - 🇺🇸 US_2289 |104.42Mb
+      - DE_469 |61.19Mb
+      - DE_519 |71.64Mb
+      - DE_520 |66.52Mb
+      - DE_521 |86.34Mb
+      - FR_610 |78.68Mb
+      - GB_688 |60.11Mb
+      - GE_694 |72.71Mb
+      - LT_935 |54.17Mb
+      - NL_974 |78.81Mb
+      - NL_975 |156.28Mb
+      - NL_976 |83.12Mb
+      - 🇷🇺 RU_1078 |56.31Mb
+      - 🇺🇸 US_2266 |137.46Mb
+      - 🇺🇸 US_2280 |104.42Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE_464 |61.19Mb
-      - DE_514 |86.34Mb
-      - FR_604 |78.68Mb
-      - GB_689 |60.11Mb
-      - GE_690 |72.71Mb
-      - LT_953 |54.17Mb
-      - 🇷🇺 RU_1095 |56.31Mb
-      - 🇺🇸 US_2289 |104.42Mb
+      - DE_469 |61.19Mb
+      - DE_519 |71.64Mb
+      - DE_520 |66.52Mb
+      - DE_521 |86.34Mb
+      - FR_610 |78.68Mb
+      - GB_688 |60.11Mb
+      - GE_694 |72.71Mb
+      - LT_935 |54.17Mb
+      - NL_974 |78.81Mb
+      - NL_975 |156.28Mb
+      - NL_976 |83.12Mb
+      - 🇷🇺 RU_1078 |56.31Mb
+      - 🇺🇸 US_2266 |137.46Mb
+      - 🇺🇸 US_2280 |104.42Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_464 |61.19Mb
-      - DE_514 |86.34Mb
-      - FR_604 |78.68Mb
-      - GB_689 |60.11Mb
-      - GE_690 |72.71Mb
-      - LT_953 |54.17Mb
-      - 🇷🇺 RU_1095 |56.31Mb
-      - 🇺🇸 US_2289 |104.42Mb
+      - DE_469 |61.19Mb
+      - DE_519 |71.64Mb
+      - DE_520 |66.52Mb
+      - DE_521 |86.34Mb
+      - FR_610 |78.68Mb
+      - GB_688 |60.11Mb
+      - GE_694 |72.71Mb
+      - LT_935 |54.17Mb
+      - NL_974 |78.81Mb
+      - NL_975 |156.28Mb
+      - NL_976 |83.12Mb
+      - 🇷🇺 RU_1078 |56.31Mb
+      - 🇺🇸 US_2266 |137.46Mb
+      - 🇺🇸 US_2280 |104.42Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - DE_464 |61.19Mb
-      - DE_514 |86.34Mb
-      - FR_604 |78.68Mb
-      - GB_689 |60.11Mb
-      - GE_690 |72.71Mb
-      - LT_953 |54.17Mb
-      - 🇷🇺 RU_1095 |56.31Mb
-      - 🇺🇸 US_2289 |104.42Mb
+      - DE_469 |61.19Mb
+      - DE_519 |71.64Mb
+      - DE_520 |66.52Mb
+      - DE_521 |86.34Mb
+      - FR_610 |78.68Mb
+      - GB_688 |60.11Mb
+      - GE_694 |72.71Mb
+      - LT_935 |54.17Mb
+      - NL_974 |78.81Mb
+      - NL_975 |156.28Mb
+      - NL_976 |83.12Mb
+      - 🇷🇺 RU_1078 |56.31Mb
+      - 🇺🇸 US_2266 |137.46Mb
+      - 🇺🇸 US_2280 |104.42Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_464 |61.19Mb
-      - DE_514 |86.34Mb
-      - FR_604 |78.68Mb
-      - GB_689 |60.11Mb
-      - GE_690 |72.71Mb
-      - LT_953 |54.17Mb
-      - 🇷🇺 RU_1095 |56.31Mb
-      - 🇺🇸 US_2289 |104.42Mb
+      - DE_469 |61.19Mb
+      - DE_519 |71.64Mb
+      - DE_520 |66.52Mb
+      - DE_521 |86.34Mb
+      - FR_610 |78.68Mb
+      - GB_688 |60.11Mb
+      - GE_694 |72.71Mb
+      - LT_935 |54.17Mb
+      - NL_974 |78.81Mb
+      - NL_975 |156.28Mb
+      - NL_976 |83.12Mb
+      - 🇷🇺 RU_1078 |56.31Mb
+      - 🇺🇸 US_2266 |137.46Mb
+      - 🇺🇸 US_2280 |104.42Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_464 |61.19Mb
-      - DE_514 |86.34Mb
-      - FR_604 |78.68Mb
-      - GB_689 |60.11Mb
-      - GE_690 |72.71Mb
-      - LT_953 |54.17Mb
-      - 🇷🇺 RU_1095 |56.31Mb
-      - 🇺🇸 US_2289 |104.42Mb
+      - DE_469 |61.19Mb
+      - DE_519 |71.64Mb
+      - DE_520 |66.52Mb
+      - DE_521 |86.34Mb
+      - FR_610 |78.68Mb
+      - GB_688 |60.11Mb
+      - GE_694 |72.71Mb
+      - LT_935 |54.17Mb
+      - NL_974 |78.81Mb
+      - NL_975 |156.28Mb
+      - NL_976 |83.12Mb
+      - 🇷🇺 RU_1078 |56.31Mb
+      - 🇺🇸 US_2266 |137.46Mb
+      - 🇺🇸 US_2280 |104.42Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -129,14 +177,20 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_464 |61.19Mb
-      - DE_514 |86.34Mb
-      - FR_604 |78.68Mb
-      - GB_689 |60.11Mb
-      - GE_690 |72.71Mb
-      - LT_953 |54.17Mb
-      - 🇷🇺 RU_1095 |56.31Mb
-      - 🇺🇸 US_2289 |104.42Mb
+      - DE_469 |61.19Mb
+      - DE_519 |71.64Mb
+      - DE_520 |66.52Mb
+      - DE_521 |86.34Mb
+      - FR_610 |78.68Mb
+      - GB_688 |60.11Mb
+      - GE_694 |72.71Mb
+      - LT_935 |54.17Mb
+      - NL_974 |78.81Mb
+      - NL_975 |156.28Mb
+      - NL_976 |83.12Mb
+      - 🇷🇺 RU_1078 |56.31Mb
+      - 🇺🇸 US_2266 |137.46Mb
+      - 🇺🇸 US_2280 |104.42Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
