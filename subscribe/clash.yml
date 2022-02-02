@@ -5,140 +5,124 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: DE_529 |67.97Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
-  - {name: DE_570 |126.24Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: DE_572 |79.58Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}}
-  - {name: GB_744 |263.55Mb, server: 178.79.156.236, port: 80, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /niaoyun, headers: {Host: 178.79.156.236}}}
-  - {name: GB_747 |88.70Mb, server: 109.74.194.189, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: HU_851 |65.05Mb, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
-  - {name: LT_1031 |79.23Mb, server: 213.183.45.80, port: 80, type: vmess, uuid: 5547a0ab-6373-3915-9187-84e8c8317e1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.80}}}
-  - {name: LT_1033 |75.68Mb, server: 213.183.41.13, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.41.13}}}
-  - {name: LT_1034 |69.04Mb, server: 0118ru.fans8.xyz, port: 80, type: vmess, uuid: 745b504f-06da-345d-a389-c6e532334815, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 0118ru.fans8.xyz}}}
-  - {name: LT_1035 |66.26Mb, server: 213.183.41.13, port: 80, type: vmess, uuid: 5547a0ab-6373-3915-9187-84e8c8317e1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.41.13}}}
-  - {name: NL_1081 |168.22Mb, server: 213.183.51.179, port: 3309, type: vmess, uuid: 07d676a1-903d-4606-93bd-e3522089f951, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 213.183.51.179}}}
-  - {name: NL_1082 |126.14Mb, server: nodeg.showmeyoutube.com, port: 3395, type: vmess, uuid: 07d676a1-903d-4606-93bd-e3522089f951, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nodeg.showmeyoutube.com}}}
+  - {name: DE_515 |67.97Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
+  - {name: DE_562 |79.58Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}}
+  - {name: GB_732 |88.70Mb, server: 109.74.194.189, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: HU_835 |65.05Mb, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: LT_1014 |79.23Mb, server: 213.183.45.80, port: 80, type: vmess, uuid: 5547a0ab-6373-3915-9187-84e8c8317e1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.80}}}
+  - {name: LT_1016 |66.26Mb, server: 213.183.41.13, port: 80, type: vmess, uuid: 5547a0ab-6373-3915-9187-84e8c8317e1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.41.13}}}
+  - {name: LT_1017 |75.68Mb, server: 213.183.41.13, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.41.13}}}
+  - {name: LT_1018 |69.04Mb, server: 0118ru.fans8.xyz, port: 80, type: vmess, uuid: 745b504f-06da-345d-a389-c6e532334815, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 0118ru.fans8.xyz}}}
+  - {name: NL_1061 |126.14Mb, server: nodeg.showmeyoutube.com, port: 3395, type: vmess, uuid: 07d676a1-903d-4606-93bd-e3522089f951, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nodeg.showmeyoutube.com}}}
+  - {name: NL_1062 |168.22Mb, server: 213.183.51.179, port: 3309, type: vmess, uuid: 07d676a1-903d-4606-93bd-e3522089f951, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 213.183.51.179}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - DE_529 |67.97Mb
-      - DE_570 |126.24Mb
-      - DE_572 |79.58Mb
-      - GB_744 |263.55Mb
-      - GB_747 |88.70Mb
-      - HU_851 |65.05Mb
-      - LT_1031 |79.23Mb
-      - LT_1033 |75.68Mb
-      - LT_1034 |69.04Mb
-      - LT_1035 |66.26Mb
-      - NL_1081 |168.22Mb
-      - NL_1082 |126.14Mb
+      - DE_515 |67.97Mb
+      - DE_562 |79.58Mb
+      - GB_732 |88.70Mb
+      - HU_835 |65.05Mb
+      - LT_1014 |79.23Mb
+      - LT_1016 |66.26Mb
+      - LT_1017 |75.68Mb
+      - LT_1018 |69.04Mb
+      - NL_1061 |126.14Mb
+      - NL_1062 |168.22Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DE_529 |67.97Mb
-      - DE_570 |126.24Mb
-      - DE_572 |79.58Mb
-      - GB_744 |263.55Mb
-      - GB_747 |88.70Mb
-      - HU_851 |65.05Mb
-      - LT_1031 |79.23Mb
-      - LT_1033 |75.68Mb
-      - LT_1034 |69.04Mb
-      - LT_1035 |66.26Mb
-      - NL_1081 |168.22Mb
-      - NL_1082 |126.14Mb
+      - DE_515 |67.97Mb
+      - DE_562 |79.58Mb
+      - GB_732 |88.70Mb
+      - HU_835 |65.05Mb
+      - LT_1014 |79.23Mb
+      - LT_1016 |66.26Mb
+      - LT_1017 |75.68Mb
+      - LT_1018 |69.04Mb
+      - NL_1061 |126.14Mb
+      - NL_1062 |168.22Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE_529 |67.97Mb
-      - DE_570 |126.24Mb
-      - DE_572 |79.58Mb
-      - GB_744 |263.55Mb
-      - GB_747 |88.70Mb
-      - HU_851 |65.05Mb
-      - LT_1031 |79.23Mb
-      - LT_1033 |75.68Mb
-      - LT_1034 |69.04Mb
-      - LT_1035 |66.26Mb
-      - NL_1081 |168.22Mb
-      - NL_1082 |126.14Mb
+      - DE_515 |67.97Mb
+      - DE_562 |79.58Mb
+      - GB_732 |88.70Mb
+      - HU_835 |65.05Mb
+      - LT_1014 |79.23Mb
+      - LT_1016 |66.26Mb
+      - LT_1017 |75.68Mb
+      - LT_1018 |69.04Mb
+      - NL_1061 |126.14Mb
+      - NL_1062 |168.22Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_529 |67.97Mb
-      - DE_570 |126.24Mb
-      - DE_572 |79.58Mb
-      - GB_744 |263.55Mb
-      - GB_747 |88.70Mb
-      - HU_851 |65.05Mb
-      - LT_1031 |79.23Mb
-      - LT_1033 |75.68Mb
-      - LT_1034 |69.04Mb
-      - LT_1035 |66.26Mb
-      - NL_1081 |168.22Mb
-      - NL_1082 |126.14Mb
+      - DE_515 |67.97Mb
+      - DE_562 |79.58Mb
+      - GB_732 |88.70Mb
+      - HU_835 |65.05Mb
+      - LT_1014 |79.23Mb
+      - LT_1016 |66.26Mb
+      - LT_1017 |75.68Mb
+      - LT_1018 |69.04Mb
+      - NL_1061 |126.14Mb
+      - NL_1062 |168.22Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - DE_529 |67.97Mb
-      - DE_570 |126.24Mb
-      - DE_572 |79.58Mb
-      - GB_744 |263.55Mb
-      - GB_747 |88.70Mb
-      - HU_851 |65.05Mb
-      - LT_1031 |79.23Mb
-      - LT_1033 |75.68Mb
-      - LT_1034 |69.04Mb
-      - LT_1035 |66.26Mb
-      - NL_1081 |168.22Mb
-      - NL_1082 |126.14Mb
+      - DE_515 |67.97Mb
+      - DE_562 |79.58Mb
+      - GB_732 |88.70Mb
+      - HU_835 |65.05Mb
+      - LT_1014 |79.23Mb
+      - LT_1016 |66.26Mb
+      - LT_1017 |75.68Mb
+      - LT_1018 |69.04Mb
+      - NL_1061 |126.14Mb
+      - NL_1062 |168.22Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_529 |67.97Mb
-      - DE_570 |126.24Mb
-      - DE_572 |79.58Mb
-      - GB_744 |263.55Mb
-      - GB_747 |88.70Mb
-      - HU_851 |65.05Mb
-      - LT_1031 |79.23Mb
-      - LT_1033 |75.68Mb
-      - LT_1034 |69.04Mb
-      - LT_1035 |66.26Mb
-      - NL_1081 |168.22Mb
-      - NL_1082 |126.14Mb
+      - DE_515 |67.97Mb
+      - DE_562 |79.58Mb
+      - GB_732 |88.70Mb
+      - HU_835 |65.05Mb
+      - LT_1014 |79.23Mb
+      - LT_1016 |66.26Mb
+      - LT_1017 |75.68Mb
+      - LT_1018 |69.04Mb
+      - NL_1061 |126.14Mb
+      - NL_1062 |168.22Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_529 |67.97Mb
-      - DE_570 |126.24Mb
-      - DE_572 |79.58Mb
-      - GB_744 |263.55Mb
-      - GB_747 |88.70Mb
-      - HU_851 |65.05Mb
-      - LT_1031 |79.23Mb
-      - LT_1033 |75.68Mb
-      - LT_1034 |69.04Mb
-      - LT_1035 |66.26Mb
-      - NL_1081 |168.22Mb
-      - NL_1082 |126.14Mb
+      - DE_515 |67.97Mb
+      - DE_562 |79.58Mb
+      - GB_732 |88.70Mb
+      - HU_835 |65.05Mb
+      - LT_1014 |79.23Mb
+      - LT_1016 |66.26Mb
+      - LT_1017 |75.68Mb
+      - LT_1018 |69.04Mb
+      - NL_1061 |126.14Mb
+      - NL_1062 |168.22Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -161,18 +145,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_529 |67.97Mb
-      - DE_570 |126.24Mb
-      - DE_572 |79.58Mb
-      - GB_744 |263.55Mb
-      - GB_747 |88.70Mb
-      - HU_851 |65.05Mb
-      - LT_1031 |79.23Mb
-      - LT_1033 |75.68Mb
-      - LT_1034 |69.04Mb
-      - LT_1035 |66.26Mb
-      - NL_1081 |168.22Mb
-      - NL_1082 |126.14Mb
+      - DE_515 |67.97Mb
+      - DE_562 |79.58Mb
+      - GB_732 |88.70Mb
+      - HU_835 |65.05Mb
+      - LT_1014 |79.23Mb
+      - LT_1016 |66.26Mb
+      - LT_1017 |75.68Mb
+      - LT_1018 |69.04Mb
+      - NL_1061 |126.14Mb
+      - NL_1062 |168.22Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -940,12 +922,10 @@ rules:
  - DOMAIN-SUFFIX,activate-sea.adobe.com,🍃 应用净化
  - DOMAIN-SUFFIX,activate-sjc0.adobe.com,🍃 应用净化
  - DOMAIN-SUFFIX,activate.adobe.com,🍃 应用净化
- - DOMAIN-SUFFIX,activate.wip3.adobe.com,🍃 应用净化
  - DOMAIN-SUFFIX,adobe-dns-2.adobe.com,🍃 应用净化
  - DOMAIN-SUFFIX,adobe-dns-3.adobe.com,🍃 应用净化
  - DOMAIN-SUFFIX,adobe-dns.adobe.com,🍃 应用净化
  - DOMAIN-SUFFIX,ereg.adobe.com,🍃 应用净化
- - DOMAIN-SUFFIX,ereg.wip3.adobe.com,🍃 应用净化
  - DOMAIN-SUFFIX,geo2.adobe.com,🍃 应用净化
  - DOMAIN-SUFFIX,hl2rcv.adobe.com,🍃 应用净化
  - DOMAIN-SUFFIX,hlrcv.stage.adobe.com,🍃 应用净化
@@ -1000,7 +980,6 @@ rules:
  - DOMAIN-SUFFIX,baikebcs.bdimg.com,🍃 应用净化
  - DOMAIN-SUFFIX,banlv.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,bar.baidu.com,🍃 应用净化
- - DOMAIN-SUFFIX,bdimg.share.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,bdplus.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,btlaunch.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,c.baidu.cn,🍃 应用净化
@@ -1018,7 +997,6 @@ rules:
  - DOMAIN-SUFFIX,click.hm.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,click.qianqian.com,🍃 应用净化
  - DOMAIN-SUFFIX,cm.baidu.com,🍃 应用净化
- - DOMAIN-SUFFIX,cm.pos.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,cpro.baidu.cn,🍃 应用净化
  - DOMAIN-SUFFIX,cpro.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,cpro.baidustatic.com,🍃 应用净化
@@ -1121,13 +1099,10 @@ rules:
  - DOMAIN-SUFFIX,rp.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,rplog.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,s.baidu.com,🍃 应用净化
- - DOMAIN-SUFFIX,s.cpro.baidu.com,🍃 应用净化
- - DOMAIN-SUFFIX,sa.tuisong.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,sclick.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,sestat.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,shadu.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,share.baidu.com,🍃 应用净化
- - DOMAIN-SUFFIX,snippet.pos.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,sobar.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,sobartop.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,spcode.baidu.cn,🍃 应用净化
@@ -1144,7 +1119,6 @@ rules:
  - DOMAIN-SUFFIX,tuijian.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,tuisong.baidu.cn,🍃 应用净化
  - DOMAIN-SUFFIX,tuisong.baidu.com,🍃 应用净化
- - DOMAIN-SUFFIX,uat1.bfsspadserver.8le8le.com,🍃 应用净化
  - DOMAIN-SUFFIX,ubmcmm.baidustatic.com,🍃 应用净化
  - DOMAIN-SUFFIX,ucstat.baidu.cn,🍃 应用净化
  - DOMAIN-SUFFIX,ucstat.baidu.com,🍃 应用净化
@@ -1169,7 +1143,6 @@ rules:
  - DOMAIN-SUFFIX,wisepush.video.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,wm.baidu.cn,🍃 应用净化
  - DOMAIN-SUFFIX,wm.baidu.com,🍃 应用净化
- - DOMAIN-SUFFIX,wn.pos.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,znsv.baidu.cn,🍃 应用净化
  - DOMAIN-SUFFIX,znsv.baidu.com,🍃 应用净化
  - DOMAIN-SUFFIX,zz.bdstatic.com,🍃 应用净化
@@ -1220,7 +1193,11 @@ rules:
  - DOMAIN-SUFFIX,ic.snssdk.com,🍃 应用净化
  - DOMAIN-SUFFIX,log.snssdk.com,🍃 应用净化
  - DOMAIN-SUFFIX,nativeapp.toutiao.com,🍃 应用净化
+ - DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,🍃 应用净化
+ - DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,🍃 应用净化
+ - DOMAIN-SUFFIX,pangolin.snssdk.com,🍃 应用净化
  - DOMAIN-SUFFIX,partner.toutiao.com,🍃 应用净化
+ - DOMAIN-SUFFIX,pglstatp-toutiao.com,🍃 应用净化
  - DOMAIN-SUFFIX,sm.toutiao.com,🍃 应用净化
  - DOMAIN-SUFFIX,a.dangdang.com,🍃 应用净化
  - DOMAIN-SUFFIX,click.dangdang.com,🍃 应用净化
@@ -1743,7 +1720,6 @@ rules:
  - DOMAIN-SUFFIX,couchcoaster.jp,🍃 应用净化
  - DOMAIN-SUFFIX,delivery.dmkt-sp.jp,🍃 应用净化
  - DOMAIN-SUFFIX,ehg-youtube.hitbox.com,🍃 应用净化
- - DOMAIN-SUFFIX,m-78.jp,🍃 应用净化
  - DOMAIN-SUFFIX,nichibenren.or.jp,🍃 应用净化
  - DOMAIN-SUFFIX,nicorette.co.kr,🍃 应用净化
  - DOMAIN-SUFFIX,ssl-youtube.2cnt.net,🍃 应用净化
@@ -1754,8 +1730,6 @@ rules:
  - DOMAIN-SUFFIX,ads.wasu.tv,🍃 应用净化
  - DOMAIN-SUFFIX,afp.wasu.tv,🍃 应用净化
  - DOMAIN-SUFFIX,c.algovid.com,🍃 应用净化
- - DOMAIN-SUFFIX,cc.xtgreat.com,🍃 应用净化
- - DOMAIN-SUFFIX,d.dsp.imageter.com,🍃 应用净化
  - DOMAIN-SUFFIX,gg.jtertp.com,🍃 应用净化
  - DOMAIN-SUFFIX,gridsum-vd.cntv.cn,🍃 应用净化
  - DOMAIN-SUFFIX,kwflvcdn.000dn.com,🍃 应用净化
