@@ -5,12 +5,14 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: DE_476 |67.46Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
-  - {name: GB_607 |51.73Mb, server: switzerland-zurich.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: switzerland-zurich.mah3Hoet.com}}}
-  - {name: GB_675 |109.47Mb, server: 178.79.156.236, port: 80, type: vmess, uuid: 80bc6df4-2905-35f9-a671-35bc803d93cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /niaoyun, headers: {Host: 178.79.156.236}}}
-  - {name: LT_959 |87.15Mb, server: 213.183.41.13, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.41.13}}}
-  - {name: LT_960 |76.56Mb, server: 213.183.45.80, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.80}}}
-  - {name: US_2630 |153.35Mb, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shuier, headers: {Host: 172.67.68.58}}}
+  - {name: DE_475 |95.71Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
+  - {name: GB_595 |71.82Mb, server: switzerland-zurich.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: switzerland-zurich.mah3Hoet.com}}}
+  - {name: GB_658 |134.91Mb, server: uk-am3-5.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: PNRbp3j9B, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: GB_667 |56.10Mb, server: 109.74.194.189, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: HU_762 |54.04Mb, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: LT_942 |75.20Mb, server: 213.183.41.13, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.41.13}}}
+  - {name: LT_943 |66.25Mb, server: 213.183.45.80, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.80}}}
+  - {name: US_2622 |62.60Mb, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shuier, headers: {Host: 172.67.68.58}}}
   - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
@@ -18,24 +20,28 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - DE_476 |67.46Mb
-      - GB_607 |51.73Mb
-      - GB_675 |109.47Mb
-      - LT_959 |87.15Mb
-      - LT_960 |76.56Mb
-      - US_2630 |153.35Mb
+      - DE_475 |95.71Mb
+      - GB_595 |71.82Mb
+      - GB_658 |134.91Mb
+      - GB_667 |56.10Mb
+      - HU_762 |54.04Mb
+      - LT_942 |75.20Mb
+      - LT_943 |66.25Mb
+      - US_2622 |62.60Mb
       - "NULL"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DE_476 |67.46Mb
-      - GB_607 |51.73Mb
-      - GB_675 |109.47Mb
-      - LT_959 |87.15Mb
-      - LT_960 |76.56Mb
-      - US_2630 |153.35Mb
+      - DE_475 |95.71Mb
+      - GB_595 |71.82Mb
+      - GB_658 |134.91Mb
+      - GB_667 |56.10Mb
+      - HU_762 |54.04Mb
+      - LT_942 |75.20Mb
+      - LT_943 |66.25Mb
+      - US_2622 |62.60Mb
       - "NULL"
   - name: 🌍 国外媒体
     type: select
@@ -43,48 +49,56 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE_476 |67.46Mb
-      - GB_607 |51.73Mb
-      - GB_675 |109.47Mb
-      - LT_959 |87.15Mb
-      - LT_960 |76.56Mb
-      - US_2630 |153.35Mb
+      - DE_475 |95.71Mb
+      - GB_595 |71.82Mb
+      - GB_658 |134.91Mb
+      - GB_667 |56.10Mb
+      - HU_762 |54.04Mb
+      - LT_942 |75.20Mb
+      - LT_943 |66.25Mb
+      - US_2622 |62.60Mb
       - "NULL"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_476 |67.46Mb
-      - GB_607 |51.73Mb
-      - GB_675 |109.47Mb
-      - LT_959 |87.15Mb
-      - LT_960 |76.56Mb
-      - US_2630 |153.35Mb
+      - DE_475 |95.71Mb
+      - GB_595 |71.82Mb
+      - GB_658 |134.91Mb
+      - GB_667 |56.10Mb
+      - HU_762 |54.04Mb
+      - LT_942 |75.20Mb
+      - LT_943 |66.25Mb
+      - US_2622 |62.60Mb
       - "NULL"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - DE_476 |67.46Mb
-      - GB_607 |51.73Mb
-      - GB_675 |109.47Mb
-      - LT_959 |87.15Mb
-      - LT_960 |76.56Mb
-      - US_2630 |153.35Mb
+      - DE_475 |95.71Mb
+      - GB_595 |71.82Mb
+      - GB_658 |134.91Mb
+      - GB_667 |56.10Mb
+      - HU_762 |54.04Mb
+      - LT_942 |75.20Mb
+      - LT_943 |66.25Mb
+      - US_2622 |62.60Mb
       - "NULL"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_476 |67.46Mb
-      - GB_607 |51.73Mb
-      - GB_675 |109.47Mb
-      - LT_959 |87.15Mb
-      - LT_960 |76.56Mb
-      - US_2630 |153.35Mb
+      - DE_475 |95.71Mb
+      - GB_595 |71.82Mb
+      - GB_658 |134.91Mb
+      - GB_667 |56.10Mb
+      - HU_762 |54.04Mb
+      - LT_942 |75.20Mb
+      - LT_943 |66.25Mb
+      - US_2622 |62.60Mb
       - "NULL"
   - name: 📢 谷歌FCM
     type: select
@@ -92,12 +106,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_476 |67.46Mb
-      - GB_607 |51.73Mb
-      - GB_675 |109.47Mb
-      - LT_959 |87.15Mb
-      - LT_960 |76.56Mb
-      - US_2630 |153.35Mb
+      - DE_475 |95.71Mb
+      - GB_595 |71.82Mb
+      - GB_658 |134.91Mb
+      - GB_667 |56.10Mb
+      - HU_762 |54.04Mb
+      - LT_942 |75.20Mb
+      - LT_943 |66.25Mb
+      - US_2622 |62.60Mb
       - "NULL"
   - name: 🎯 全球直连
     type: select
@@ -121,12 +137,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_476 |67.46Mb
-      - GB_607 |51.73Mb
-      - GB_675 |109.47Mb
-      - LT_959 |87.15Mb
-      - LT_960 |76.56Mb
-      - US_2630 |153.35Mb
+      - DE_475 |95.71Mb
+      - GB_595 |71.82Mb
+      - GB_658 |134.91Mb
+      - GB_667 |56.10Mb
+      - HU_762 |54.04Mb
+      - LT_942 |75.20Mb
+      - LT_943 |66.25Mb
+      - US_2622 |62.60Mb
       - "NULL"
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
