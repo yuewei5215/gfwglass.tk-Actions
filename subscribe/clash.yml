@@ -5,100 +5,92 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: DE_545 |215.18Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: FR_631 |77.53Mb, server: 137.74.96.141, port: 9423, type: vmess, uuid: 077b4435-80de-4374-866d-349ae95e32e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
-  - {name: GB_704 |59.61Mb, server: 146.70.71.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.70.71.2}}}
-  - {name: GB_711 |63.38Mb, server: 109.74.194.189, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: LT_977 |85.22Mb, server: 213.183.41.13, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.41.13}}}
-  - {name: LT_978 |58.92Mb, server: 213.183.45.80, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.80}}}
-  - {name: US_2647 |149.99Mb, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shuier, headers: {Host: 172.67.68.58}}}
+  - {name: FR_609 |77.53Mb, server: 137.74.96.141, port: 9423, type: vmess, uuid: 077b4435-80de-4374-866d-349ae95e32e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: GB_679 |59.61Mb, server: 146.70.71.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.70.71.2}}}
+  - {name: GB_685 |63.38Mb, server: 109.74.194.189, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: LT_946 |58.92Mb, server: 213.183.45.80, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.80}}}
+  - {name: LT_947 |85.22Mb, server: 213.183.41.13, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.41.13}}}
+  - {name: US_2609 |149.99Mb, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shuier, headers: {Host: 172.67.68.58}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - DE_545 |215.18Mb
-      - FR_631 |77.53Mb
-      - GB_704 |59.61Mb
-      - GB_711 |63.38Mb
-      - LT_977 |85.22Mb
-      - LT_978 |58.92Mb
-      - US_2647 |149.99Mb
+      - FR_609 |77.53Mb
+      - GB_679 |59.61Mb
+      - GB_685 |63.38Mb
+      - LT_946 |58.92Mb
+      - LT_947 |85.22Mb
+      - US_2609 |149.99Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DE_545 |215.18Mb
-      - FR_631 |77.53Mb
-      - GB_704 |59.61Mb
-      - GB_711 |63.38Mb
-      - LT_977 |85.22Mb
-      - LT_978 |58.92Mb
-      - US_2647 |149.99Mb
+      - FR_609 |77.53Mb
+      - GB_679 |59.61Mb
+      - GB_685 |63.38Mb
+      - LT_946 |58.92Mb
+      - LT_947 |85.22Mb
+      - US_2609 |149.99Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE_545 |215.18Mb
-      - FR_631 |77.53Mb
-      - GB_704 |59.61Mb
-      - GB_711 |63.38Mb
-      - LT_977 |85.22Mb
-      - LT_978 |58.92Mb
-      - US_2647 |149.99Mb
+      - FR_609 |77.53Mb
+      - GB_679 |59.61Mb
+      - GB_685 |63.38Mb
+      - LT_946 |58.92Mb
+      - LT_947 |85.22Mb
+      - US_2609 |149.99Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_545 |215.18Mb
-      - FR_631 |77.53Mb
-      - GB_704 |59.61Mb
-      - GB_711 |63.38Mb
-      - LT_977 |85.22Mb
-      - LT_978 |58.92Mb
-      - US_2647 |149.99Mb
+      - FR_609 |77.53Mb
+      - GB_679 |59.61Mb
+      - GB_685 |63.38Mb
+      - LT_946 |58.92Mb
+      - LT_947 |85.22Mb
+      - US_2609 |149.99Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - DE_545 |215.18Mb
-      - FR_631 |77.53Mb
-      - GB_704 |59.61Mb
-      - GB_711 |63.38Mb
-      - LT_977 |85.22Mb
-      - LT_978 |58.92Mb
-      - US_2647 |149.99Mb
+      - FR_609 |77.53Mb
+      - GB_679 |59.61Mb
+      - GB_685 |63.38Mb
+      - LT_946 |58.92Mb
+      - LT_947 |85.22Mb
+      - US_2609 |149.99Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_545 |215.18Mb
-      - FR_631 |77.53Mb
-      - GB_704 |59.61Mb
-      - GB_711 |63.38Mb
-      - LT_977 |85.22Mb
-      - LT_978 |58.92Mb
-      - US_2647 |149.99Mb
+      - FR_609 |77.53Mb
+      - GB_679 |59.61Mb
+      - GB_685 |63.38Mb
+      - LT_946 |58.92Mb
+      - LT_947 |85.22Mb
+      - US_2609 |149.99Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_545 |215.18Mb
-      - FR_631 |77.53Mb
-      - GB_704 |59.61Mb
-      - GB_711 |63.38Mb
-      - LT_977 |85.22Mb
-      - LT_978 |58.92Mb
-      - US_2647 |149.99Mb
+      - FR_609 |77.53Mb
+      - GB_679 |59.61Mb
+      - GB_685 |63.38Mb
+      - LT_946 |58.92Mb
+      - LT_947 |85.22Mb
+      - US_2609 |149.99Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -121,13 +113,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_545 |215.18Mb
-      - FR_631 |77.53Mb
-      - GB_704 |59.61Mb
-      - GB_711 |63.38Mb
-      - LT_977 |85.22Mb
-      - LT_978 |58.92Mb
-      - US_2647 |149.99Mb
+      - FR_609 |77.53Mb
+      - GB_679 |59.61Mb
+      - GB_685 |63.38Mb
+      - LT_946 |58.92Mb
+      - LT_947 |85.22Mb
+      - US_2609 |149.99Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
