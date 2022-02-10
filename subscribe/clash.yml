@@ -5,100 +5,100 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: DE_503 |78.52Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
-  - {name: DE_547 |58.17Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}}
-  - {name: HU_811 |68.69Mb, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
-  - {name: JP_979 |164.43Mb, server: tt6.tjvpn.top, port: 443, type: trojan, password: 0cb2cd1f-870b-485c-914a-60aba39eed39, skip-cert-verify: true, udp: true}
-  - {name: LT_981 |72.35Mb, server: 213.183.45.80, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.80}}}
-  - {name: LT_982 |71.98Mb, server: 213.183.41.13, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.41.13}}}
-  - {name: US_2690 |87.51Mb, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shuier, headers: {Host: 172.67.68.58}}}
+  - {name: DE_501 |78.52Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
+  - {name: DE_549 |58.17Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}}
+  - {name: HU_795 |68.69Mb, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: JP_965 |164.43Mb, server: tt6.tjvpn.top, port: 443, type: trojan, password: 0cb2cd1f-870b-485c-914a-60aba39eed39, skip-cert-verify: true, udp: true}
+  - {name: LT_967 |71.98Mb, server: 213.183.41.13, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.41.13}}}
+  - {name: LT_968 |72.35Mb, server: 213.183.45.80, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.80}}}
+  - {name: US_2646 |87.51Mb, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shuier, headers: {Host: 172.67.68.58}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - DE_503 |78.52Mb
-      - DE_547 |58.17Mb
-      - HU_811 |68.69Mb
-      - JP_979 |164.43Mb
-      - LT_981 |72.35Mb
-      - LT_982 |71.98Mb
-      - US_2690 |87.51Mb
+      - DE_501 |78.52Mb
+      - DE_549 |58.17Mb
+      - HU_795 |68.69Mb
+      - JP_965 |164.43Mb
+      - LT_967 |71.98Mb
+      - LT_968 |72.35Mb
+      - US_2646 |87.51Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DE_503 |78.52Mb
-      - DE_547 |58.17Mb
-      - HU_811 |68.69Mb
-      - JP_979 |164.43Mb
-      - LT_981 |72.35Mb
-      - LT_982 |71.98Mb
-      - US_2690 |87.51Mb
+      - DE_501 |78.52Mb
+      - DE_549 |58.17Mb
+      - HU_795 |68.69Mb
+      - JP_965 |164.43Mb
+      - LT_967 |71.98Mb
+      - LT_968 |72.35Mb
+      - US_2646 |87.51Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE_503 |78.52Mb
-      - DE_547 |58.17Mb
-      - HU_811 |68.69Mb
-      - JP_979 |164.43Mb
-      - LT_981 |72.35Mb
-      - LT_982 |71.98Mb
-      - US_2690 |87.51Mb
+      - DE_501 |78.52Mb
+      - DE_549 |58.17Mb
+      - HU_795 |68.69Mb
+      - JP_965 |164.43Mb
+      - LT_967 |71.98Mb
+      - LT_968 |72.35Mb
+      - US_2646 |87.51Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_503 |78.52Mb
-      - DE_547 |58.17Mb
-      - HU_811 |68.69Mb
-      - JP_979 |164.43Mb
-      - LT_981 |72.35Mb
-      - LT_982 |71.98Mb
-      - US_2690 |87.51Mb
+      - DE_501 |78.52Mb
+      - DE_549 |58.17Mb
+      - HU_795 |68.69Mb
+      - JP_965 |164.43Mb
+      - LT_967 |71.98Mb
+      - LT_968 |72.35Mb
+      - US_2646 |87.51Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - DE_503 |78.52Mb
-      - DE_547 |58.17Mb
-      - HU_811 |68.69Mb
-      - JP_979 |164.43Mb
-      - LT_981 |72.35Mb
-      - LT_982 |71.98Mb
-      - US_2690 |87.51Mb
+      - DE_501 |78.52Mb
+      - DE_549 |58.17Mb
+      - HU_795 |68.69Mb
+      - JP_965 |164.43Mb
+      - LT_967 |71.98Mb
+      - LT_968 |72.35Mb
+      - US_2646 |87.51Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_503 |78.52Mb
-      - DE_547 |58.17Mb
-      - HU_811 |68.69Mb
-      - JP_979 |164.43Mb
-      - LT_981 |72.35Mb
-      - LT_982 |71.98Mb
-      - US_2690 |87.51Mb
+      - DE_501 |78.52Mb
+      - DE_549 |58.17Mb
+      - HU_795 |68.69Mb
+      - JP_965 |164.43Mb
+      - LT_967 |71.98Mb
+      - LT_968 |72.35Mb
+      - US_2646 |87.51Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_503 |78.52Mb
-      - DE_547 |58.17Mb
-      - HU_811 |68.69Mb
-      - JP_979 |164.43Mb
-      - LT_981 |72.35Mb
-      - LT_982 |71.98Mb
-      - US_2690 |87.51Mb
+      - DE_501 |78.52Mb
+      - DE_549 |58.17Mb
+      - HU_795 |68.69Mb
+      - JP_965 |164.43Mb
+      - LT_967 |71.98Mb
+      - LT_968 |72.35Mb
+      - US_2646 |87.51Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -121,13 +121,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_503 |78.52Mb
-      - DE_547 |58.17Mb
-      - HU_811 |68.69Mb
-      - JP_979 |164.43Mb
-      - LT_981 |72.35Mb
-      - LT_982 |71.98Mb
-      - US_2690 |87.51Mb
+      - DE_501 |78.52Mb
+      - DE_549 |58.17Mb
+      - HU_795 |68.69Mb
+      - JP_965 |164.43Mb
+      - LT_967 |71.98Mb
+      - LT_968 |72.35Mb
+      - US_2646 |87.51Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
