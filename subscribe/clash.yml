@@ -5,212 +5,188 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: AT_75 |78.29Mb, server: 5.253.207.161, port: 443, type: vmess, uuid: ec5f1c3d-2e1d-4516-ab56-e3907bae3976, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 5.253.207.161}}}
-  - {name: DE_519 |65.77Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
-  - {name: DE_563 |202.48Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: DE_564 |394.52Mb, server: 37.61.213.94, port: 443, type: vmess, uuid: 97ff78ea-8807-4c33-93e5-d8481ac0539e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 37.61.213.94}}}
-  - {name: DE_565 |131.99Mb, server: 134.119.176.171, port: 443, type: vmess, uuid: b1a868c2-cba7-42c5-bba5-ae158894402e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 134.119.176.171}}}
-  - {name: DE_566 |61.18Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}}
-  - {name: ES_586 |83.66Mb, server: 151.236.23.120, port: 443, type: vmess, uuid: 75bd7620-60a7-4930-af13-46b58ad4f137, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 151.236.23.120}}}
-  - {name: FR_720 |93.15Mb, server: fr-am1-1.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: gVWc0WaJn, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: GB_722 |87.48Mb, server: switzerland-zurich.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: switzerland-zurich.mah3Hoet.com}}}
-  - {name: GB_794 |79.40Mb, server: 37.120.134.207, port: 443, type: vmess, uuid: 5c0beec7-9b91-4e28-85b0-e3ff49b4ac50, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 37.120.134.207}}}
-  - {name: IT_1017 |184.34Mb, server: 37.9.229.103, port: 443, type: vmess, uuid: a30cef7c-77d5-48cb-b2eb-cda85963b42f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 37.9.229.103}}}
-  - {name: LT_1118 |72.77Mb, server: 213.183.41.13, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.41.13}}}
-  - {name: LT_1119 |53.02Mb, server: 213.183.41.46, port: 3395, type: vmess, uuid: 07d676a1-903d-4606-93bd-e3522089f951, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 213.183.41.46}}}
-  - {name: LT_1120 |79.55Mb, server: 0118ru.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 0118ru.fans8.xyz}}}
-  - {name: LT_1121 |54.45Mb, server: nodea.showmeyoutube.com, port: 3395, type: vmess, uuid: 07d676a1-903d-4606-93bd-e3522089f951, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nodea.showmeyoutube.com}}}
-  - {name: LT_1122 |57.98Mb, server: 1222ru.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 1222ru.fans8.xyz}}}
-  - {name: LT_1123 |60.71Mb, server: 213.183.45.80, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.80}}}
-  - {name: RU_1228 |74.66Mb, server: 92.223.65.119, port: 443, type: vmess, uuid: 3fd6713f-e036-4ba9-938a-da7843a17a15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 92.223.65.119}}}
-  - {name: RU_1230 |52.73Mb, server: 5.188.35.120, port: 443, type: vmess, uuid: 0c7a06d0-8061-4df7-b521-960e2b9ce0f7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 5.188.35.120}}}
-  - {name: SE_1235 |89.87Mb, server: 194.71.227.16, port: 443, type: vmess, uuid: 0c601ad4-9fe1-4b02-b026-a37f6f45147d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 194.71.227.16}}}
-  - {name: US_2921 |128.09Mb, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shuier, headers: {Host: 172.67.68.58}}}
+  - {name: AT_75 |125.95Mb, server: 5.253.207.161, port: 443, type: vmess, uuid: ec5f1c3d-2e1d-4516-ab56-e3907bae3976, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 5.253.207.161}}}
+  - {name: DE_588 |186.56Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: DE_590 |235.28Mb, server: 134.119.176.171, port: 443, type: vmess, uuid: b1a868c2-cba7-42c5-bba5-ae158894402e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 134.119.176.171}}}
+  - {name: ES_611 |86.04Mb, server: 151.236.23.120, port: 443, type: vmess, uuid: 75bd7620-60a7-4930-af13-46b58ad4f137, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 151.236.23.120}}}
+  - {name: FR_749 |88.52Mb, server: 15.236.146.95, port: 8181, type: ssr, cipher: aes-256-cfb, password: gVWc0WaJn, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: GB_753 |62.67Mb, server: switzerland-zurich.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: switzerland-zurich.mah3Hoet.com}}}
+  - {name: GB_755 |72.80Mb, server: uk-manchester.eiw2eemo.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: uk-manchester.eiw2eemo.com}}}
+  - {name: GB_824 |51.40Mb, server: 37.120.134.207, port: 443, type: vmess, uuid: 5c0beec7-9b91-4e28-85b0-e3ff49b4ac50, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 37.120.134.207}}}
+  - {name: HU_964 |58.73Mb, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: IT_1054 |168.10Mb, server: 37.9.229.103, port: 443, type: vmess, uuid: a30cef7c-77d5-48cb-b2eb-cda85963b42f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 37.9.229.103}}}
+  - {name: LT_1155 |52.83Mb, server: nodea.showmeyoutube.com, port: 3395, type: vmess, uuid: 07d676a1-903d-4606-93bd-e3522089f951, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nodea.showmeyoutube.com}}}
+  - {name: LT_1157 |51.13Mb, server: 213.183.45.80, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.80}}}
+  - {name: LT_1159 |58.39Mb, server: 213.183.41.13, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.41.13}}}
+  - {name: LT_1160 |51.09Mb, server: 1222ru.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 1222ru.fans8.xyz}}}
+  - {name: RU_1267 |67.62Mb, server: 146.185.218.171, port: 443, type: vmess, uuid: 947af181-c509-4245-80de-9baf64f1aa51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 146.185.218.171}}}
+  - {name: RU_1271 |74.66Mb, server: 92.223.65.119, port: 443, type: vmess, uuid: 3fd6713f-e036-4ba9-938a-da7843a17a15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 92.223.65.119}}}
+  - {name: SE_1275 |89.87Mb, server: 194.71.227.16, port: 443, type: vmess, uuid: 0c601ad4-9fe1-4b02-b026-a37f6f45147d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 194.71.227.16}}}
+  - {name: US_3016 |142.60Mb, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shuier, headers: {Host: 172.67.68.58}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - AT_75 |78.29Mb
-      - DE_519 |65.77Mb
-      - DE_563 |202.48Mb
-      - DE_564 |394.52Mb
-      - DE_565 |131.99Mb
-      - DE_566 |61.18Mb
-      - ES_586 |83.66Mb
-      - FR_720 |93.15Mb
-      - GB_722 |87.48Mb
-      - GB_794 |79.40Mb
-      - IT_1017 |184.34Mb
-      - LT_1118 |72.77Mb
-      - LT_1119 |53.02Mb
-      - LT_1120 |79.55Mb
-      - LT_1121 |54.45Mb
-      - LT_1122 |57.98Mb
-      - LT_1123 |60.71Mb
-      - RU_1228 |74.66Mb
-      - RU_1230 |52.73Mb
-      - SE_1235 |89.87Mb
-      - US_2921 |128.09Mb
+      - AT_75 |125.95Mb
+      - DE_588 |186.56Mb
+      - DE_590 |235.28Mb
+      - ES_611 |86.04Mb
+      - FR_749 |88.52Mb
+      - GB_753 |62.67Mb
+      - GB_755 |72.80Mb
+      - GB_824 |51.40Mb
+      - HU_964 |58.73Mb
+      - IT_1054 |168.10Mb
+      - LT_1155 |52.83Mb
+      - LT_1157 |51.13Mb
+      - LT_1159 |58.39Mb
+      - LT_1160 |51.09Mb
+      - RU_1267 |67.62Mb
+      - RU_1271 |74.66Mb
+      - SE_1275 |89.87Mb
+      - US_3016 |142.60Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AT_75 |78.29Mb
-      - DE_519 |65.77Mb
-      - DE_563 |202.48Mb
-      - DE_564 |394.52Mb
-      - DE_565 |131.99Mb
-      - DE_566 |61.18Mb
-      - ES_586 |83.66Mb
-      - FR_720 |93.15Mb
-      - GB_722 |87.48Mb
-      - GB_794 |79.40Mb
-      - IT_1017 |184.34Mb
-      - LT_1118 |72.77Mb
-      - LT_1119 |53.02Mb
-      - LT_1120 |79.55Mb
-      - LT_1121 |54.45Mb
-      - LT_1122 |57.98Mb
-      - LT_1123 |60.71Mb
-      - RU_1228 |74.66Mb
-      - RU_1230 |52.73Mb
-      - SE_1235 |89.87Mb
-      - US_2921 |128.09Mb
+      - AT_75 |125.95Mb
+      - DE_588 |186.56Mb
+      - DE_590 |235.28Mb
+      - ES_611 |86.04Mb
+      - FR_749 |88.52Mb
+      - GB_753 |62.67Mb
+      - GB_755 |72.80Mb
+      - GB_824 |51.40Mb
+      - HU_964 |58.73Mb
+      - IT_1054 |168.10Mb
+      - LT_1155 |52.83Mb
+      - LT_1157 |51.13Mb
+      - LT_1159 |58.39Mb
+      - LT_1160 |51.09Mb
+      - RU_1267 |67.62Mb
+      - RU_1271 |74.66Mb
+      - SE_1275 |89.87Mb
+      - US_3016 |142.60Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AT_75 |78.29Mb
-      - DE_519 |65.77Mb
-      - DE_563 |202.48Mb
-      - DE_564 |394.52Mb
-      - DE_565 |131.99Mb
-      - DE_566 |61.18Mb
-      - ES_586 |83.66Mb
-      - FR_720 |93.15Mb
-      - GB_722 |87.48Mb
-      - GB_794 |79.40Mb
-      - IT_1017 |184.34Mb
-      - LT_1118 |72.77Mb
-      - LT_1119 |53.02Mb
-      - LT_1120 |79.55Mb
-      - LT_1121 |54.45Mb
-      - LT_1122 |57.98Mb
-      - LT_1123 |60.71Mb
-      - RU_1228 |74.66Mb
-      - RU_1230 |52.73Mb
-      - SE_1235 |89.87Mb
-      - US_2921 |128.09Mb
+      - AT_75 |125.95Mb
+      - DE_588 |186.56Mb
+      - DE_590 |235.28Mb
+      - ES_611 |86.04Mb
+      - FR_749 |88.52Mb
+      - GB_753 |62.67Mb
+      - GB_755 |72.80Mb
+      - GB_824 |51.40Mb
+      - HU_964 |58.73Mb
+      - IT_1054 |168.10Mb
+      - LT_1155 |52.83Mb
+      - LT_1157 |51.13Mb
+      - LT_1159 |58.39Mb
+      - LT_1160 |51.09Mb
+      - RU_1267 |67.62Mb
+      - RU_1271 |74.66Mb
+      - SE_1275 |89.87Mb
+      - US_3016 |142.60Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - AT_75 |78.29Mb
-      - DE_519 |65.77Mb
-      - DE_563 |202.48Mb
-      - DE_564 |394.52Mb
-      - DE_565 |131.99Mb
-      - DE_566 |61.18Mb
-      - ES_586 |83.66Mb
-      - FR_720 |93.15Mb
-      - GB_722 |87.48Mb
-      - GB_794 |79.40Mb
-      - IT_1017 |184.34Mb
-      - LT_1118 |72.77Mb
-      - LT_1119 |53.02Mb
-      - LT_1120 |79.55Mb
-      - LT_1121 |54.45Mb
-      - LT_1122 |57.98Mb
-      - LT_1123 |60.71Mb
-      - RU_1228 |74.66Mb
-      - RU_1230 |52.73Mb
-      - SE_1235 |89.87Mb
-      - US_2921 |128.09Mb
+      - AT_75 |125.95Mb
+      - DE_588 |186.56Mb
+      - DE_590 |235.28Mb
+      - ES_611 |86.04Mb
+      - FR_749 |88.52Mb
+      - GB_753 |62.67Mb
+      - GB_755 |72.80Mb
+      - GB_824 |51.40Mb
+      - HU_964 |58.73Mb
+      - IT_1054 |168.10Mb
+      - LT_1155 |52.83Mb
+      - LT_1157 |51.13Mb
+      - LT_1159 |58.39Mb
+      - LT_1160 |51.09Mb
+      - RU_1267 |67.62Mb
+      - RU_1271 |74.66Mb
+      - SE_1275 |89.87Mb
+      - US_3016 |142.60Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - AT_75 |78.29Mb
-      - DE_519 |65.77Mb
-      - DE_563 |202.48Mb
-      - DE_564 |394.52Mb
-      - DE_565 |131.99Mb
-      - DE_566 |61.18Mb
-      - ES_586 |83.66Mb
-      - FR_720 |93.15Mb
-      - GB_722 |87.48Mb
-      - GB_794 |79.40Mb
-      - IT_1017 |184.34Mb
-      - LT_1118 |72.77Mb
-      - LT_1119 |53.02Mb
-      - LT_1120 |79.55Mb
-      - LT_1121 |54.45Mb
-      - LT_1122 |57.98Mb
-      - LT_1123 |60.71Mb
-      - RU_1228 |74.66Mb
-      - RU_1230 |52.73Mb
-      - SE_1235 |89.87Mb
-      - US_2921 |128.09Mb
+      - AT_75 |125.95Mb
+      - DE_588 |186.56Mb
+      - DE_590 |235.28Mb
+      - ES_611 |86.04Mb
+      - FR_749 |88.52Mb
+      - GB_753 |62.67Mb
+      - GB_755 |72.80Mb
+      - GB_824 |51.40Mb
+      - HU_964 |58.73Mb
+      - IT_1054 |168.10Mb
+      - LT_1155 |52.83Mb
+      - LT_1157 |51.13Mb
+      - LT_1159 |58.39Mb
+      - LT_1160 |51.09Mb
+      - RU_1267 |67.62Mb
+      - RU_1271 |74.66Mb
+      - SE_1275 |89.87Mb
+      - US_3016 |142.60Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - AT_75 |78.29Mb
-      - DE_519 |65.77Mb
-      - DE_563 |202.48Mb
-      - DE_564 |394.52Mb
-      - DE_565 |131.99Mb
-      - DE_566 |61.18Mb
-      - ES_586 |83.66Mb
-      - FR_720 |93.15Mb
-      - GB_722 |87.48Mb
-      - GB_794 |79.40Mb
-      - IT_1017 |184.34Mb
-      - LT_1118 |72.77Mb
-      - LT_1119 |53.02Mb
-      - LT_1120 |79.55Mb
-      - LT_1121 |54.45Mb
-      - LT_1122 |57.98Mb
-      - LT_1123 |60.71Mb
-      - RU_1228 |74.66Mb
-      - RU_1230 |52.73Mb
-      - SE_1235 |89.87Mb
-      - US_2921 |128.09Mb
+      - AT_75 |125.95Mb
+      - DE_588 |186.56Mb
+      - DE_590 |235.28Mb
+      - ES_611 |86.04Mb
+      - FR_749 |88.52Mb
+      - GB_753 |62.67Mb
+      - GB_755 |72.80Mb
+      - GB_824 |51.40Mb
+      - HU_964 |58.73Mb
+      - IT_1054 |168.10Mb
+      - LT_1155 |52.83Mb
+      - LT_1157 |51.13Mb
+      - LT_1159 |58.39Mb
+      - LT_1160 |51.09Mb
+      - RU_1267 |67.62Mb
+      - RU_1271 |74.66Mb
+      - SE_1275 |89.87Mb
+      - US_3016 |142.60Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AT_75 |78.29Mb
-      - DE_519 |65.77Mb
-      - DE_563 |202.48Mb
-      - DE_564 |394.52Mb
-      - DE_565 |131.99Mb
-      - DE_566 |61.18Mb
-      - ES_586 |83.66Mb
-      - FR_720 |93.15Mb
-      - GB_722 |87.48Mb
-      - GB_794 |79.40Mb
-      - IT_1017 |184.34Mb
-      - LT_1118 |72.77Mb
-      - LT_1119 |53.02Mb
-      - LT_1120 |79.55Mb
-      - LT_1121 |54.45Mb
-      - LT_1122 |57.98Mb
-      - LT_1123 |60.71Mb
-      - RU_1228 |74.66Mb
-      - RU_1230 |52.73Mb
-      - SE_1235 |89.87Mb
-      - US_2921 |128.09Mb
+      - AT_75 |125.95Mb
+      - DE_588 |186.56Mb
+      - DE_590 |235.28Mb
+      - ES_611 |86.04Mb
+      - FR_749 |88.52Mb
+      - GB_753 |62.67Mb
+      - GB_755 |72.80Mb
+      - GB_824 |51.40Mb
+      - HU_964 |58.73Mb
+      - IT_1054 |168.10Mb
+      - LT_1155 |52.83Mb
+      - LT_1157 |51.13Mb
+      - LT_1159 |58.39Mb
+      - LT_1160 |51.09Mb
+      - RU_1267 |67.62Mb
+      - RU_1271 |74.66Mb
+      - SE_1275 |89.87Mb
+      - US_3016 |142.60Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -233,27 +209,24 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AT_75 |78.29Mb
-      - DE_519 |65.77Mb
-      - DE_563 |202.48Mb
-      - DE_564 |394.52Mb
-      - DE_565 |131.99Mb
-      - DE_566 |61.18Mb
-      - ES_586 |83.66Mb
-      - FR_720 |93.15Mb
-      - GB_722 |87.48Mb
-      - GB_794 |79.40Mb
-      - IT_1017 |184.34Mb
-      - LT_1118 |72.77Mb
-      - LT_1119 |53.02Mb
-      - LT_1120 |79.55Mb
-      - LT_1121 |54.45Mb
-      - LT_1122 |57.98Mb
-      - LT_1123 |60.71Mb
-      - RU_1228 |74.66Mb
-      - RU_1230 |52.73Mb
-      - SE_1235 |89.87Mb
-      - US_2921 |128.09Mb
+      - AT_75 |125.95Mb
+      - DE_588 |186.56Mb
+      - DE_590 |235.28Mb
+      - ES_611 |86.04Mb
+      - FR_749 |88.52Mb
+      - GB_753 |62.67Mb
+      - GB_755 |72.80Mb
+      - GB_824 |51.40Mb
+      - HU_964 |58.73Mb
+      - IT_1054 |168.10Mb
+      - LT_1155 |52.83Mb
+      - LT_1157 |51.13Mb
+      - LT_1159 |58.39Mb
+      - LT_1160 |51.09Mb
+      - RU_1267 |67.62Mb
+      - RU_1271 |74.66Mb
+      - SE_1275 |89.87Mb
+      - US_3016 |142.60Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
