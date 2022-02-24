@@ -5,108 +5,92 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: DE_404 |314.92Mb, server: 37.61.213.94, port: 443, type: vmess, uuid: 97ff78ea-8807-4c33-93e5-d8481ac0539e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 37.61.213.94}}}
-  - {name: DE_448 |74.83Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: DE_449 |53.88Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
-  - {name: DE_450 |87.70Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}}
-  - {name: RU_1018 |85.08Mb, server: 146.185.218.171, port: 443, type: vmess, uuid: 947af181-c509-4245-80de-9baf64f1aa51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 146.185.218.171}}}
-  - {name: US_1235 |52.86Mb, server: 104.16.42.170, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: 104.16.42.170}}}
-  - {name: US_1252 |185.34Mb, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shuier, headers: {Host: 172.67.68.58}}}
-  - {name: ZZ_2890 |60.53Mb, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: 9b04ac52-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nBaG3RmV/, headers: {Host: v2ray.ifuckgfw.ga}}}
+  - {name: DE_398 |314.92Mb, server: 37.61.213.94, port: 443, type: vmess, uuid: 97ff78ea-8807-4c33-93e5-d8481ac0539e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 37.61.213.94}}}
+  - {name: DE_440 |74.83Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: DE_441 |87.70Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}}
+  - {name: DE_442 |53.88Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
+  - {name: US_1215 |52.86Mb, server: 104.16.42.170, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: 104.16.42.170}}}
+  - {name: ZZ_2862 |60.53Mb, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: 9b04ac52-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nBaG3RmV/, headers: {Host: v2ray.ifuckgfw.ga}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - DE_404 |314.92Mb
-      - DE_448 |74.83Mb
-      - DE_449 |53.88Mb
-      - DE_450 |87.70Mb
-      - RU_1018 |85.08Mb
-      - US_1235 |52.86Mb
-      - US_1252 |185.34Mb
-      - ZZ_2890 |60.53Mb
+      - DE_398 |314.92Mb
+      - DE_440 |74.83Mb
+      - DE_441 |87.70Mb
+      - DE_442 |53.88Mb
+      - US_1215 |52.86Mb
+      - ZZ_2862 |60.53Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DE_404 |314.92Mb
-      - DE_448 |74.83Mb
-      - DE_449 |53.88Mb
-      - DE_450 |87.70Mb
-      - RU_1018 |85.08Mb
-      - US_1235 |52.86Mb
-      - US_1252 |185.34Mb
-      - ZZ_2890 |60.53Mb
+      - DE_398 |314.92Mb
+      - DE_440 |74.83Mb
+      - DE_441 |87.70Mb
+      - DE_442 |53.88Mb
+      - US_1215 |52.86Mb
+      - ZZ_2862 |60.53Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE_404 |314.92Mb
-      - DE_448 |74.83Mb
-      - DE_449 |53.88Mb
-      - DE_450 |87.70Mb
-      - RU_1018 |85.08Mb
-      - US_1235 |52.86Mb
-      - US_1252 |185.34Mb
-      - ZZ_2890 |60.53Mb
+      - DE_398 |314.92Mb
+      - DE_440 |74.83Mb
+      - DE_441 |87.70Mb
+      - DE_442 |53.88Mb
+      - US_1215 |52.86Mb
+      - ZZ_2862 |60.53Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_404 |314.92Mb
-      - DE_448 |74.83Mb
-      - DE_449 |53.88Mb
-      - DE_450 |87.70Mb
-      - RU_1018 |85.08Mb
-      - US_1235 |52.86Mb
-      - US_1252 |185.34Mb
-      - ZZ_2890 |60.53Mb
+      - DE_398 |314.92Mb
+      - DE_440 |74.83Mb
+      - DE_441 |87.70Mb
+      - DE_442 |53.88Mb
+      - US_1215 |52.86Mb
+      - ZZ_2862 |60.53Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - DE_404 |314.92Mb
-      - DE_448 |74.83Mb
-      - DE_449 |53.88Mb
-      - DE_450 |87.70Mb
-      - RU_1018 |85.08Mb
-      - US_1235 |52.86Mb
-      - US_1252 |185.34Mb
-      - ZZ_2890 |60.53Mb
+      - DE_398 |314.92Mb
+      - DE_440 |74.83Mb
+      - DE_441 |87.70Mb
+      - DE_442 |53.88Mb
+      - US_1215 |52.86Mb
+      - ZZ_2862 |60.53Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_404 |314.92Mb
-      - DE_448 |74.83Mb
-      - DE_449 |53.88Mb
-      - DE_450 |87.70Mb
-      - RU_1018 |85.08Mb
-      - US_1235 |52.86Mb
-      - US_1252 |185.34Mb
-      - ZZ_2890 |60.53Mb
+      - DE_398 |314.92Mb
+      - DE_440 |74.83Mb
+      - DE_441 |87.70Mb
+      - DE_442 |53.88Mb
+      - US_1215 |52.86Mb
+      - ZZ_2862 |60.53Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_404 |314.92Mb
-      - DE_448 |74.83Mb
-      - DE_449 |53.88Mb
-      - DE_450 |87.70Mb
-      - RU_1018 |85.08Mb
-      - US_1235 |52.86Mb
-      - US_1252 |185.34Mb
-      - ZZ_2890 |60.53Mb
+      - DE_398 |314.92Mb
+      - DE_440 |74.83Mb
+      - DE_441 |87.70Mb
+      - DE_442 |53.88Mb
+      - US_1215 |52.86Mb
+      - ZZ_2862 |60.53Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -129,14 +113,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_404 |314.92Mb
-      - DE_448 |74.83Mb
-      - DE_449 |53.88Mb
-      - DE_450 |87.70Mb
-      - RU_1018 |85.08Mb
-      - US_1235 |52.86Mb
-      - US_1252 |185.34Mb
-      - ZZ_2890 |60.53Mb
+      - DE_398 |314.92Mb
+      - DE_440 |74.83Mb
+      - DE_441 |87.70Mb
+      - DE_442 |53.88Mb
+      - US_1215 |52.86Mb
+      - ZZ_2862 |60.53Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
