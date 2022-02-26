@@ -5,84 +5,92 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: DE_425 |103.16Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: DE_426 |82.03Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
-  - {name: DE_427 |51.00Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}}
-  - {name: GB_630 |51.20Mb, server: 146.70.73.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.70.73.2}}}
-  - {name: ZZ_2826 |149.56Mb, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: 9b04ac52-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nBaG3RmV/, headers: {Host: v2ray.ifuckgfw.ga}}}
+  - {name: DE_439 |103.16Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: DE_440 |82.03Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
+  - {name: DE_441 |51.00Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}}
+  - {name: GB_646 |51.20Mb, server: 146.70.73.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.70.73.2}}}
+  - {name: US_1184 |136.80Mb, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shuier, headers: {Host: 172.67.68.58}}}
+  - {name: ZZ_2859 |149.56Mb, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: 9b04ac52-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nBaG3RmV/, headers: {Host: v2ray.ifuckgfw.ga}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - DE_425 |103.16Mb
-      - DE_426 |82.03Mb
-      - DE_427 |51.00Mb
-      - GB_630 |51.20Mb
-      - ZZ_2826 |149.56Mb
+      - DE_439 |103.16Mb
+      - DE_440 |82.03Mb
+      - DE_441 |51.00Mb
+      - GB_646 |51.20Mb
+      - US_1184 |136.80Mb
+      - ZZ_2859 |149.56Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DE_425 |103.16Mb
-      - DE_426 |82.03Mb
-      - DE_427 |51.00Mb
-      - GB_630 |51.20Mb
-      - ZZ_2826 |149.56Mb
+      - DE_439 |103.16Mb
+      - DE_440 |82.03Mb
+      - DE_441 |51.00Mb
+      - GB_646 |51.20Mb
+      - US_1184 |136.80Mb
+      - ZZ_2859 |149.56Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE_425 |103.16Mb
-      - DE_426 |82.03Mb
-      - DE_427 |51.00Mb
-      - GB_630 |51.20Mb
-      - ZZ_2826 |149.56Mb
+      - DE_439 |103.16Mb
+      - DE_440 |82.03Mb
+      - DE_441 |51.00Mb
+      - GB_646 |51.20Mb
+      - US_1184 |136.80Mb
+      - ZZ_2859 |149.56Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_425 |103.16Mb
-      - DE_426 |82.03Mb
-      - DE_427 |51.00Mb
-      - GB_630 |51.20Mb
-      - ZZ_2826 |149.56Mb
+      - DE_439 |103.16Mb
+      - DE_440 |82.03Mb
+      - DE_441 |51.00Mb
+      - GB_646 |51.20Mb
+      - US_1184 |136.80Mb
+      - ZZ_2859 |149.56Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - DE_425 |103.16Mb
-      - DE_426 |82.03Mb
-      - DE_427 |51.00Mb
-      - GB_630 |51.20Mb
-      - ZZ_2826 |149.56Mb
+      - DE_439 |103.16Mb
+      - DE_440 |82.03Mb
+      - DE_441 |51.00Mb
+      - GB_646 |51.20Mb
+      - US_1184 |136.80Mb
+      - ZZ_2859 |149.56Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_425 |103.16Mb
-      - DE_426 |82.03Mb
-      - DE_427 |51.00Mb
-      - GB_630 |51.20Mb
-      - ZZ_2826 |149.56Mb
+      - DE_439 |103.16Mb
+      - DE_440 |82.03Mb
+      - DE_441 |51.00Mb
+      - GB_646 |51.20Mb
+      - US_1184 |136.80Mb
+      - ZZ_2859 |149.56Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_425 |103.16Mb
-      - DE_426 |82.03Mb
-      - DE_427 |51.00Mb
-      - GB_630 |51.20Mb
-      - ZZ_2826 |149.56Mb
+      - DE_439 |103.16Mb
+      - DE_440 |82.03Mb
+      - DE_441 |51.00Mb
+      - GB_646 |51.20Mb
+      - US_1184 |136.80Mb
+      - ZZ_2859 |149.56Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -105,11 +113,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_425 |103.16Mb
-      - DE_426 |82.03Mb
-      - DE_427 |51.00Mb
-      - GB_630 |51.20Mb
-      - ZZ_2826 |149.56Mb
+      - DE_439 |103.16Mb
+      - DE_440 |82.03Mb
+      - DE_441 |51.00Mb
+      - GB_646 |51.20Mb
+      - US_1184 |136.80Mb
+      - ZZ_2859 |149.56Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
