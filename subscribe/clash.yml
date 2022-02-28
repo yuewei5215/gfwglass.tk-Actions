@@ -5,84 +5,100 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: DE_429 |130.90Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: DE_430 |64.75Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
-  - {name: DE_431 |61.85Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}}
-  - {name: LT_904 |52.83Mb, server: nodea.showmeyoutube.com, port: 3395, type: vmess, uuid: 07d676a1-903d-4606-93bd-e3522089f951, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nodea.showmeyoutube.com}}}
-  - {name: US_1191 |78.35Mb, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shuier, headers: {Host: 172.67.68.58}}}
+  - {name: DE_431 |130.90Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: DE_432 |64.75Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
+  - {name: DE_433 |61.85Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}}
+  - {name: LT_912 |52.83Mb, server: nodea.showmeyoutube.com, port: 3395, type: vmess, uuid: 07d676a1-903d-4606-93bd-e3522089f951, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nodea.showmeyoutube.com}}}
+  - {name: US_1197 |78.35Mb, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shuier, headers: {Host: 172.67.68.58}}}
+  - {name: ZZ_2871 |119.12Mb, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: a1effd82-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nBaG3RmV/, headers: {Host: v2ray.ifuckgfw.ga}}}
+  - {name: ZZ_2875 |149.56Mb, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: 9b04ac52-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nBaG3RmV/, headers: {Host: v2ray.ifuckgfw.ga}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - DE_429 |130.90Mb
-      - DE_430 |64.75Mb
-      - DE_431 |61.85Mb
-      - LT_904 |52.83Mb
-      - US_1191 |78.35Mb
+      - DE_431 |130.90Mb
+      - DE_432 |64.75Mb
+      - DE_433 |61.85Mb
+      - LT_912 |52.83Mb
+      - US_1197 |78.35Mb
+      - ZZ_2871 |119.12Mb
+      - ZZ_2875 |149.56Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DE_429 |130.90Mb
-      - DE_430 |64.75Mb
-      - DE_431 |61.85Mb
-      - LT_904 |52.83Mb
-      - US_1191 |78.35Mb
+      - DE_431 |130.90Mb
+      - DE_432 |64.75Mb
+      - DE_433 |61.85Mb
+      - LT_912 |52.83Mb
+      - US_1197 |78.35Mb
+      - ZZ_2871 |119.12Mb
+      - ZZ_2875 |149.56Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE_429 |130.90Mb
-      - DE_430 |64.75Mb
-      - DE_431 |61.85Mb
-      - LT_904 |52.83Mb
-      - US_1191 |78.35Mb
+      - DE_431 |130.90Mb
+      - DE_432 |64.75Mb
+      - DE_433 |61.85Mb
+      - LT_912 |52.83Mb
+      - US_1197 |78.35Mb
+      - ZZ_2871 |119.12Mb
+      - ZZ_2875 |149.56Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_429 |130.90Mb
-      - DE_430 |64.75Mb
-      - DE_431 |61.85Mb
-      - LT_904 |52.83Mb
-      - US_1191 |78.35Mb
+      - DE_431 |130.90Mb
+      - DE_432 |64.75Mb
+      - DE_433 |61.85Mb
+      - LT_912 |52.83Mb
+      - US_1197 |78.35Mb
+      - ZZ_2871 |119.12Mb
+      - ZZ_2875 |149.56Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - DE_429 |130.90Mb
-      - DE_430 |64.75Mb
-      - DE_431 |61.85Mb
-      - LT_904 |52.83Mb
-      - US_1191 |78.35Mb
+      - DE_431 |130.90Mb
+      - DE_432 |64.75Mb
+      - DE_433 |61.85Mb
+      - LT_912 |52.83Mb
+      - US_1197 |78.35Mb
+      - ZZ_2871 |119.12Mb
+      - ZZ_2875 |149.56Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_429 |130.90Mb
-      - DE_430 |64.75Mb
-      - DE_431 |61.85Mb
-      - LT_904 |52.83Mb
-      - US_1191 |78.35Mb
+      - DE_431 |130.90Mb
+      - DE_432 |64.75Mb
+      - DE_433 |61.85Mb
+      - LT_912 |52.83Mb
+      - US_1197 |78.35Mb
+      - ZZ_2871 |119.12Mb
+      - ZZ_2875 |149.56Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_429 |130.90Mb
-      - DE_430 |64.75Mb
-      - DE_431 |61.85Mb
-      - LT_904 |52.83Mb
-      - US_1191 |78.35Mb
+      - DE_431 |130.90Mb
+      - DE_432 |64.75Mb
+      - DE_433 |61.85Mb
+      - LT_912 |52.83Mb
+      - US_1197 |78.35Mb
+      - ZZ_2871 |119.12Mb
+      - ZZ_2875 |149.56Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -105,11 +121,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_429 |130.90Mb
-      - DE_430 |64.75Mb
-      - DE_431 |61.85Mb
-      - LT_904 |52.83Mb
-      - US_1191 |78.35Mb
+      - DE_431 |130.90Mb
+      - DE_432 |64.75Mb
+      - DE_433 |61.85Mb
+      - LT_912 |52.83Mb
+      - US_1197 |78.35Mb
+      - ZZ_2871 |119.12Mb
+      - ZZ_2875 |149.56Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
