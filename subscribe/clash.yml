@@ -5,76 +5,68 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CH_325 |68.64Mb, server: ocrs.vproxy.us, port: 34567, type: trojan, password: fd54b442-3a4c-4580-bd9a-70e1b249eceb, skip-cert-verify: true, udp: true}
-  - {name: DE_522 |55.58Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}}
-  - {name: LT_976 |58.49Mb, server: nodea.showmeyoutube.com, port: 3395, type: vmess, uuid: 07d676a1-903d-4606-93bd-e3522089f951, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nodea.showmeyoutube.com}}}
-  - {name: NL_984 |254.93Mb, server: 45.62.123.208, port: 47729, type: vmess, uuid: d9c827ee-063e-417e-e331-a589a7197578, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.62.123.208}}}
+  - {name: DE_491 |130.90Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: GB_710 |61.35Mb, server: 146.70.46.68, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.70.46.68}}}
+  - {name: NL_947 |80.63Mb, server: 45.62.123.208, port: 47729, type: vmess, uuid: d9c827ee-063e-417e-e331-a589a7197578, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.62.123.208}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CH_325 |68.64Mb
-      - DE_522 |55.58Mb
-      - LT_976 |58.49Mb
-      - NL_984 |254.93Mb
+      - DE_491 |130.90Mb
+      - GB_710 |61.35Mb
+      - NL_947 |80.63Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CH_325 |68.64Mb
-      - DE_522 |55.58Mb
-      - LT_976 |58.49Mb
-      - NL_984 |254.93Mb
+      - DE_491 |130.90Mb
+      - GB_710 |61.35Mb
+      - NL_947 |80.63Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CH_325 |68.64Mb
-      - DE_522 |55.58Mb
-      - LT_976 |58.49Mb
-      - NL_984 |254.93Mb
+      - DE_491 |130.90Mb
+      - GB_710 |61.35Mb
+      - NL_947 |80.63Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CH_325 |68.64Mb
-      - DE_522 |55.58Mb
-      - LT_976 |58.49Mb
-      - NL_984 |254.93Mb
+      - DE_491 |130.90Mb
+      - GB_710 |61.35Mb
+      - NL_947 |80.63Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - CH_325 |68.64Mb
-      - DE_522 |55.58Mb
-      - LT_976 |58.49Mb
-      - NL_984 |254.93Mb
+      - DE_491 |130.90Mb
+      - GB_710 |61.35Mb
+      - NL_947 |80.63Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CH_325 |68.64Mb
-      - DE_522 |55.58Mb
-      - LT_976 |58.49Mb
-      - NL_984 |254.93Mb
+      - DE_491 |130.90Mb
+      - GB_710 |61.35Mb
+      - NL_947 |80.63Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CH_325 |68.64Mb
-      - DE_522 |55.58Mb
-      - LT_976 |58.49Mb
-      - NL_984 |254.93Mb
+      - DE_491 |130.90Mb
+      - GB_710 |61.35Mb
+      - NL_947 |80.63Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -97,10 +89,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CH_325 |68.64Mb
-      - DE_522 |55.58Mb
-      - LT_976 |58.49Mb
-      - NL_984 |254.93Mb
+      - DE_491 |130.90Mb
+      - GB_710 |61.35Mb
+      - NL_947 |80.63Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
