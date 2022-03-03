@@ -5,84 +5,100 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: DE_420 |53.97Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
-  - {name: LT_899 |75.26Mb, server: 213.183.45.16, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.16}}}
-  - {name: LT_900 |67.79Mb, server: 213.183.45.6, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.6}}}
-  - {name: NL_910 |216.90Mb, server: 45.62.123.208, port: 47729, type: vmess, uuid: d9c827ee-063e-417e-e331-a589a7197578, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.62.123.208}}}
-  - {name: US_1208 |126.48Mb, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shuier, headers: {Host: 172.67.68.58}}}
+  - {name: DE_418 |53.97Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
+  - {name: LT_866 |75.26Mb, server: 213.183.45.16, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.16}}}
+  - {name: LT_867 |67.79Mb, server: 213.183.45.6, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.6}}}
+  - {name: NL_877 |216.90Mb, server: 45.62.123.208, port: 47729, type: vmess, uuid: d9c827ee-063e-417e-e331-a589a7197578, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.62.123.208}}}
+  - {name: US_1148 |126.48Mb, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shuier, headers: {Host: 172.67.68.58}}}
+  - {name: ZZ_2880 |119.12Mb, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: a1effd82-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nBaG3RmV/, headers: {Host: v2ray.ifuckgfw.ga}}}
+  - {name: ZZ_2883 |120.50Mb, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: 9b04ac52-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nBaG3RmV/, headers: {Host: v2ray.ifuckgfw.ga}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - DE_420 |53.97Mb
-      - LT_899 |75.26Mb
-      - LT_900 |67.79Mb
-      - NL_910 |216.90Mb
-      - US_1208 |126.48Mb
+      - DE_418 |53.97Mb
+      - LT_866 |75.26Mb
+      - LT_867 |67.79Mb
+      - NL_877 |216.90Mb
+      - US_1148 |126.48Mb
+      - ZZ_2880 |119.12Mb
+      - ZZ_2883 |120.50Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DE_420 |53.97Mb
-      - LT_899 |75.26Mb
-      - LT_900 |67.79Mb
-      - NL_910 |216.90Mb
-      - US_1208 |126.48Mb
+      - DE_418 |53.97Mb
+      - LT_866 |75.26Mb
+      - LT_867 |67.79Mb
+      - NL_877 |216.90Mb
+      - US_1148 |126.48Mb
+      - ZZ_2880 |119.12Mb
+      - ZZ_2883 |120.50Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE_420 |53.97Mb
-      - LT_899 |75.26Mb
-      - LT_900 |67.79Mb
-      - NL_910 |216.90Mb
-      - US_1208 |126.48Mb
+      - DE_418 |53.97Mb
+      - LT_866 |75.26Mb
+      - LT_867 |67.79Mb
+      - NL_877 |216.90Mb
+      - US_1148 |126.48Mb
+      - ZZ_2880 |119.12Mb
+      - ZZ_2883 |120.50Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_420 |53.97Mb
-      - LT_899 |75.26Mb
-      - LT_900 |67.79Mb
-      - NL_910 |216.90Mb
-      - US_1208 |126.48Mb
+      - DE_418 |53.97Mb
+      - LT_866 |75.26Mb
+      - LT_867 |67.79Mb
+      - NL_877 |216.90Mb
+      - US_1148 |126.48Mb
+      - ZZ_2880 |119.12Mb
+      - ZZ_2883 |120.50Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - DE_420 |53.97Mb
-      - LT_899 |75.26Mb
-      - LT_900 |67.79Mb
-      - NL_910 |216.90Mb
-      - US_1208 |126.48Mb
+      - DE_418 |53.97Mb
+      - LT_866 |75.26Mb
+      - LT_867 |67.79Mb
+      - NL_877 |216.90Mb
+      - US_1148 |126.48Mb
+      - ZZ_2880 |119.12Mb
+      - ZZ_2883 |120.50Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_420 |53.97Mb
-      - LT_899 |75.26Mb
-      - LT_900 |67.79Mb
-      - NL_910 |216.90Mb
-      - US_1208 |126.48Mb
+      - DE_418 |53.97Mb
+      - LT_866 |75.26Mb
+      - LT_867 |67.79Mb
+      - NL_877 |216.90Mb
+      - US_1148 |126.48Mb
+      - ZZ_2880 |119.12Mb
+      - ZZ_2883 |120.50Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_420 |53.97Mb
-      - LT_899 |75.26Mb
-      - LT_900 |67.79Mb
-      - NL_910 |216.90Mb
-      - US_1208 |126.48Mb
+      - DE_418 |53.97Mb
+      - LT_866 |75.26Mb
+      - LT_867 |67.79Mb
+      - NL_877 |216.90Mb
+      - US_1148 |126.48Mb
+      - ZZ_2880 |119.12Mb
+      - ZZ_2883 |120.50Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -105,11 +121,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_420 |53.97Mb
-      - LT_899 |75.26Mb
-      - LT_900 |67.79Mb
-      - NL_910 |216.90Mb
-      - US_1208 |126.48Mb
+      - DE_418 |53.97Mb
+      - LT_866 |75.26Mb
+      - LT_867 |67.79Mb
+      - NL_877 |216.90Mb
+      - US_1148 |126.48Mb
+      - ZZ_2880 |119.12Mb
+      - ZZ_2883 |120.50Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
