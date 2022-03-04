@@ -6,14 +6,12 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: DE_474 |174.13Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: DE_475 |59.43Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}}
-  - {name: DE_476 |54.92Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
-  - {name: GB_697 |87.65Mb, server: 146.70.46.68, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.70.46.68}}}
-  - {name: LT_947 |80.57Mb, server: 213.183.45.16, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.16}}}
-  - {name: LT_948 |65.05Mb, server: 213.183.45.6, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.6}}}
-  - {name: NL_958 |137.21Mb, server: 45.62.123.208, port: 47729, type: vmess, uuid: d9c827ee-063e-417e-e331-a589a7197578, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.62.123.208}}}
+  - {name: DE_476 |74.51Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
+  - {name: LT_947 |72.00Mb, server: 213.183.45.16, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.16}}}
+  - {name: LT_948 |72.60Mb, server: 213.183.45.6, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.6}}}
+  - {name: NL_958 |202.25Mb, server: 45.62.123.208, port: 47729, type: vmess, uuid: d9c827ee-063e-417e-e331-a589a7197578, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.62.123.208}}}
   - {name: ZZ_3002 |119.12Mb, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: a1effd82-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nBaG3RmV/, headers: {Host: v2ray.ifuckgfw.ga}}}
-  - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: FR_567 |961.40Mb, server: 51.195.217.22, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -21,28 +19,24 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - DE_474 |174.13Mb
-      - DE_475 |59.43Mb
-      - DE_476 |54.92Mb
-      - GB_697 |87.65Mb
-      - LT_947 |80.57Mb
-      - LT_948 |65.05Mb
-      - NL_958 |137.21Mb
+      - DE_476 |74.51Mb
+      - LT_947 |72.00Mb
+      - LT_948 |72.60Mb
+      - NL_958 |202.25Mb
       - ZZ_3002 |119.12Mb
-      - "NULL"
+      - FR_567 |961.40Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - DE_474 |174.13Mb
-      - DE_475 |59.43Mb
-      - DE_476 |54.92Mb
-      - GB_697 |87.65Mb
-      - LT_947 |80.57Mb
-      - LT_948 |65.05Mb
-      - NL_958 |137.21Mb
+      - DE_476 |74.51Mb
+      - LT_947 |72.00Mb
+      - LT_948 |72.60Mb
+      - NL_958 |202.25Mb
       - ZZ_3002 |119.12Mb
-      - "NULL"
+      - FR_567 |961.40Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -50,56 +44,48 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - DE_474 |174.13Mb
-      - DE_475 |59.43Mb
-      - DE_476 |54.92Mb
-      - GB_697 |87.65Mb
-      - LT_947 |80.57Mb
-      - LT_948 |65.05Mb
-      - NL_958 |137.21Mb
+      - DE_476 |74.51Mb
+      - LT_947 |72.00Mb
+      - LT_948 |72.60Mb
+      - NL_958 |202.25Mb
       - ZZ_3002 |119.12Mb
-      - "NULL"
+      - FR_567 |961.40Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - DE_474 |174.13Mb
-      - DE_475 |59.43Mb
-      - DE_476 |54.92Mb
-      - GB_697 |87.65Mb
-      - LT_947 |80.57Mb
-      - LT_948 |65.05Mb
-      - NL_958 |137.21Mb
+      - DE_476 |74.51Mb
+      - LT_947 |72.00Mb
+      - LT_948 |72.60Mb
+      - NL_958 |202.25Mb
       - ZZ_3002 |119.12Mb
-      - "NULL"
+      - FR_567 |961.40Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - DE_474 |174.13Mb
-      - DE_475 |59.43Mb
-      - DE_476 |54.92Mb
-      - GB_697 |87.65Mb
-      - LT_947 |80.57Mb
-      - LT_948 |65.05Mb
-      - NL_958 |137.21Mb
+      - DE_476 |74.51Mb
+      - LT_947 |72.00Mb
+      - LT_948 |72.60Mb
+      - NL_958 |202.25Mb
       - ZZ_3002 |119.12Mb
-      - "NULL"
+      - FR_567 |961.40Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - DE_474 |174.13Mb
-      - DE_475 |59.43Mb
-      - DE_476 |54.92Mb
-      - GB_697 |87.65Mb
-      - LT_947 |80.57Mb
-      - LT_948 |65.05Mb
-      - NL_958 |137.21Mb
+      - DE_476 |74.51Mb
+      - LT_947 |72.00Mb
+      - LT_948 |72.60Mb
+      - NL_958 |202.25Mb
       - ZZ_3002 |119.12Mb
-      - "NULL"
+      - FR_567 |961.40Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -107,14 +93,12 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - DE_474 |174.13Mb
-      - DE_475 |59.43Mb
-      - DE_476 |54.92Mb
-      - GB_697 |87.65Mb
-      - LT_947 |80.57Mb
-      - LT_948 |65.05Mb
-      - NL_958 |137.21Mb
+      - DE_476 |74.51Mb
+      - LT_947 |72.00Mb
+      - LT_948 |72.60Mb
+      - NL_958 |202.25Mb
       - ZZ_3002 |119.12Mb
-      - "NULL"
+      - FR_567 |961.40Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -138,14 +122,12 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - DE_474 |174.13Mb
-      - DE_475 |59.43Mb
-      - DE_476 |54.92Mb
-      - GB_697 |87.65Mb
-      - LT_947 |80.57Mb
-      - LT_948 |65.05Mb
-      - NL_958 |137.21Mb
+      - DE_476 |74.51Mb
+      - LT_947 |72.00Mb
+      - LT_948 |72.60Mb
+      - NL_958 |202.25Mb
       - ZZ_3002 |119.12Mb
-      - "NULL"
+      - FR_567 |961.40Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
