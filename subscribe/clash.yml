@@ -5,84 +5,92 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: DE_465 |174.13Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
   - {name: DE_467 |74.51Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
-  - {name: LT_910 |77.48Mb, server: 213.183.45.16, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.16}}}
-  - {name: LT_911 |70.44Mb, server: 213.183.45.6, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.6}}}
-  - {name: NL_921 |58.98Mb, server: 45.62.123.208, port: 47729, type: vmess, uuid: d9c827ee-063e-417e-e331-a589a7197578, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.62.123.208}}}
-  - {name: US_1214 |139.61Mb, server: 152.70.188.10, port: 443, type: vmess, uuid: 6ae16454-de6a-4113-c64e-0549be488f15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true}
+  - {name: LT_906 |77.48Mb, server: 213.183.45.16, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.16}}}
+  - {name: LT_907 |70.44Mb, server: 213.183.45.6, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.6}}}
+  - {name: NL_917 |58.98Mb, server: 45.62.123.208, port: 47729, type: vmess, uuid: d9c827ee-063e-417e-e331-a589a7197578, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.62.123.208}}}
+  - {name: US_1206 |139.61Mb, server: 152.70.188.10, port: 443, type: vmess, uuid: 6ae16454-de6a-4113-c64e-0549be488f15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - DE_465 |174.13Mb
       - DE_467 |74.51Mb
-      - LT_910 |77.48Mb
-      - LT_911 |70.44Mb
-      - NL_921 |58.98Mb
-      - US_1214 |139.61Mb
+      - LT_906 |77.48Mb
+      - LT_907 |70.44Mb
+      - NL_917 |58.98Mb
+      - US_1206 |139.61Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - DE_465 |174.13Mb
       - DE_467 |74.51Mb
-      - LT_910 |77.48Mb
-      - LT_911 |70.44Mb
-      - NL_921 |58.98Mb
-      - US_1214 |139.61Mb
+      - LT_906 |77.48Mb
+      - LT_907 |70.44Mb
+      - NL_917 |58.98Mb
+      - US_1206 |139.61Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - DE_465 |174.13Mb
       - DE_467 |74.51Mb
-      - LT_910 |77.48Mb
-      - LT_911 |70.44Mb
-      - NL_921 |58.98Mb
-      - US_1214 |139.61Mb
+      - LT_906 |77.48Mb
+      - LT_907 |70.44Mb
+      - NL_917 |58.98Mb
+      - US_1206 |139.61Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - DE_465 |174.13Mb
       - DE_467 |74.51Mb
-      - LT_910 |77.48Mb
-      - LT_911 |70.44Mb
-      - NL_921 |58.98Mb
-      - US_1214 |139.61Mb
+      - LT_906 |77.48Mb
+      - LT_907 |70.44Mb
+      - NL_917 |58.98Mb
+      - US_1206 |139.61Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - DE_465 |174.13Mb
       - DE_467 |74.51Mb
-      - LT_910 |77.48Mb
-      - LT_911 |70.44Mb
-      - NL_921 |58.98Mb
-      - US_1214 |139.61Mb
+      - LT_906 |77.48Mb
+      - LT_907 |70.44Mb
+      - NL_917 |58.98Mb
+      - US_1206 |139.61Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - DE_465 |174.13Mb
       - DE_467 |74.51Mb
-      - LT_910 |77.48Mb
-      - LT_911 |70.44Mb
-      - NL_921 |58.98Mb
-      - US_1214 |139.61Mb
+      - LT_906 |77.48Mb
+      - LT_907 |70.44Mb
+      - NL_917 |58.98Mb
+      - US_1206 |139.61Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - DE_465 |174.13Mb
       - DE_467 |74.51Mb
-      - LT_910 |77.48Mb
-      - LT_911 |70.44Mb
-      - NL_921 |58.98Mb
-      - US_1214 |139.61Mb
+      - LT_906 |77.48Mb
+      - LT_907 |70.44Mb
+      - NL_917 |58.98Mb
+      - US_1206 |139.61Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -105,11 +113,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - DE_465 |174.13Mb
       - DE_467 |74.51Mb
-      - LT_910 |77.48Mb
-      - LT_911 |70.44Mb
-      - NL_921 |58.98Mb
-      - US_1214 |139.61Mb
+      - LT_906 |77.48Mb
+      - LT_907 |70.44Mb
+      - NL_917 |58.98Mb
+      - US_1206 |139.61Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
