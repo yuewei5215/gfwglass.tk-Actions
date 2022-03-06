@@ -5,116 +5,84 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: DE_396 |242.68Mb, server: 194.195.240.132, port: 33210, type: vmess, uuid: f46d05d6-8d41-4e0a-993e-e2658ac29f85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 194.195.240.132}}}
-  - {name: DE_454 |174.13Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: LT_909 |76.31Mb, server: 213.183.45.16, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.16}}}
-  - {name: LT_910 |64.58Mb, server: 213.183.45.6, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.6}}}
-  - {name: NL_923 |146.91Mb, server: 45.62.123.208, port: 47729, type: vmess, uuid: d9c827ee-063e-417e-e331-a589a7197578, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.62.123.208}}}
-  - {name: US_1220 |126.48Mb, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shuier, headers: {Host: 172.67.68.58}}}
-  - {name: US_1225 |173.41Mb, server: 152.70.188.10, port: 443, type: vmess, uuid: 6ae16454-de6a-4113-c64e-0549be488f15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true}
-  - {name: ZZ_2951 |120.50Mb, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: 9b04ac52-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nBaG3RmV/, headers: {Host: v2ray.ifuckgfw.ga}}}
-  - {name: ZZ_2952 |119.12Mb, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: a1effd82-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nBaG3RmV/, headers: {Host: v2ray.ifuckgfw.ga}}}
+  - {name: DE_400 |242.68Mb, server: 194.195.240.132, port: 33210, type: vmess, uuid: f46d05d6-8d41-4e0a-993e-e2658ac29f85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 194.195.240.132}}}
+  - {name: LT_911 |64.58Mb, server: 213.183.45.6, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.6}}}
+  - {name: LT_912 |76.31Mb, server: 213.183.45.16, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.16}}}
+  - {name: NL_924 |146.91Mb, server: 45.62.123.208, port: 47729, type: vmess, uuid: d9c827ee-063e-417e-e331-a589a7197578, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.62.123.208}}}
+  - {name: ZZ_2941 |119.12Mb, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: a1effd82-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nBaG3RmV/, headers: {Host: v2ray.ifuckgfw.ga}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - DE_396 |242.68Mb
-      - DE_454 |174.13Mb
-      - LT_909 |76.31Mb
-      - LT_910 |64.58Mb
-      - NL_923 |146.91Mb
-      - US_1220 |126.48Mb
-      - US_1225 |173.41Mb
-      - ZZ_2951 |120.50Mb
-      - ZZ_2952 |119.12Mb
+      - DE_400 |242.68Mb
+      - LT_911 |64.58Mb
+      - LT_912 |76.31Mb
+      - NL_924 |146.91Mb
+      - ZZ_2941 |119.12Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DE_396 |242.68Mb
-      - DE_454 |174.13Mb
-      - LT_909 |76.31Mb
-      - LT_910 |64.58Mb
-      - NL_923 |146.91Mb
-      - US_1220 |126.48Mb
-      - US_1225 |173.41Mb
-      - ZZ_2951 |120.50Mb
-      - ZZ_2952 |119.12Mb
+      - DE_400 |242.68Mb
+      - LT_911 |64.58Mb
+      - LT_912 |76.31Mb
+      - NL_924 |146.91Mb
+      - ZZ_2941 |119.12Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE_396 |242.68Mb
-      - DE_454 |174.13Mb
-      - LT_909 |76.31Mb
-      - LT_910 |64.58Mb
-      - NL_923 |146.91Mb
-      - US_1220 |126.48Mb
-      - US_1225 |173.41Mb
-      - ZZ_2951 |120.50Mb
-      - ZZ_2952 |119.12Mb
+      - DE_400 |242.68Mb
+      - LT_911 |64.58Mb
+      - LT_912 |76.31Mb
+      - NL_924 |146.91Mb
+      - ZZ_2941 |119.12Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_396 |242.68Mb
-      - DE_454 |174.13Mb
-      - LT_909 |76.31Mb
-      - LT_910 |64.58Mb
-      - NL_923 |146.91Mb
-      - US_1220 |126.48Mb
-      - US_1225 |173.41Mb
-      - ZZ_2951 |120.50Mb
-      - ZZ_2952 |119.12Mb
+      - DE_400 |242.68Mb
+      - LT_911 |64.58Mb
+      - LT_912 |76.31Mb
+      - NL_924 |146.91Mb
+      - ZZ_2941 |119.12Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - DE_396 |242.68Mb
-      - DE_454 |174.13Mb
-      - LT_909 |76.31Mb
-      - LT_910 |64.58Mb
-      - NL_923 |146.91Mb
-      - US_1220 |126.48Mb
-      - US_1225 |173.41Mb
-      - ZZ_2951 |120.50Mb
-      - ZZ_2952 |119.12Mb
+      - DE_400 |242.68Mb
+      - LT_911 |64.58Mb
+      - LT_912 |76.31Mb
+      - NL_924 |146.91Mb
+      - ZZ_2941 |119.12Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_396 |242.68Mb
-      - DE_454 |174.13Mb
-      - LT_909 |76.31Mb
-      - LT_910 |64.58Mb
-      - NL_923 |146.91Mb
-      - US_1220 |126.48Mb
-      - US_1225 |173.41Mb
-      - ZZ_2951 |120.50Mb
-      - ZZ_2952 |119.12Mb
+      - DE_400 |242.68Mb
+      - LT_911 |64.58Mb
+      - LT_912 |76.31Mb
+      - NL_924 |146.91Mb
+      - ZZ_2941 |119.12Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_396 |242.68Mb
-      - DE_454 |174.13Mb
-      - LT_909 |76.31Mb
-      - LT_910 |64.58Mb
-      - NL_923 |146.91Mb
-      - US_1220 |126.48Mb
-      - US_1225 |173.41Mb
-      - ZZ_2951 |120.50Mb
-      - ZZ_2952 |119.12Mb
+      - DE_400 |242.68Mb
+      - LT_911 |64.58Mb
+      - LT_912 |76.31Mb
+      - NL_924 |146.91Mb
+      - ZZ_2941 |119.12Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -137,15 +105,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_396 |242.68Mb
-      - DE_454 |174.13Mb
-      - LT_909 |76.31Mb
-      - LT_910 |64.58Mb
-      - NL_923 |146.91Mb
-      - US_1220 |126.48Mb
-      - US_1225 |173.41Mb
-      - ZZ_2951 |120.50Mb
-      - ZZ_2952 |119.12Mb
+      - DE_400 |242.68Mb
+      - LT_911 |64.58Mb
+      - LT_912 |76.31Mb
+      - NL_924 |146.91Mb
+      - ZZ_2941 |119.12Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
