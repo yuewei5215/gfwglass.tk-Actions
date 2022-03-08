@@ -5,60 +5,52 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: DE_412 |86.57Mb, server: 194.195.240.132, port: 33210, type: vmess, uuid: f46d05d6-8d41-4e0a-993e-e2658ac29f85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 194.195.240.132}}}
-  - {name: LT_888 |73.92Mb, server: 213.183.45.16, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.16}}}
+  - {name: DE_392 |86.14Mb, server: 194.195.240.132, port: 33210, type: vmess, uuid: f46d05d6-8d41-4e0a-993e-e2658ac29f85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 194.195.240.132}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - DE_412 |86.57Mb
-      - LT_888 |73.92Mb
+      - DE_392 |86.14Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DE_412 |86.57Mb
-      - LT_888 |73.92Mb
+      - DE_392 |86.14Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE_412 |86.57Mb
-      - LT_888 |73.92Mb
+      - DE_392 |86.14Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_412 |86.57Mb
-      - LT_888 |73.92Mb
+      - DE_392 |86.14Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - DE_412 |86.57Mb
-      - LT_888 |73.92Mb
+      - DE_392 |86.14Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_412 |86.57Mb
-      - LT_888 |73.92Mb
+      - DE_392 |86.14Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_412 |86.57Mb
-      - LT_888 |73.92Mb
+      - DE_392 |86.14Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -81,8 +73,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_412 |86.57Mb
-      - LT_888 |73.92Mb
+      - DE_392 |86.14Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
