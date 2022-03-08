@@ -5,52 +5,60 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: DE_392 |86.14Mb, server: 194.195.240.132, port: 33210, type: vmess, uuid: f46d05d6-8d41-4e0a-993e-e2658ac29f85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 194.195.240.132}}}
+  - {name: DE_387 |86.14Mb, server: 194.195.240.132, port: 33210, type: vmess, uuid: f46d05d6-8d41-4e0a-993e-e2658ac29f85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 194.195.240.132}}}
+  - {name: ZZ_2888 |119.12Mb, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: a1effd82-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nBaG3RmV/, headers: {Host: v2ray.ifuckgfw.ga}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - DE_392 |86.14Mb
+      - DE_387 |86.14Mb
+      - ZZ_2888 |119.12Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - DE_392 |86.14Mb
+      - DE_387 |86.14Mb
+      - ZZ_2888 |119.12Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - DE_392 |86.14Mb
+      - DE_387 |86.14Mb
+      - ZZ_2888 |119.12Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_392 |86.14Mb
+      - DE_387 |86.14Mb
+      - ZZ_2888 |119.12Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - DE_392 |86.14Mb
+      - DE_387 |86.14Mb
+      - ZZ_2888 |119.12Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - DE_392 |86.14Mb
+      - DE_387 |86.14Mb
+      - ZZ_2888 |119.12Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_392 |86.14Mb
+      - DE_387 |86.14Mb
+      - ZZ_2888 |119.12Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -73,7 +81,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - DE_392 |86.14Mb
+      - DE_387 |86.14Mb
+      - ZZ_2888 |119.12Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
