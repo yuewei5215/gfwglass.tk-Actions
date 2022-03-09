@@ -5,10 +5,11 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HU_752 |55.48Mb, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
-  - {name: NL_962 |151.67Mb, server: 45.62.123.208, port: 47729, type: vmess, uuid: d9c827ee-063e-417e-e331-a589a7197578, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.62.123.208}}}
-  - {name: US_1259 |126.48Mb, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shuier, headers: {Host: 172.67.68.58}}}
-  - {name: US_2918 |162.91Mb, server: sw.gfwglass.tk, port: 443, type: vmess, uuid: 36b01b78-29b2-46c8-a79b-4498dee25396, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sw.gfwglass.tk}}}
+  - {name: HU_749 |55.48Mb, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: NL_954 |151.67Mb, server: 45.62.123.208, port: 47729, type: vmess, uuid: d9c827ee-063e-417e-e331-a589a7197578, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.62.123.208}}}
+  - {name: US_1243 |126.48Mb, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shuier, headers: {Host: 172.67.68.58}}}
+  - {name: US_2884 |162.91Mb, server: sw.gfwglass.tk, port: 443, type: vmess, uuid: 36b01b78-29b2-46c8-a79b-4498dee25396, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sw.gfwglass.tk}}}
+  - {name: ZZ_2988 |119.12Mb, server: v2ray.ifuckgfw.ga, port: 8443, type: vmess, uuid: a1effd82-8a11-11ec-9aeb-52ac0014346a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nBaG3RmV/, headers: {Host: v2ray.ifuckgfw.ga}}}
   - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
@@ -16,20 +17,22 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - HU_752 |55.48Mb
-      - NL_962 |151.67Mb
-      - US_1259 |126.48Mb
-      - US_2918 |162.91Mb
+      - HU_749 |55.48Mb
+      - NL_954 |151.67Mb
+      - US_1243 |126.48Mb
+      - US_2884 |162.91Mb
+      - ZZ_2988 |119.12Mb
       - "NULL"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HU_752 |55.48Mb
-      - NL_962 |151.67Mb
-      - US_1259 |126.48Mb
-      - US_2918 |162.91Mb
+      - HU_749 |55.48Mb
+      - NL_954 |151.67Mb
+      - US_1243 |126.48Mb
+      - US_2884 |162.91Mb
+      - ZZ_2988 |119.12Mb
       - "NULL"
   - name: 🌍 国外媒体
     type: select
@@ -37,40 +40,44 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HU_752 |55.48Mb
-      - NL_962 |151.67Mb
-      - US_1259 |126.48Mb
-      - US_2918 |162.91Mb
+      - HU_749 |55.48Mb
+      - NL_954 |151.67Mb
+      - US_1243 |126.48Mb
+      - US_2884 |162.91Mb
+      - ZZ_2988 |119.12Mb
       - "NULL"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - HU_752 |55.48Mb
-      - NL_962 |151.67Mb
-      - US_1259 |126.48Mb
-      - US_2918 |162.91Mb
+      - HU_749 |55.48Mb
+      - NL_954 |151.67Mb
+      - US_1243 |126.48Mb
+      - US_2884 |162.91Mb
+      - ZZ_2988 |119.12Mb
       - "NULL"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - HU_752 |55.48Mb
-      - NL_962 |151.67Mb
-      - US_1259 |126.48Mb
-      - US_2918 |162.91Mb
+      - HU_749 |55.48Mb
+      - NL_954 |151.67Mb
+      - US_1243 |126.48Mb
+      - US_2884 |162.91Mb
+      - ZZ_2988 |119.12Mb
       - "NULL"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - HU_752 |55.48Mb
-      - NL_962 |151.67Mb
-      - US_1259 |126.48Mb
-      - US_2918 |162.91Mb
+      - HU_749 |55.48Mb
+      - NL_954 |151.67Mb
+      - US_1243 |126.48Mb
+      - US_2884 |162.91Mb
+      - ZZ_2988 |119.12Mb
       - "NULL"
   - name: 📢 谷歌FCM
     type: select
@@ -78,10 +85,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HU_752 |55.48Mb
-      - NL_962 |151.67Mb
-      - US_1259 |126.48Mb
-      - US_2918 |162.91Mb
+      - HU_749 |55.48Mb
+      - NL_954 |151.67Mb
+      - US_1243 |126.48Mb
+      - US_2884 |162.91Mb
+      - ZZ_2988 |119.12Mb
       - "NULL"
   - name: 🎯 全球直连
     type: select
@@ -105,10 +113,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HU_752 |55.48Mb
-      - NL_962 |151.67Mb
-      - US_1259 |126.48Mb
-      - US_2918 |162.91Mb
+      - HU_749 |55.48Mb
+      - NL_954 |151.67Mb
+      - US_1243 |126.48Mb
+      - US_2884 |162.91Mb
+      - ZZ_2988 |119.12Mb
       - "NULL"
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
