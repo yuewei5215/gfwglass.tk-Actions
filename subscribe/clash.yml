@@ -5,92 +5,84 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HU_700 |51.48Mb, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
-  - {name: LT_886 |66.32Mb, server: 213.183.45.16, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.16}}}
-  - {name: NL_898 |151.16Mb, server: 45.62.123.208, port: 47729, type: vmess, uuid: d9c827ee-063e-417e-e331-a589a7197578, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.62.123.208}}}
-  - {name: US_1168 |109.21Mb, server: 152.70.188.10, port: 443, type: vmess, uuid: 6ae16454-de6a-4113-c64e-0549be488f15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true}
-  - {name: US_2811 |78.54Mb, server: 154.94.218.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 154.94.218.130}}}
-  - {name: US_2833 |122.64Mb, server: sw.gfwglass.tk, port: 443, type: vmess, uuid: 36b01b78-29b2-46c8-a79b-4498dee25396, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sw.gfwglass.tk}}}
+  - {name: HU_712 |51.48Mb, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: LT_897 |66.32Mb, server: 213.183.45.16, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 213.183.45.16}}}
+  - {name: NL_909 |151.16Mb, server: 45.62.123.208, port: 47729, type: vmess, uuid: d9c827ee-063e-417e-e331-a589a7197578, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.62.123.208}}}
+  - {name: US_1172 |109.21Mb, server: 152.70.188.10, port: 443, type: vmess, uuid: 6ae16454-de6a-4113-c64e-0549be488f15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true}
+  - {name: US_2813 |122.64Mb, server: sw.gfwglass.tk, port: 443, type: vmess, uuid: 36b01b78-29b2-46c8-a79b-4498dee25396, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sw.gfwglass.tk}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - HU_700 |51.48Mb
-      - LT_886 |66.32Mb
-      - NL_898 |151.16Mb
-      - US_1168 |109.21Mb
-      - US_2811 |78.54Mb
-      - US_2833 |122.64Mb
+      - HU_712 |51.48Mb
+      - LT_897 |66.32Mb
+      - NL_909 |151.16Mb
+      - US_1172 |109.21Mb
+      - US_2813 |122.64Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HU_700 |51.48Mb
-      - LT_886 |66.32Mb
-      - NL_898 |151.16Mb
-      - US_1168 |109.21Mb
-      - US_2811 |78.54Mb
-      - US_2833 |122.64Mb
+      - HU_712 |51.48Mb
+      - LT_897 |66.32Mb
+      - NL_909 |151.16Mb
+      - US_1172 |109.21Mb
+      - US_2813 |122.64Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HU_700 |51.48Mb
-      - LT_886 |66.32Mb
-      - NL_898 |151.16Mb
-      - US_1168 |109.21Mb
-      - US_2811 |78.54Mb
-      - US_2833 |122.64Mb
+      - HU_712 |51.48Mb
+      - LT_897 |66.32Mb
+      - NL_909 |151.16Mb
+      - US_1172 |109.21Mb
+      - US_2813 |122.64Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - HU_700 |51.48Mb
-      - LT_886 |66.32Mb
-      - NL_898 |151.16Mb
-      - US_1168 |109.21Mb
-      - US_2811 |78.54Mb
-      - US_2833 |122.64Mb
+      - HU_712 |51.48Mb
+      - LT_897 |66.32Mb
+      - NL_909 |151.16Mb
+      - US_1172 |109.21Mb
+      - US_2813 |122.64Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - HU_700 |51.48Mb
-      - LT_886 |66.32Mb
-      - NL_898 |151.16Mb
-      - US_1168 |109.21Mb
-      - US_2811 |78.54Mb
-      - US_2833 |122.64Mb
+      - HU_712 |51.48Mb
+      - LT_897 |66.32Mb
+      - NL_909 |151.16Mb
+      - US_1172 |109.21Mb
+      - US_2813 |122.64Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - HU_700 |51.48Mb
-      - LT_886 |66.32Mb
-      - NL_898 |151.16Mb
-      - US_1168 |109.21Mb
-      - US_2811 |78.54Mb
-      - US_2833 |122.64Mb
+      - HU_712 |51.48Mb
+      - LT_897 |66.32Mb
+      - NL_909 |151.16Mb
+      - US_1172 |109.21Mb
+      - US_2813 |122.64Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HU_700 |51.48Mb
-      - LT_886 |66.32Mb
-      - NL_898 |151.16Mb
-      - US_1168 |109.21Mb
-      - US_2811 |78.54Mb
-      - US_2833 |122.64Mb
+      - HU_712 |51.48Mb
+      - LT_897 |66.32Mb
+      - NL_909 |151.16Mb
+      - US_1172 |109.21Mb
+      - US_2813 |122.64Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -113,12 +105,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HU_700 |51.48Mb
-      - LT_886 |66.32Mb
-      - NL_898 |151.16Mb
-      - US_1168 |109.21Mb
-      - US_2811 |78.54Mb
-      - US_2833 |122.64Mb
+      - HU_712 |51.48Mb
+      - LT_897 |66.32Mb
+      - NL_909 |151.16Mb
+      - US_1172 |109.21Mb
+      - US_2813 |122.64Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
