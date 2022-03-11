@@ -5,6 +5,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: AU_41 |37.00Mb, server: 43.131.51.120, port: 44970, type: vmess, uuid: 334181ca-0c75-4fd2-fd56-51a510c7be65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
   - {name: DE_492 |103.18Mb, server: 194.195.240.132, port: 33210, type: vmess, uuid: f46d05d6-8d41-4e0a-993e-e2658ac29f85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 194.195.240.132}}}
   - {name: DE_493 |40.13Mb, server: 78.46.244.34, port: 33655, type: vmess, uuid: b41303b4-e2c8-4771-cb6c-ef62244a7621, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
   - {name: DE_550 |53.33Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
@@ -26,6 +27,8 @@ proxies:
   - {name: NL_984 |187.41Mb, server: 46.182.107.23, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/353021140201, headers: {Host: www.11300814.xyz}}}
   - {name: NL_985 |37.02Mb, server: 154.84.1.198, port: 443, type: vmess, uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/080331123005, headers: {Host: www.54872833.xyz}}}
   - {name: NL_986 |34.01Mb, server: 154.84.1.177, port: 443, type: vmess, uuid: 9c026efe-6af0-465f-b8c0-3f58c8c2d4c5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/353021140201, headers: {Host: www.90408767.xyz}}}
+  - {name: NL_998 |46.64Mb, server: 46.182.107.55, port: 443, type: vmess, uuid: 0056e4b1-ab31-457e-b028-ab86e9a46842, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/353021140201, headers: {Host: 46.182.107.55}}}
+  - {name: NL_999 |186.66Mb, server: 154.84.1.214, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca4690dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/080331123005, headers: {Host: 154.84.1.214}}}
   - {name: RU_1050 |31.16Mb, server: 2.56.241.14, port: 13955, type: vmess, uuid: 1e2f3cfc-16e5-4304-d441-db91088a91dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
   - {name: US_1251 |36.39Mb, server: uae.oracleusa.ml, port: 2053, type: vmess, uuid: 810a7deb-4fcf-4e21-93bd-3d7685bb8cb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: uae.oracleusa.ml}}}
   - {name: US_1252 |44.37Mb, server: bi.oracleusa.ml, port: 2053, type: vmess, uuid: 810a7deb-4fcf-4e21-93bd-3d7685bb8cb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: bi.oracleusa.ml}}}
@@ -44,6 +47,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - AU_41 |37.00Mb
       - DE_492 |103.18Mb
       - DE_493 |40.13Mb
       - DE_550 |53.33Mb
@@ -65,6 +69,8 @@ proxy-groups:
       - NL_984 |187.41Mb
       - NL_985 |37.02Mb
       - NL_986 |34.01Mb
+      - NL_998 |46.64Mb
+      - NL_999 |186.66Mb
       - RU_1050 |31.16Mb
       - US_1251 |36.39Mb
       - US_1252 |44.37Mb
@@ -82,6 +88,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - AU_41 |37.00Mb
       - DE_492 |103.18Mb
       - DE_493 |40.13Mb
       - DE_550 |53.33Mb
@@ -103,6 +110,8 @@ proxy-groups:
       - NL_984 |187.41Mb
       - NL_985 |37.02Mb
       - NL_986 |34.01Mb
+      - NL_998 |46.64Mb
+      - NL_999 |186.66Mb
       - RU_1050 |31.16Mb
       - US_1251 |36.39Mb
       - US_1252 |44.37Mb
@@ -121,6 +130,7 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - AU_41 |37.00Mb
       - DE_492 |103.18Mb
       - DE_493 |40.13Mb
       - DE_550 |53.33Mb
@@ -142,6 +152,8 @@ proxy-groups:
       - NL_984 |187.41Mb
       - NL_985 |37.02Mb
       - NL_986 |34.01Mb
+      - NL_998 |46.64Mb
+      - NL_999 |186.66Mb
       - RU_1050 |31.16Mb
       - US_1251 |36.39Mb
       - US_1252 |44.37Mb
@@ -159,6 +171,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - AU_41 |37.00Mb
       - DE_492 |103.18Mb
       - DE_493 |40.13Mb
       - DE_550 |53.33Mb
@@ -180,6 +193,8 @@ proxy-groups:
       - NL_984 |187.41Mb
       - NL_985 |37.02Mb
       - NL_986 |34.01Mb
+      - NL_998 |46.64Mb
+      - NL_999 |186.66Mb
       - RU_1050 |31.16Mb
       - US_1251 |36.39Mb
       - US_1252 |44.37Mb
@@ -197,6 +212,7 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - AU_41 |37.00Mb
       - DE_492 |103.18Mb
       - DE_493 |40.13Mb
       - DE_550 |53.33Mb
@@ -218,6 +234,8 @@ proxy-groups:
       - NL_984 |187.41Mb
       - NL_985 |37.02Mb
       - NL_986 |34.01Mb
+      - NL_998 |46.64Mb
+      - NL_999 |186.66Mb
       - RU_1050 |31.16Mb
       - US_1251 |36.39Mb
       - US_1252 |44.37Mb
@@ -235,6 +253,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - AU_41 |37.00Mb
       - DE_492 |103.18Mb
       - DE_493 |40.13Mb
       - DE_550 |53.33Mb
@@ -256,6 +275,8 @@ proxy-groups:
       - NL_984 |187.41Mb
       - NL_985 |37.02Mb
       - NL_986 |34.01Mb
+      - NL_998 |46.64Mb
+      - NL_999 |186.66Mb
       - RU_1050 |31.16Mb
       - US_1251 |36.39Mb
       - US_1252 |44.37Mb
@@ -274,6 +295,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - AU_41 |37.00Mb
       - DE_492 |103.18Mb
       - DE_493 |40.13Mb
       - DE_550 |53.33Mb
@@ -295,6 +317,8 @@ proxy-groups:
       - NL_984 |187.41Mb
       - NL_985 |37.02Mb
       - NL_986 |34.01Mb
+      - NL_998 |46.64Mb
+      - NL_999 |186.66Mb
       - RU_1050 |31.16Mb
       - US_1251 |36.39Mb
       - US_1252 |44.37Mb
@@ -329,6 +353,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - AU_41 |37.00Mb
       - DE_492 |103.18Mb
       - DE_493 |40.13Mb
       - DE_550 |53.33Mb
@@ -350,6 +375,8 @@ proxy-groups:
       - NL_984 |187.41Mb
       - NL_985 |37.02Mb
       - NL_986 |34.01Mb
+      - NL_998 |46.64Mb
+      - NL_999 |186.66Mb
       - RU_1050 |31.16Mb
       - US_1251 |36.39Mb
       - US_1252 |44.37Mb
