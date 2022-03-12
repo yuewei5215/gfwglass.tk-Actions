@@ -37,7 +37,7 @@ def main(event, context):
         'https://api.dler.io/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2Fimyaoxp%2Fgetclash%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini', 'imyaoxp-getclash.yml')
     
     savePoint(
-        'https://api.dler.io/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2Fldir92664%2FTop-FreeProxies%2Fmaster%2Fsub%2Fsub_merge_yaml.yml&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini', 'Top-FreeProxies.yml')
+        'https://api.dler.io/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2Fldir92664%2FTop-FreeProxies%2Fmaster%2Fupdate%2Fprovider%2Fprovider-all.yml&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini', 'Top-FreeProxies.yml')
     
     savePoint(
         'https://raw.githubusercontent.com/lizisan/Free-Proxies/main/README.md', 'README.md')
