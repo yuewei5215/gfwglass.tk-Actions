@@ -62,7 +62,7 @@
 
 <br>
 
-## 订阅转换
+## 订阅转换   https://sub-web.jadesong.net/
 
 > - https://suc.bihai.ml/sub?target=clash&new_name=true&url=<<<<ss,ssr,vmess,trojan地址1>>>>|<<<<ss,ssr,vmess,trojan地址2>>>>&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
 
