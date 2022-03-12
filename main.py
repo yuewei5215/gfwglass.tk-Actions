@@ -34,6 +34,9 @@ def main(event, context):
         'https://api.dler.io/sub?target=clash&new_name=true&url=https%3A%2F%2Fednovas.design%2Fclash%2Fproxies%3Fnc%3DCN%2CHK%2CTW%26speed%3D30%2C100%26type%3Dvmess%2Ctrojan%2Cssr%2Css&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini', 'ednovas.design.yml')
     
     savePoint(
+        'https://api.dler.io/sub?target=clash&new_name=true&url=https%3A%2F%2Fsub.id9.cc%2Fsub%3Ftarget%3Dclash%26new_name%3Dtrue%26url%3Dhttps%253A%252F%252Fraw.githubusercontent.com%252Fimyaoxp%252Fgetclash%252Fmaster%252Fsub%252Fsub_merge_yaml.yml%26insert%3Dfalse%26config%3Dhttps%253A%252F%252Fraw.githubusercontent.com%252FACL4SSR%252FACL4SSR%252Fmaster%252FClash%252Fconfig%252FACL4SSR_Online.ini&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini', 'imyaoxp-getclash.yml')
+    
+    savePoint(
         'https://raw.githubusercontent.com/lizisan/Free-Proxies/main/README.md', 'README.md')
     
     # 获取文章地址
