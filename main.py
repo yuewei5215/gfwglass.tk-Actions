@@ -40,6 +40,12 @@ def main(event, context):
         'https://api.dler.io/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2Fldir92664%2FTop-FreeProxies%2Fmaster%2Fupdate%2Fprovider%2Fprovider-all.yml&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&exclude=HK%7CTW%7CCN&append_type=true&emoji=true&list=false&udp=true&tfo=false&scv=false&fdn=true&sort=true', 'Top-FreeProxies.yml')
     
     savePoint(
+        'https://api.dler.io/sub?target=clash&new_name=true&url=https%3A%2F%2Fhellopool.herokuapp.com%2Fclash%2Fproxies%3Fnc%3DHK%2CTW%2CCN%26speed%3D30%2C100%26type%3Dss%2Cvmess%2Ctrojan%2Cssr&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini', 'hellopool.herokuapp.com.yml')
+    
+    savePoint(
+        'https://api.dler.io/sub?target=clash&new_name=true&url=https%3A%2F%2Forigamiboy.herokuapp.com%2Fclash%2Fproxies%3Fnc%3DHK%2CTW%2CCN%26speed%3D30%2C100%26type%3Dss%2Cvmess%2Ctrojan%2Cssr&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini', 'origamiboy.herokuapp.com.yml')
+    
+    savePoint(
         'https://raw.githubusercontent.com/lizisan/Free-Proxies/main/README.md', 'README.md')
     
     # 获取文章地址
