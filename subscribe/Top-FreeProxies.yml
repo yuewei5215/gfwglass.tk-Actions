@@ -6,6 +6,7 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: "[VMess] CH-152.67.79.65-00", server: sw.oracleusa.ml, port: 2053, type: vmess, uuid: 0b97a9b1-a671-4b32-a02e-17850a466fdc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sw.oracleusa.ml}}, udp: true}
+  - {name: "[VMess] RELAY-172.64.175.26-01", server: vir2.oracleusa.ml, port: 2053, type: vmess, uuid: 0b97a9b1-a671-4b32-a02e-17850a466fdc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: vir2.oracleusa.ml}}, udp: true}
   - {name: "[SS] 🇨🇦 CA-134.195.196.3-09", server: 134.195.196.3, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
   - {name: "[SS] 🇨🇦 CA-134.195.196.68-07", server: 134.195.196.68, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
   - {name: "[SS] 🇨🇦 CA-134.195.196.68-08", server: 134.195.196.68, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
@@ -16,7 +17,6 @@ proxies:
   - {name: "[Trojan] 🇯🇵 JP-20.89.238.230-25", server: 20.89.238.230, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: false, udp: true}
   - {name: "[Trojan] 🇸🇬 SG-103.172.116.113-46", server: 103.172.116.113, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: false, udp: true}
   - {name: "[Trojan] 🇸🇬 SG-5.44.249.43-49", server: 5.44.249.43, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: false, udp: true}
-  - {name: "[VMess] 🇺🇸 US-172.64.175.26-01", server: vir2.oracleusa.ml, port: 2053, type: vmess, uuid: 0b97a9b1-a671-4b32-a02e-17850a466fdc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: vir2.oracleusa.ml}}, udp: true}
   - {name: "[Trojan] 🇺🇸 US-185.218.6.227-36", server: 185.218.6.227, port: 443, type: trojan, password: vIl4ReBJj7, skip-cert-verify: false, udp: true}
   - {name: "[VMess] 🇺🇸 US-209.94.56.152-03", server: 209.94.56.152, port: 443, type: vmess, uuid: 3033e157-fdc3-47c0-ae32-fc4fe65fc64d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /9apQabyg9le, headers: {Host: 209.94.56.152}}, udp: true}
   - {name: "[SS] 🇺🇸 US-38.86.135.36-05", server: 38.86.135.36, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
@@ -27,6 +27,7 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - "[VMess] CH-152.67.79.65-00"
+      - "[VMess] RELAY-172.64.175.26-01"
       - "[SS] 🇨🇦 CA-134.195.196.3-09"
       - "[SS] 🇨🇦 CA-134.195.196.68-07"
       - "[SS] 🇨🇦 CA-134.195.196.68-08"
@@ -37,7 +38,6 @@ proxy-groups:
       - "[Trojan] 🇯🇵 JP-20.89.238.230-25"
       - "[Trojan] 🇸🇬 SG-103.172.116.113-46"
       - "[Trojan] 🇸🇬 SG-5.44.249.43-49"
-      - "[VMess] 🇺🇸 US-172.64.175.26-01"
       - "[Trojan] 🇺🇸 US-185.218.6.227-36"
       - "[VMess] 🇺🇸 US-209.94.56.152-03"
       - "[SS] 🇺🇸 US-38.86.135.36-05"
@@ -47,6 +47,7 @@ proxy-groups:
     interval: 300
     proxies:
       - "[VMess] CH-152.67.79.65-00"
+      - "[VMess] RELAY-172.64.175.26-01"
       - "[SS] 🇨🇦 CA-134.195.196.3-09"
       - "[SS] 🇨🇦 CA-134.195.196.68-07"
       - "[SS] 🇨🇦 CA-134.195.196.68-08"
@@ -57,7 +58,6 @@ proxy-groups:
       - "[Trojan] 🇯🇵 JP-20.89.238.230-25"
       - "[Trojan] 🇸🇬 SG-103.172.116.113-46"
       - "[Trojan] 🇸🇬 SG-5.44.249.43-49"
-      - "[VMess] 🇺🇸 US-172.64.175.26-01"
       - "[Trojan] 🇺🇸 US-185.218.6.227-36"
       - "[VMess] 🇺🇸 US-209.94.56.152-03"
       - "[SS] 🇺🇸 US-38.86.135.36-05"
@@ -68,6 +68,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - "[VMess] CH-152.67.79.65-00"
+      - "[VMess] RELAY-172.64.175.26-01"
       - "[SS] 🇨🇦 CA-134.195.196.3-09"
       - "[SS] 🇨🇦 CA-134.195.196.68-07"
       - "[SS] 🇨🇦 CA-134.195.196.68-08"
@@ -78,7 +79,6 @@ proxy-groups:
       - "[Trojan] 🇯🇵 JP-20.89.238.230-25"
       - "[Trojan] 🇸🇬 SG-103.172.116.113-46"
       - "[Trojan] 🇸🇬 SG-5.44.249.43-49"
-      - "[VMess] 🇺🇸 US-172.64.175.26-01"
       - "[Trojan] 🇺🇸 US-185.218.6.227-36"
       - "[VMess] 🇺🇸 US-209.94.56.152-03"
       - "[SS] 🇺🇸 US-38.86.135.36-05"
@@ -88,6 +88,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - "[VMess] CH-152.67.79.65-00"
+      - "[VMess] RELAY-172.64.175.26-01"
       - "[SS] 🇨🇦 CA-134.195.196.3-09"
       - "[SS] 🇨🇦 CA-134.195.196.68-07"
       - "[SS] 🇨🇦 CA-134.195.196.68-08"
@@ -98,7 +99,6 @@ proxy-groups:
       - "[Trojan] 🇯🇵 JP-20.89.238.230-25"
       - "[Trojan] 🇸🇬 SG-103.172.116.113-46"
       - "[Trojan] 🇸🇬 SG-5.44.249.43-49"
-      - "[VMess] 🇺🇸 US-172.64.175.26-01"
       - "[Trojan] 🇺🇸 US-185.218.6.227-36"
       - "[VMess] 🇺🇸 US-209.94.56.152-03"
       - "[SS] 🇺🇸 US-38.86.135.36-05"
@@ -108,6 +108,7 @@ proxy-groups:
       - 🎯 全球直连
       - 🚀 节点选择
       - "[VMess] CH-152.67.79.65-00"
+      - "[VMess] RELAY-172.64.175.26-01"
       - "[SS] 🇨🇦 CA-134.195.196.3-09"
       - "[SS] 🇨🇦 CA-134.195.196.68-07"
       - "[SS] 🇨🇦 CA-134.195.196.68-08"
@@ -118,7 +119,6 @@ proxy-groups:
       - "[Trojan] 🇯🇵 JP-20.89.238.230-25"
       - "[Trojan] 🇸🇬 SG-103.172.116.113-46"
       - "[Trojan] 🇸🇬 SG-5.44.249.43-49"
-      - "[VMess] 🇺🇸 US-172.64.175.26-01"
       - "[Trojan] 🇺🇸 US-185.218.6.227-36"
       - "[VMess] 🇺🇸 US-209.94.56.152-03"
       - "[SS] 🇺🇸 US-38.86.135.36-05"
@@ -128,6 +128,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - "[VMess] CH-152.67.79.65-00"
+      - "[VMess] RELAY-172.64.175.26-01"
       - "[SS] 🇨🇦 CA-134.195.196.3-09"
       - "[SS] 🇨🇦 CA-134.195.196.68-07"
       - "[SS] 🇨🇦 CA-134.195.196.68-08"
@@ -138,7 +139,6 @@ proxy-groups:
       - "[Trojan] 🇯🇵 JP-20.89.238.230-25"
       - "[Trojan] 🇸🇬 SG-103.172.116.113-46"
       - "[Trojan] 🇸🇬 SG-5.44.249.43-49"
-      - "[VMess] 🇺🇸 US-172.64.175.26-01"
       - "[Trojan] 🇺🇸 US-185.218.6.227-36"
       - "[VMess] 🇺🇸 US-209.94.56.152-03"
       - "[SS] 🇺🇸 US-38.86.135.36-05"
@@ -149,6 +149,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - "[VMess] CH-152.67.79.65-00"
+      - "[VMess] RELAY-172.64.175.26-01"
       - "[SS] 🇨🇦 CA-134.195.196.3-09"
       - "[SS] 🇨🇦 CA-134.195.196.68-07"
       - "[SS] 🇨🇦 CA-134.195.196.68-08"
@@ -159,7 +160,6 @@ proxy-groups:
       - "[Trojan] 🇯🇵 JP-20.89.238.230-25"
       - "[Trojan] 🇸🇬 SG-103.172.116.113-46"
       - "[Trojan] 🇸🇬 SG-5.44.249.43-49"
-      - "[VMess] 🇺🇸 US-172.64.175.26-01"
       - "[Trojan] 🇺🇸 US-185.218.6.227-36"
       - "[VMess] 🇺🇸 US-209.94.56.152-03"
       - "[SS] 🇺🇸 US-38.86.135.36-05"
@@ -186,6 +186,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - "[VMess] CH-152.67.79.65-00"
+      - "[VMess] RELAY-172.64.175.26-01"
       - "[SS] 🇨🇦 CA-134.195.196.3-09"
       - "[SS] 🇨🇦 CA-134.195.196.68-07"
       - "[SS] 🇨🇦 CA-134.195.196.68-08"
@@ -196,7 +197,6 @@ proxy-groups:
       - "[Trojan] 🇯🇵 JP-20.89.238.230-25"
       - "[Trojan] 🇸🇬 SG-103.172.116.113-46"
       - "[Trojan] 🇸🇬 SG-5.44.249.43-49"
-      - "[VMess] 🇺🇸 US-172.64.175.26-01"
       - "[Trojan] 🇺🇸 US-185.218.6.227-36"
       - "[VMess] 🇺🇸 US-209.94.56.152-03"
       - "[SS] 🇺🇸 US-38.86.135.36-05"
