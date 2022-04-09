@@ -6,11 +6,13 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: "|35.71Mb", server: 152.89.210.105, port: 9032, type: ssr, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: "|33.17Mb", server: 108.61.221.253, port: 9918, type: vmess, uuid: 29430b3d-f83f-3c74-94a2-e8c1a459219f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray}}
-  - {name: "|62.12Mb", server: 45.77.150.109, port: 9918, type: vmess, uuid: 29430b3d-f83f-3c74-94a2-e8c1a459219f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray}}
-  - {name: 2022.04.09_ |51.51Mb, server: usa-washington.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-washington.lvuft.com, network: ws, ws-opts: {path: /ws, headers: {Host: usa-washington.lvuft.com}}}
-  - {name: 2022.04.09_ |75.06Mb, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-dallas.lvuft.com, network: ws, ws-opts: {path: /ws, headers: {Host: usa-dallas.lvuft.com}}}
-  - {name: US_486 |78.34Mb, server: 67.207.92.252, port: 55239, type: vmess, uuid: 1a923713-6220-4246-fd24-7192619740d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: "|36.78Mb", server: 108.61.221.253, port: 9918, type: vmess, uuid: 29430b3d-f83f-3c74-94a2-e8c1a459219f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray}}
+  - {name: 🇰🇷 2022.04.09_🇰🇷KR-🇰🇷KR_232 |34.44Mb, server: krgs.v2yun.vip, port: 80, type: vmess, uuid: 29eda9b6-6863-3f6d-820a-b838f4e7da09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: krgs.v2yun.vip}}}
+  - {name: 🇺🇸 2022.04.09_🇺🇸US-🇺🇸US_459 |36.54Mb, server: kr02.ayanami.best, port: 80, type: vmess, uuid: 3a294af3-7cff-48f3-bb4b-595961b895cc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: tms.dingtalk.com, network: ws, ws-opts: {path: /, headers: {Host: kr02.ayanami.best}}}
+  - {name: 2022.04.09_ |39.36Mb, server: usa-washington.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-washington.lvuft.com, network: ws, ws-opts: {path: /ws, headers: {Host: usa-washington.lvuft.com}}}
+  - {name: 🇺🇸 2022.04.09_🇺🇸US-🇺🇸US_462 |69.95Mb, server: s2.520guge.com, port: 443, type: vmess, uuid: cf1819c8-e530-4626-aec0-87ac04200385, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: s2.520guge.com, network: ws, ws-opts: {path: /happy, headers: {Host: s2.520guge.com}}}
+  - {name: 2022.04.09_ |81.90Mb, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-dallas.lvuft.com, network: ws, ws-opts: {path: /ws, headers: {Host: usa-dallas.lvuft.com}}}
+  - {name: "|48.50Mb", server: 45.77.150.109, port: 9918, type: vmess, uuid: 29430b3d-f83f-3c74-94a2-e8c1a459219f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -18,11 +20,13 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - "|35.71Mb"
-      - "|33.17Mb"
-      - "|62.12Mb"
-      - 2022.04.09_ |51.51Mb
-      - 2022.04.09_ |75.06Mb
-      - US_486 |78.34Mb
+      - "|36.78Mb"
+      - 🇰🇷 2022.04.09_🇰🇷KR-🇰🇷KR_232 |34.44Mb
+      - 🇺🇸 2022.04.09_🇺🇸US-🇺🇸US_459 |36.54Mb
+      - 2022.04.09_ |39.36Mb
+      - 🇺🇸 2022.04.09_🇺🇸US-🇺🇸US_462 |69.95Mb
+      - 2022.04.09_ |81.90Mb
+      - "|48.50Mb"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -30,11 +34,13 @@ proxy-groups:
     tolerance: 50
     proxies:
       - "|35.71Mb"
-      - "|33.17Mb"
-      - "|62.12Mb"
-      - 2022.04.09_ |51.51Mb
-      - 2022.04.09_ |75.06Mb
-      - US_486 |78.34Mb
+      - "|36.78Mb"
+      - 🇰🇷 2022.04.09_🇰🇷KR-🇰🇷KR_232 |34.44Mb
+      - 🇺🇸 2022.04.09_🇺🇸US-🇺🇸US_459 |36.54Mb
+      - 2022.04.09_ |39.36Mb
+      - 🇺🇸 2022.04.09_🇺🇸US-🇺🇸US_462 |69.95Mb
+      - 2022.04.09_ |81.90Mb
+      - "|48.50Mb"
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -42,44 +48,52 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - "|35.71Mb"
-      - "|33.17Mb"
-      - "|62.12Mb"
-      - 2022.04.09_ |51.51Mb
-      - 2022.04.09_ |75.06Mb
-      - US_486 |78.34Mb
+      - "|36.78Mb"
+      - 🇰🇷 2022.04.09_🇰🇷KR-🇰🇷KR_232 |34.44Mb
+      - 🇺🇸 2022.04.09_🇺🇸US-🇺🇸US_459 |36.54Mb
+      - 2022.04.09_ |39.36Mb
+      - 🇺🇸 2022.04.09_🇺🇸US-🇺🇸US_462 |69.95Mb
+      - 2022.04.09_ |81.90Mb
+      - "|48.50Mb"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - "|35.71Mb"
-      - "|33.17Mb"
-      - "|62.12Mb"
-      - 2022.04.09_ |51.51Mb
-      - 2022.04.09_ |75.06Mb
-      - US_486 |78.34Mb
+      - "|36.78Mb"
+      - 🇰🇷 2022.04.09_🇰🇷KR-🇰🇷KR_232 |34.44Mb
+      - 🇺🇸 2022.04.09_🇺🇸US-🇺🇸US_459 |36.54Mb
+      - 2022.04.09_ |39.36Mb
+      - 🇺🇸 2022.04.09_🇺🇸US-🇺🇸US_462 |69.95Mb
+      - 2022.04.09_ |81.90Mb
+      - "|48.50Mb"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - "|35.71Mb"
-      - "|33.17Mb"
-      - "|62.12Mb"
-      - 2022.04.09_ |51.51Mb
-      - 2022.04.09_ |75.06Mb
-      - US_486 |78.34Mb
+      - "|36.78Mb"
+      - 🇰🇷 2022.04.09_🇰🇷KR-🇰🇷KR_232 |34.44Mb
+      - 🇺🇸 2022.04.09_🇺🇸US-🇺🇸US_459 |36.54Mb
+      - 2022.04.09_ |39.36Mb
+      - 🇺🇸 2022.04.09_🇺🇸US-🇺🇸US_462 |69.95Mb
+      - 2022.04.09_ |81.90Mb
+      - "|48.50Mb"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - "|35.71Mb"
-      - "|33.17Mb"
-      - "|62.12Mb"
-      - 2022.04.09_ |51.51Mb
-      - 2022.04.09_ |75.06Mb
-      - US_486 |78.34Mb
+      - "|36.78Mb"
+      - 🇰🇷 2022.04.09_🇰🇷KR-🇰🇷KR_232 |34.44Mb
+      - 🇺🇸 2022.04.09_🇺🇸US-🇺🇸US_459 |36.54Mb
+      - 2022.04.09_ |39.36Mb
+      - 🇺🇸 2022.04.09_🇺🇸US-🇺🇸US_462 |69.95Mb
+      - 2022.04.09_ |81.90Mb
+      - "|48.50Mb"
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -87,11 +101,13 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - "|35.71Mb"
-      - "|33.17Mb"
-      - "|62.12Mb"
-      - 2022.04.09_ |51.51Mb
-      - 2022.04.09_ |75.06Mb
-      - US_486 |78.34Mb
+      - "|36.78Mb"
+      - 🇰🇷 2022.04.09_🇰🇷KR-🇰🇷KR_232 |34.44Mb
+      - 🇺🇸 2022.04.09_🇺🇸US-🇺🇸US_459 |36.54Mb
+      - 2022.04.09_ |39.36Mb
+      - 🇺🇸 2022.04.09_🇺🇸US-🇺🇸US_462 |69.95Mb
+      - 2022.04.09_ |81.90Mb
+      - "|48.50Mb"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -115,11 +131,13 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - "|35.71Mb"
-      - "|33.17Mb"
-      - "|62.12Mb"
-      - 2022.04.09_ |51.51Mb
-      - 2022.04.09_ |75.06Mb
-      - US_486 |78.34Mb
+      - "|36.78Mb"
+      - 🇰🇷 2022.04.09_🇰🇷KR-🇰🇷KR_232 |34.44Mb
+      - 🇺🇸 2022.04.09_🇺🇸US-🇺🇸US_459 |36.54Mb
+      - 2022.04.09_ |39.36Mb
+      - 🇺🇸 2022.04.09_🇺🇸US-🇺🇸US_462 |69.95Mb
+      - 2022.04.09_ |81.90Mb
+      - "|48.50Mb"
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
