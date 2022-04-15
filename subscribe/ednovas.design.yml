@@ -5,69 +5,61 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US_184 |89.89Mb, server: 45.32.94.166, port: 31676, type: vmess, uuid: 6f3ec45c-5283-40e8-aea9-7749f4c75753, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: 45.32.94.166, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇺🇸 2022.04.15_🇺🇸US-🇺🇸US_214 |35.02Mb, server: usa-washington.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-washington.lvuft.com, network: ws, ws-opts: {path: /ws, headers: {Host: usa-washington.lvuft.com}}}
-  - {name: 🇺🇸 2022.04.15_🇺🇸US-🇺🇸US_215 |32.20Mb, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-dallas.lvuft.com, network: ws, ws-opts: {path: /ws, headers: {Host: usa-dallas.lvuft.com}}}
+  - {name: 🇬🇧 2022.04.15_🇬🇧GB-🇺🇸US_36 |92.15Mb, server: a2.okz2.com, port: 50001, type: trojan, password: aa5bf2dd-6977-4be9-bac7-02d43a08175c, skip-cert-verify: true, udp: true}
+  - {name: "|89.89Mb", server: 45.32.94.166, port: 31676, type: vmess, uuid: 6f3ec45c-5283-40e8-aea9-7749f4c75753, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: 45.32.94.166, network: http, http-opts: {method: GET, path: [/]}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - US_184 |89.89Mb
-      - 🇺🇸 2022.04.15_🇺🇸US-🇺🇸US_214 |35.02Mb
-      - 🇺🇸 2022.04.15_🇺🇸US-🇺🇸US_215 |32.20Mb
+      - 🇬🇧 2022.04.15_🇬🇧GB-🇺🇸US_36 |92.15Mb
+      - "|89.89Mb"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - US_184 |89.89Mb
-      - 🇺🇸 2022.04.15_🇺🇸US-🇺🇸US_214 |35.02Mb
-      - 🇺🇸 2022.04.15_🇺🇸US-🇺🇸US_215 |32.20Mb
+      - 🇬🇧 2022.04.15_🇬🇧GB-🇺🇸US_36 |92.15Mb
+      - "|89.89Mb"
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_184 |89.89Mb
-      - 🇺🇸 2022.04.15_🇺🇸US-🇺🇸US_214 |35.02Mb
-      - 🇺🇸 2022.04.15_🇺🇸US-🇺🇸US_215 |32.20Mb
+      - 🇬🇧 2022.04.15_🇬🇧GB-🇺🇸US_36 |92.15Mb
+      - "|89.89Mb"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - US_184 |89.89Mb
-      - 🇺🇸 2022.04.15_🇺🇸US-🇺🇸US_214 |35.02Mb
-      - 🇺🇸 2022.04.15_🇺🇸US-🇺🇸US_215 |32.20Mb
+      - 🇬🇧 2022.04.15_🇬🇧GB-🇺🇸US_36 |92.15Mb
+      - "|89.89Mb"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - US_184 |89.89Mb
-      - 🇺🇸 2022.04.15_🇺🇸US-🇺🇸US_214 |35.02Mb
-      - 🇺🇸 2022.04.15_🇺🇸US-🇺🇸US_215 |32.20Mb
+      - 🇬🇧 2022.04.15_🇬🇧GB-🇺🇸US_36 |92.15Mb
+      - "|89.89Mb"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - US_184 |89.89Mb
-      - 🇺🇸 2022.04.15_🇺🇸US-🇺🇸US_214 |35.02Mb
-      - 🇺🇸 2022.04.15_🇺🇸US-🇺🇸US_215 |32.20Mb
+      - 🇬🇧 2022.04.15_🇬🇧GB-🇺🇸US_36 |92.15Mb
+      - "|89.89Mb"
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_184 |89.89Mb
-      - 🇺🇸 2022.04.15_🇺🇸US-🇺🇸US_214 |35.02Mb
-      - 🇺🇸 2022.04.15_🇺🇸US-🇺🇸US_215 |32.20Mb
+      - 🇬🇧 2022.04.15_🇬🇧GB-🇺🇸US_36 |92.15Mb
+      - "|89.89Mb"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -90,9 +82,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_184 |89.89Mb
-      - 🇺🇸 2022.04.15_🇺🇸US-🇺🇸US_214 |35.02Mb
-      - 🇺🇸 2022.04.15_🇺🇸US-🇺🇸US_215 |32.20Mb
+      - 🇬🇧 2022.04.15_🇬🇧GB-🇺🇸US_36 |92.15Mb
+      - "|89.89Mb"
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
