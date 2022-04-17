@@ -5,53 +5,61 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: LT_110 |53.42Mb, server: 213.183.53.200, port: 9005, type: ssr, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: JP_68 |34.34Mb, server: 167.179.77.250, port: 8650, type: vmess, uuid: 29430b3d-f83f-3c74-94a2-e8c1a459219f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: 167.179.77.250, network: ws, ws-opts: {path: /v2ray}}
+  - {name: US_187 |46.97Mb, server: 45.32.94.166, port: 31676, type: vmess, uuid: 6f3ec45c-5283-40e8-aea9-7749f4c75753, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: 45.32.94.166, network: http, http-opts: {method: GET, path: [/]}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - LT_110 |53.42Mb
+      - JP_68 |34.34Mb
+      - US_187 |46.97Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - LT_110 |53.42Mb
+      - JP_68 |34.34Mb
+      - US_187 |46.97Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - LT_110 |53.42Mb
+      - JP_68 |34.34Mb
+      - US_187 |46.97Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - LT_110 |53.42Mb
+      - JP_68 |34.34Mb
+      - US_187 |46.97Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - LT_110 |53.42Mb
+      - JP_68 |34.34Mb
+      - US_187 |46.97Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - LT_110 |53.42Mb
+      - JP_68 |34.34Mb
+      - US_187 |46.97Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - LT_110 |53.42Mb
+      - JP_68 |34.34Mb
+      - US_187 |46.97Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -74,7 +82,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - LT_110 |53.42Mb
+      - JP_68 |34.34Mb
+      - US_187 |46.97Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
