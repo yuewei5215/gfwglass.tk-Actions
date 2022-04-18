@@ -5,101 +5,53 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: GB_28 |32.13Mb, server: 152.89.210.105, port: 9056, type: ssr, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: LT_113 |48.08Mb, server: 213.183.53.200, port: 9060, type: ssr, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_191 |35.97Mb, server: v2-1.godlight.xyz, port: 12230, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: v2-1.godlight.xyz, network: ws, ws-opts: {path: /j75g1461x, headers: {Host: v2-1.godlight.xyz}}}
-  - {name: US_192 |41.90Mb, server: 45.77.121.2, port: 64422, type: vmess, uuid: b0028fae-bead-11ec-ad32-560003f3b86f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /0j6txJQR/}}
-  - {name: 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_193 |34.60Mb, server: usa-washington.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-washington.lvuft.com, network: ws, ws-opts: {path: /ws, headers: {Host: usa-washington.lvuft.com}}}
-  - {name: US_195 |33.21Mb, server: 23.94.120.19, port: 28554, type: vmess, uuid: 4a4c96c5-7b8b-4612-c715-6b91a9c34d07, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, servername: 23.94.120.19}
-  - {name: 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_198 |53.85Mb, server: misaka1433.tk, port: 443, type: trojan, password: YcQgIbGZNNd1PwsF, skip-cert-verify: true, udp: true}
+  - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - GB_28 |32.13Mb
-      - LT_113 |48.08Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_191 |35.97Mb
-      - US_192 |41.90Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_193 |34.60Mb
-      - US_195 |33.21Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_198 |53.85Mb
+      - "NULL"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - GB_28 |32.13Mb
-      - LT_113 |48.08Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_191 |35.97Mb
-      - US_192 |41.90Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_193 |34.60Mb
-      - US_195 |33.21Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_198 |53.85Mb
+      - "NULL"
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - GB_28 |32.13Mb
-      - LT_113 |48.08Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_191 |35.97Mb
-      - US_192 |41.90Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_193 |34.60Mb
-      - US_195 |33.21Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_198 |53.85Mb
+      - "NULL"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - GB_28 |32.13Mb
-      - LT_113 |48.08Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_191 |35.97Mb
-      - US_192 |41.90Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_193 |34.60Mb
-      - US_195 |33.21Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_198 |53.85Mb
+      - "NULL"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - GB_28 |32.13Mb
-      - LT_113 |48.08Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_191 |35.97Mb
-      - US_192 |41.90Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_193 |34.60Mb
-      - US_195 |33.21Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_198 |53.85Mb
+      - "NULL"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - GB_28 |32.13Mb
-      - LT_113 |48.08Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_191 |35.97Mb
-      - US_192 |41.90Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_193 |34.60Mb
-      - US_195 |33.21Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_198 |53.85Mb
+      - "NULL"
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - GB_28 |32.13Mb
-      - LT_113 |48.08Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_191 |35.97Mb
-      - US_192 |41.90Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_193 |34.60Mb
-      - US_195 |33.21Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_198 |53.85Mb
+      - "NULL"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -122,13 +74,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - GB_28 |32.13Mb
-      - LT_113 |48.08Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_191 |35.97Mb
-      - US_192 |41.90Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_193 |34.60Mb
-      - US_195 |33.21Mb
-      - 🇺🇸 2022.04.18_🇺🇸US-🇺🇸US_198 |53.85Mb
+      - "NULL"
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
