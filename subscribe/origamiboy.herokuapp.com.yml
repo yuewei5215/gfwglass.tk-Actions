@@ -5,181 +5,693 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CA_07 |42.79Mb, server: 198.57.27.225, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: CA_08 |43.06Mb, server: 198.57.27.225, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: CA_09 |43.14Mb, server: 198.57.27.225, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: CA_10 |42.83Mb, server: 198.57.27.225, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: CA_11 |43.11Mb, server: 198.57.27.225, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: CA_12 |43.57Mb, server: 198.57.27.225, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: CA_13 |42.75Mb, server: 198.57.27.225, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: CA_14 |40.51Mb, server: 198.57.27.225, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: CA_15 |42.91Mb, server: 198.57.27.225, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: CA_16 |43.00Mb, server: 198.57.27.225, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: CA_17 |43.02Mb, server: 198.57.27.225, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: CA_18 |43.01Mb, server: 198.57.27.225, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: CA_19 |43.36Mb, server: 198.57.27.225, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: CA_20 |43.15Mb, server: 198.57.27.225, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: CA_21 |42.92Mb, server: 198.57.27.225, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: CA_22 |34.25Mb, server: 198.57.27.225, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: CA_23 |42.50Mb, server: 198.57.27.225, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "|43.00Mb", server: 198.57.27.225, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: "|42.83Mb", server: 198.57.27.225, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: "|43.06Mb", server: 198.57.27.225, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: "|42.75Mb", server: 198.57.27.225, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "|40.51Mb", server: 198.57.27.225, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: "|43.01Mb", server: 198.57.27.225, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: "|43.36Mb", server: 198.57.27.225, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: "|42.92Mb", server: 198.57.27.225, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: "|43.15Mb", server: 198.57.27.225, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: "|43.57Mb", server: 198.57.27.225, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: "|42.50Mb", server: 198.57.27.225, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "|42.79Mb", server: 198.57.27.225, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: "|42.91Mb", server: 198.57.27.225, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "|43.14Mb", server: 198.57.27.225, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: "|43.11Mb", server: 198.57.27.225, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: "|43.02Mb", server: 198.57.27.225, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: "|34.25Mb", server: 198.57.27.225, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: "|62.25Mb", server: 149.202.82.172, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: "|30.33Mb", server: uk.london1.vpntester.net, port: 15256, type: ss, cipher: chacha20-ietf-poly1305, password: 4SGLMZ7Z83fN}
+  - {name: "|85.73Mb", server: 213.183.53.208, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ}
+  - {name: "|40.62Mb", server: 213.183.53.207, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA}
+  - {name: "|34.96Mb", server: 213.183.53.207, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq}
+  - {name: "|89.29Mb", server: 213.183.53.177, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL}
+  - {name: "|86.03Mb", server: 213.183.53.177, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj}
+  - {name: "|33.19Mb", server: 185.246.155.29, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ}
+  - {name: "|42.24Mb", server: 213.183.59.206, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ}
+  - {name: "|95.75Mb", server: 217.30.10.63, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ}
+  - {name: "|97.43Mb", server: 217.30.10.64, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY}
+  - {name: "|81.55Mb", server: 217.30.10.63, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8}
+  - {name: "|92.37Mb", server: 217.30.10.63, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj}
+  - {name: "|97.23Mb", server: 217.30.10.63, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf}
+  - {name: "|77.96Mb", server: 217.30.10.63, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7}
+  - {name: "|90.33Mb", server: 217.30.10.63, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF}
+  - {name: "|99.28Mb", server: 217.30.10.63, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
+  - {name: "|90.96Mb", server: 217.30.10.63, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX}
+  - {name: "|78.03Mb", server: 217.30.10.63, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb}
+  - {name: "|87.14Mb", server: 217.30.10.63, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB}
+  - {name: "|99.54Mb", server: 217.30.10.63, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn}
+  - {name: "|93.11Mb", server: 217.30.10.63, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq}
+  - {name: "|89.94Mb", server: 217.30.10.63, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C}
+  - {name: "|71.58Mb", server: 217.30.10.63, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ}
+  - {name: "|94.72Mb", server: 217.30.10.63, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
+  - {name: "|44.91Mb", server: 142.202.48.74, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: "|37.32Mb", server: 167.88.62.62, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: "|37.11Mb", server: 38.68.135.19, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: "|38.04Mb", server: 38.86.135.27, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: "|35.22Mb", server: 167.88.63.82, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: "|32.93Mb", server: 167.88.61.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: "|36.64Mb", server: 38.68.135.19, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: "|44.49Mb", server: 142.202.48.74, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "|36.40Mb", server: 38.68.135.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: "|33.43Mb", server: 34.215.130.186, port: 10089, type: vmess, uuid: 3608c9dc-1eeb-48b0-b570-43074b4a0c9e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}}
+  - {name: "|57.42Mb", server: vfly9.win, port: 443, type: vmess, uuid: 825136bb-fc0a-4444-8307-dc2e36f27e2d, alterId: 60, cipher: auto, tls: true, skip-cert-verify: true, servername: vfly9.win, network: ws, ws-opts: {path: /myblog, headers: {Host: vfly9.win}}}
+  - {name: "|35.22Mb 2", server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-dallas.lvuft.com, network: ws, ws-opts: {path: /ws}}
+  - {name: "|30.56Mb", server: u2.anmu.one, port: 16161, type: vmess, uuid: 919ac815-1776-47fe-8b54-508ef4f39421, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true}
+  - {name: "|39.61Mb", server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-dallas.lvuft.com, network: ws, ws-opts: {path: /ws, headers: {Host: usa-dallas.lvuft.com}}}
+  - {name: "|35.08Mb", server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, skip-cert-verify: true, udp: true}
+  - {name: "|31.12Mb", server: xjp001.369boy.com, port: 11001, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
+  - {name: "|34.48Mb", server: usa005.369boy.com, port: 15001, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
+  - {name: "|33.41Mb", server: usa004.369boy.com, port: 14001, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
+  - {name: "|32.67Mb", server: usa003.369boy.com, port: 13011, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
+  - {name: "|35.01Mb", server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: true, udp: true}
+  - {name: "|32.92Mb", server: 107.167.24.6, port: 17001, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
+  - {name: "|34.96Mb 2", server: usa006.369boy.com, port: 16001, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
+  - {name: "|37.80Mb", server: 134.195.196.231, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: "|43.15Mb 2", server: 134.195.196.231, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: "|36.86Mb", server: 134.195.196.231, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: "|34.34Mb", server: 134.195.196.231, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "|43.62Mb", server: 134.195.196.231, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: "|43.74Mb", server: 134.195.196.231, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: "|42.80Mb", server: 134.195.196.231, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: "|43.88Mb", server: 134.195.196.230, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: "|43.76Mb", server: 134.195.196.231, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: "|37.41Mb", server: 134.195.196.231, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: "|35.08Mb 2", server: 134.195.196.231, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: "|43.58Mb", server: 134.195.196.231, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: "|43.42Mb", server: 134.195.196.231, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "|43.24Mb", server: 134.195.196.231, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: "|30.88Mb", server: 5.44.249.43, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: true, udp: true}
+  - {name: "|30.78Mb", server: 5.44.249.43, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: "|30.04Mb", server: 5.44.249.43, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CA_07 |42.79Mb
-      - CA_08 |43.06Mb
-      - CA_09 |43.14Mb
-      - CA_10 |42.83Mb
-      - CA_11 |43.11Mb
-      - CA_12 |43.57Mb
-      - CA_13 |42.75Mb
-      - CA_14 |40.51Mb
-      - CA_15 |42.91Mb
-      - CA_16 |43.00Mb
-      - CA_17 |43.02Mb
-      - CA_18 |43.01Mb
-      - CA_19 |43.36Mb
-      - CA_20 |43.15Mb
-      - CA_21 |42.92Mb
-      - CA_22 |34.25Mb
-      - CA_23 |42.50Mb
+      - "|43.00Mb"
+      - "|42.83Mb"
+      - "|43.06Mb"
+      - "|42.75Mb"
+      - "|40.51Mb"
+      - "|43.01Mb"
+      - "|43.36Mb"
+      - "|42.92Mb"
+      - "|43.15Mb"
+      - "|43.57Mb"
+      - "|42.50Mb"
+      - "|42.79Mb"
+      - "|42.91Mb"
+      - "|43.14Mb"
+      - "|43.11Mb"
+      - "|43.02Mb"
+      - "|34.25Mb"
+      - "|62.25Mb"
+      - "|30.33Mb"
+      - "|85.73Mb"
+      - "|40.62Mb"
+      - "|34.96Mb"
+      - "|89.29Mb"
+      - "|86.03Mb"
+      - "|33.19Mb"
+      - "|42.24Mb"
+      - "|95.75Mb"
+      - "|97.43Mb"
+      - "|81.55Mb"
+      - "|92.37Mb"
+      - "|97.23Mb"
+      - "|77.96Mb"
+      - "|90.33Mb"
+      - "|99.28Mb"
+      - "|90.96Mb"
+      - "|78.03Mb"
+      - "|87.14Mb"
+      - "|99.54Mb"
+      - "|93.11Mb"
+      - "|89.94Mb"
+      - "|71.58Mb"
+      - "|94.72Mb"
+      - "|44.91Mb"
+      - "|37.32Mb"
+      - "|37.11Mb"
+      - "|38.04Mb"
+      - "|35.22Mb"
+      - "|32.93Mb"
+      - "|36.64Mb"
+      - "|44.49Mb"
+      - "|36.40Mb"
+      - "|33.43Mb"
+      - "|57.42Mb"
+      - "|35.22Mb 2"
+      - "|30.56Mb"
+      - "|39.61Mb"
+      - "|35.08Mb"
+      - "|31.12Mb"
+      - "|34.48Mb"
+      - "|33.41Mb"
+      - "|32.67Mb"
+      - "|35.01Mb"
+      - "|32.92Mb"
+      - "|34.96Mb 2"
+      - "|37.80Mb"
+      - "|43.15Mb 2"
+      - "|36.86Mb"
+      - "|34.34Mb"
+      - "|43.62Mb"
+      - "|43.74Mb"
+      - "|42.80Mb"
+      - "|43.88Mb"
+      - "|43.76Mb"
+      - "|37.41Mb"
+      - "|35.08Mb 2"
+      - "|43.58Mb"
+      - "|43.42Mb"
+      - "|43.24Mb"
+      - "|30.88Mb"
+      - "|30.78Mb"
+      - "|30.04Mb"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - CA_07 |42.79Mb
-      - CA_08 |43.06Mb
-      - CA_09 |43.14Mb
-      - CA_10 |42.83Mb
-      - CA_11 |43.11Mb
-      - CA_12 |43.57Mb
-      - CA_13 |42.75Mb
-      - CA_14 |40.51Mb
-      - CA_15 |42.91Mb
-      - CA_16 |43.00Mb
-      - CA_17 |43.02Mb
-      - CA_18 |43.01Mb
-      - CA_19 |43.36Mb
-      - CA_20 |43.15Mb
-      - CA_21 |42.92Mb
-      - CA_22 |34.25Mb
-      - CA_23 |42.50Mb
+      - "|43.00Mb"
+      - "|42.83Mb"
+      - "|43.06Mb"
+      - "|42.75Mb"
+      - "|40.51Mb"
+      - "|43.01Mb"
+      - "|43.36Mb"
+      - "|42.92Mb"
+      - "|43.15Mb"
+      - "|43.57Mb"
+      - "|42.50Mb"
+      - "|42.79Mb"
+      - "|42.91Mb"
+      - "|43.14Mb"
+      - "|43.11Mb"
+      - "|43.02Mb"
+      - "|34.25Mb"
+      - "|62.25Mb"
+      - "|30.33Mb"
+      - "|85.73Mb"
+      - "|40.62Mb"
+      - "|34.96Mb"
+      - "|89.29Mb"
+      - "|86.03Mb"
+      - "|33.19Mb"
+      - "|42.24Mb"
+      - "|95.75Mb"
+      - "|97.43Mb"
+      - "|81.55Mb"
+      - "|92.37Mb"
+      - "|97.23Mb"
+      - "|77.96Mb"
+      - "|90.33Mb"
+      - "|99.28Mb"
+      - "|90.96Mb"
+      - "|78.03Mb"
+      - "|87.14Mb"
+      - "|99.54Mb"
+      - "|93.11Mb"
+      - "|89.94Mb"
+      - "|71.58Mb"
+      - "|94.72Mb"
+      - "|44.91Mb"
+      - "|37.32Mb"
+      - "|37.11Mb"
+      - "|38.04Mb"
+      - "|35.22Mb"
+      - "|32.93Mb"
+      - "|36.64Mb"
+      - "|44.49Mb"
+      - "|36.40Mb"
+      - "|33.43Mb"
+      - "|57.42Mb"
+      - "|35.22Mb 2"
+      - "|30.56Mb"
+      - "|39.61Mb"
+      - "|35.08Mb"
+      - "|31.12Mb"
+      - "|34.48Mb"
+      - "|33.41Mb"
+      - "|32.67Mb"
+      - "|35.01Mb"
+      - "|32.92Mb"
+      - "|34.96Mb 2"
+      - "|37.80Mb"
+      - "|43.15Mb 2"
+      - "|36.86Mb"
+      - "|34.34Mb"
+      - "|43.62Mb"
+      - "|43.74Mb"
+      - "|42.80Mb"
+      - "|43.88Mb"
+      - "|43.76Mb"
+      - "|37.41Mb"
+      - "|35.08Mb 2"
+      - "|43.58Mb"
+      - "|43.42Mb"
+      - "|43.24Mb"
+      - "|30.88Mb"
+      - "|30.78Mb"
+      - "|30.04Mb"
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CA_07 |42.79Mb
-      - CA_08 |43.06Mb
-      - CA_09 |43.14Mb
-      - CA_10 |42.83Mb
-      - CA_11 |43.11Mb
-      - CA_12 |43.57Mb
-      - CA_13 |42.75Mb
-      - CA_14 |40.51Mb
-      - CA_15 |42.91Mb
-      - CA_16 |43.00Mb
-      - CA_17 |43.02Mb
-      - CA_18 |43.01Mb
-      - CA_19 |43.36Mb
-      - CA_20 |43.15Mb
-      - CA_21 |42.92Mb
-      - CA_22 |34.25Mb
-      - CA_23 |42.50Mb
+      - "|43.00Mb"
+      - "|42.83Mb"
+      - "|43.06Mb"
+      - "|42.75Mb"
+      - "|40.51Mb"
+      - "|43.01Mb"
+      - "|43.36Mb"
+      - "|42.92Mb"
+      - "|43.15Mb"
+      - "|43.57Mb"
+      - "|42.50Mb"
+      - "|42.79Mb"
+      - "|42.91Mb"
+      - "|43.14Mb"
+      - "|43.11Mb"
+      - "|43.02Mb"
+      - "|34.25Mb"
+      - "|62.25Mb"
+      - "|30.33Mb"
+      - "|85.73Mb"
+      - "|40.62Mb"
+      - "|34.96Mb"
+      - "|89.29Mb"
+      - "|86.03Mb"
+      - "|33.19Mb"
+      - "|42.24Mb"
+      - "|95.75Mb"
+      - "|97.43Mb"
+      - "|81.55Mb"
+      - "|92.37Mb"
+      - "|97.23Mb"
+      - "|77.96Mb"
+      - "|90.33Mb"
+      - "|99.28Mb"
+      - "|90.96Mb"
+      - "|78.03Mb"
+      - "|87.14Mb"
+      - "|99.54Mb"
+      - "|93.11Mb"
+      - "|89.94Mb"
+      - "|71.58Mb"
+      - "|94.72Mb"
+      - "|44.91Mb"
+      - "|37.32Mb"
+      - "|37.11Mb"
+      - "|38.04Mb"
+      - "|35.22Mb"
+      - "|32.93Mb"
+      - "|36.64Mb"
+      - "|44.49Mb"
+      - "|36.40Mb"
+      - "|33.43Mb"
+      - "|57.42Mb"
+      - "|35.22Mb 2"
+      - "|30.56Mb"
+      - "|39.61Mb"
+      - "|35.08Mb"
+      - "|31.12Mb"
+      - "|34.48Mb"
+      - "|33.41Mb"
+      - "|32.67Mb"
+      - "|35.01Mb"
+      - "|32.92Mb"
+      - "|34.96Mb 2"
+      - "|37.80Mb"
+      - "|43.15Mb 2"
+      - "|36.86Mb"
+      - "|34.34Mb"
+      - "|43.62Mb"
+      - "|43.74Mb"
+      - "|42.80Mb"
+      - "|43.88Mb"
+      - "|43.76Mb"
+      - "|37.41Mb"
+      - "|35.08Mb 2"
+      - "|43.58Mb"
+      - "|43.42Mb"
+      - "|43.24Mb"
+      - "|30.88Mb"
+      - "|30.78Mb"
+      - "|30.04Mb"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CA_07 |42.79Mb
-      - CA_08 |43.06Mb
-      - CA_09 |43.14Mb
-      - CA_10 |42.83Mb
-      - CA_11 |43.11Mb
-      - CA_12 |43.57Mb
-      - CA_13 |42.75Mb
-      - CA_14 |40.51Mb
-      - CA_15 |42.91Mb
-      - CA_16 |43.00Mb
-      - CA_17 |43.02Mb
-      - CA_18 |43.01Mb
-      - CA_19 |43.36Mb
-      - CA_20 |43.15Mb
-      - CA_21 |42.92Mb
-      - CA_22 |34.25Mb
-      - CA_23 |42.50Mb
+      - "|43.00Mb"
+      - "|42.83Mb"
+      - "|43.06Mb"
+      - "|42.75Mb"
+      - "|40.51Mb"
+      - "|43.01Mb"
+      - "|43.36Mb"
+      - "|42.92Mb"
+      - "|43.15Mb"
+      - "|43.57Mb"
+      - "|42.50Mb"
+      - "|42.79Mb"
+      - "|42.91Mb"
+      - "|43.14Mb"
+      - "|43.11Mb"
+      - "|43.02Mb"
+      - "|34.25Mb"
+      - "|62.25Mb"
+      - "|30.33Mb"
+      - "|85.73Mb"
+      - "|40.62Mb"
+      - "|34.96Mb"
+      - "|89.29Mb"
+      - "|86.03Mb"
+      - "|33.19Mb"
+      - "|42.24Mb"
+      - "|95.75Mb"
+      - "|97.43Mb"
+      - "|81.55Mb"
+      - "|92.37Mb"
+      - "|97.23Mb"
+      - "|77.96Mb"
+      - "|90.33Mb"
+      - "|99.28Mb"
+      - "|90.96Mb"
+      - "|78.03Mb"
+      - "|87.14Mb"
+      - "|99.54Mb"
+      - "|93.11Mb"
+      - "|89.94Mb"
+      - "|71.58Mb"
+      - "|94.72Mb"
+      - "|44.91Mb"
+      - "|37.32Mb"
+      - "|37.11Mb"
+      - "|38.04Mb"
+      - "|35.22Mb"
+      - "|32.93Mb"
+      - "|36.64Mb"
+      - "|44.49Mb"
+      - "|36.40Mb"
+      - "|33.43Mb"
+      - "|57.42Mb"
+      - "|35.22Mb 2"
+      - "|30.56Mb"
+      - "|39.61Mb"
+      - "|35.08Mb"
+      - "|31.12Mb"
+      - "|34.48Mb"
+      - "|33.41Mb"
+      - "|32.67Mb"
+      - "|35.01Mb"
+      - "|32.92Mb"
+      - "|34.96Mb 2"
+      - "|37.80Mb"
+      - "|43.15Mb 2"
+      - "|36.86Mb"
+      - "|34.34Mb"
+      - "|43.62Mb"
+      - "|43.74Mb"
+      - "|42.80Mb"
+      - "|43.88Mb"
+      - "|43.76Mb"
+      - "|37.41Mb"
+      - "|35.08Mb 2"
+      - "|43.58Mb"
+      - "|43.42Mb"
+      - "|43.24Mb"
+      - "|30.88Mb"
+      - "|30.78Mb"
+      - "|30.04Mb"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - CA_07 |42.79Mb
-      - CA_08 |43.06Mb
-      - CA_09 |43.14Mb
-      - CA_10 |42.83Mb
-      - CA_11 |43.11Mb
-      - CA_12 |43.57Mb
-      - CA_13 |42.75Mb
-      - CA_14 |40.51Mb
-      - CA_15 |42.91Mb
-      - CA_16 |43.00Mb
-      - CA_17 |43.02Mb
-      - CA_18 |43.01Mb
-      - CA_19 |43.36Mb
-      - CA_20 |43.15Mb
-      - CA_21 |42.92Mb
-      - CA_22 |34.25Mb
-      - CA_23 |42.50Mb
+      - "|43.00Mb"
+      - "|42.83Mb"
+      - "|43.06Mb"
+      - "|42.75Mb"
+      - "|40.51Mb"
+      - "|43.01Mb"
+      - "|43.36Mb"
+      - "|42.92Mb"
+      - "|43.15Mb"
+      - "|43.57Mb"
+      - "|42.50Mb"
+      - "|42.79Mb"
+      - "|42.91Mb"
+      - "|43.14Mb"
+      - "|43.11Mb"
+      - "|43.02Mb"
+      - "|34.25Mb"
+      - "|62.25Mb"
+      - "|30.33Mb"
+      - "|85.73Mb"
+      - "|40.62Mb"
+      - "|34.96Mb"
+      - "|89.29Mb"
+      - "|86.03Mb"
+      - "|33.19Mb"
+      - "|42.24Mb"
+      - "|95.75Mb"
+      - "|97.43Mb"
+      - "|81.55Mb"
+      - "|92.37Mb"
+      - "|97.23Mb"
+      - "|77.96Mb"
+      - "|90.33Mb"
+      - "|99.28Mb"
+      - "|90.96Mb"
+      - "|78.03Mb"
+      - "|87.14Mb"
+      - "|99.54Mb"
+      - "|93.11Mb"
+      - "|89.94Mb"
+      - "|71.58Mb"
+      - "|94.72Mb"
+      - "|44.91Mb"
+      - "|37.32Mb"
+      - "|37.11Mb"
+      - "|38.04Mb"
+      - "|35.22Mb"
+      - "|32.93Mb"
+      - "|36.64Mb"
+      - "|44.49Mb"
+      - "|36.40Mb"
+      - "|33.43Mb"
+      - "|57.42Mb"
+      - "|35.22Mb 2"
+      - "|30.56Mb"
+      - "|39.61Mb"
+      - "|35.08Mb"
+      - "|31.12Mb"
+      - "|34.48Mb"
+      - "|33.41Mb"
+      - "|32.67Mb"
+      - "|35.01Mb"
+      - "|32.92Mb"
+      - "|34.96Mb 2"
+      - "|37.80Mb"
+      - "|43.15Mb 2"
+      - "|36.86Mb"
+      - "|34.34Mb"
+      - "|43.62Mb"
+      - "|43.74Mb"
+      - "|42.80Mb"
+      - "|43.88Mb"
+      - "|43.76Mb"
+      - "|37.41Mb"
+      - "|35.08Mb 2"
+      - "|43.58Mb"
+      - "|43.42Mb"
+      - "|43.24Mb"
+      - "|30.88Mb"
+      - "|30.78Mb"
+      - "|30.04Mb"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CA_07 |42.79Mb
-      - CA_08 |43.06Mb
-      - CA_09 |43.14Mb
-      - CA_10 |42.83Mb
-      - CA_11 |43.11Mb
-      - CA_12 |43.57Mb
-      - CA_13 |42.75Mb
-      - CA_14 |40.51Mb
-      - CA_15 |42.91Mb
-      - CA_16 |43.00Mb
-      - CA_17 |43.02Mb
-      - CA_18 |43.01Mb
-      - CA_19 |43.36Mb
-      - CA_20 |43.15Mb
-      - CA_21 |42.92Mb
-      - CA_22 |34.25Mb
-      - CA_23 |42.50Mb
+      - "|43.00Mb"
+      - "|42.83Mb"
+      - "|43.06Mb"
+      - "|42.75Mb"
+      - "|40.51Mb"
+      - "|43.01Mb"
+      - "|43.36Mb"
+      - "|42.92Mb"
+      - "|43.15Mb"
+      - "|43.57Mb"
+      - "|42.50Mb"
+      - "|42.79Mb"
+      - "|42.91Mb"
+      - "|43.14Mb"
+      - "|43.11Mb"
+      - "|43.02Mb"
+      - "|34.25Mb"
+      - "|62.25Mb"
+      - "|30.33Mb"
+      - "|85.73Mb"
+      - "|40.62Mb"
+      - "|34.96Mb"
+      - "|89.29Mb"
+      - "|86.03Mb"
+      - "|33.19Mb"
+      - "|42.24Mb"
+      - "|95.75Mb"
+      - "|97.43Mb"
+      - "|81.55Mb"
+      - "|92.37Mb"
+      - "|97.23Mb"
+      - "|77.96Mb"
+      - "|90.33Mb"
+      - "|99.28Mb"
+      - "|90.96Mb"
+      - "|78.03Mb"
+      - "|87.14Mb"
+      - "|99.54Mb"
+      - "|93.11Mb"
+      - "|89.94Mb"
+      - "|71.58Mb"
+      - "|94.72Mb"
+      - "|44.91Mb"
+      - "|37.32Mb"
+      - "|37.11Mb"
+      - "|38.04Mb"
+      - "|35.22Mb"
+      - "|32.93Mb"
+      - "|36.64Mb"
+      - "|44.49Mb"
+      - "|36.40Mb"
+      - "|33.43Mb"
+      - "|57.42Mb"
+      - "|35.22Mb 2"
+      - "|30.56Mb"
+      - "|39.61Mb"
+      - "|35.08Mb"
+      - "|31.12Mb"
+      - "|34.48Mb"
+      - "|33.41Mb"
+      - "|32.67Mb"
+      - "|35.01Mb"
+      - "|32.92Mb"
+      - "|34.96Mb 2"
+      - "|37.80Mb"
+      - "|43.15Mb 2"
+      - "|36.86Mb"
+      - "|34.34Mb"
+      - "|43.62Mb"
+      - "|43.74Mb"
+      - "|42.80Mb"
+      - "|43.88Mb"
+      - "|43.76Mb"
+      - "|37.41Mb"
+      - "|35.08Mb 2"
+      - "|43.58Mb"
+      - "|43.42Mb"
+      - "|43.24Mb"
+      - "|30.88Mb"
+      - "|30.78Mb"
+      - "|30.04Mb"
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA_07 |42.79Mb
-      - CA_08 |43.06Mb
-      - CA_09 |43.14Mb
-      - CA_10 |42.83Mb
-      - CA_11 |43.11Mb
-      - CA_12 |43.57Mb
-      - CA_13 |42.75Mb
-      - CA_14 |40.51Mb
-      - CA_15 |42.91Mb
-      - CA_16 |43.00Mb
-      - CA_17 |43.02Mb
-      - CA_18 |43.01Mb
-      - CA_19 |43.36Mb
-      - CA_20 |43.15Mb
-      - CA_21 |42.92Mb
-      - CA_22 |34.25Mb
-      - CA_23 |42.50Mb
+      - "|43.00Mb"
+      - "|42.83Mb"
+      - "|43.06Mb"
+      - "|42.75Mb"
+      - "|40.51Mb"
+      - "|43.01Mb"
+      - "|43.36Mb"
+      - "|42.92Mb"
+      - "|43.15Mb"
+      - "|43.57Mb"
+      - "|42.50Mb"
+      - "|42.79Mb"
+      - "|42.91Mb"
+      - "|43.14Mb"
+      - "|43.11Mb"
+      - "|43.02Mb"
+      - "|34.25Mb"
+      - "|62.25Mb"
+      - "|30.33Mb"
+      - "|85.73Mb"
+      - "|40.62Mb"
+      - "|34.96Mb"
+      - "|89.29Mb"
+      - "|86.03Mb"
+      - "|33.19Mb"
+      - "|42.24Mb"
+      - "|95.75Mb"
+      - "|97.43Mb"
+      - "|81.55Mb"
+      - "|92.37Mb"
+      - "|97.23Mb"
+      - "|77.96Mb"
+      - "|90.33Mb"
+      - "|99.28Mb"
+      - "|90.96Mb"
+      - "|78.03Mb"
+      - "|87.14Mb"
+      - "|99.54Mb"
+      - "|93.11Mb"
+      - "|89.94Mb"
+      - "|71.58Mb"
+      - "|94.72Mb"
+      - "|44.91Mb"
+      - "|37.32Mb"
+      - "|37.11Mb"
+      - "|38.04Mb"
+      - "|35.22Mb"
+      - "|32.93Mb"
+      - "|36.64Mb"
+      - "|44.49Mb"
+      - "|36.40Mb"
+      - "|33.43Mb"
+      - "|57.42Mb"
+      - "|35.22Mb 2"
+      - "|30.56Mb"
+      - "|39.61Mb"
+      - "|35.08Mb"
+      - "|31.12Mb"
+      - "|34.48Mb"
+      - "|33.41Mb"
+      - "|32.67Mb"
+      - "|35.01Mb"
+      - "|32.92Mb"
+      - "|34.96Mb 2"
+      - "|37.80Mb"
+      - "|43.15Mb 2"
+      - "|36.86Mb"
+      - "|34.34Mb"
+      - "|43.62Mb"
+      - "|43.74Mb"
+      - "|42.80Mb"
+      - "|43.88Mb"
+      - "|43.76Mb"
+      - "|37.41Mb"
+      - "|35.08Mb 2"
+      - "|43.58Mb"
+      - "|43.42Mb"
+      - "|43.24Mb"
+      - "|30.88Mb"
+      - "|30.78Mb"
+      - "|30.04Mb"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -202,23 +714,87 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA_07 |42.79Mb
-      - CA_08 |43.06Mb
-      - CA_09 |43.14Mb
-      - CA_10 |42.83Mb
-      - CA_11 |43.11Mb
-      - CA_12 |43.57Mb
-      - CA_13 |42.75Mb
-      - CA_14 |40.51Mb
-      - CA_15 |42.91Mb
-      - CA_16 |43.00Mb
-      - CA_17 |43.02Mb
-      - CA_18 |43.01Mb
-      - CA_19 |43.36Mb
-      - CA_20 |43.15Mb
-      - CA_21 |42.92Mb
-      - CA_22 |34.25Mb
-      - CA_23 |42.50Mb
+      - "|43.00Mb"
+      - "|42.83Mb"
+      - "|43.06Mb"
+      - "|42.75Mb"
+      - "|40.51Mb"
+      - "|43.01Mb"
+      - "|43.36Mb"
+      - "|42.92Mb"
+      - "|43.15Mb"
+      - "|43.57Mb"
+      - "|42.50Mb"
+      - "|42.79Mb"
+      - "|42.91Mb"
+      - "|43.14Mb"
+      - "|43.11Mb"
+      - "|43.02Mb"
+      - "|34.25Mb"
+      - "|62.25Mb"
+      - "|30.33Mb"
+      - "|85.73Mb"
+      - "|40.62Mb"
+      - "|34.96Mb"
+      - "|89.29Mb"
+      - "|86.03Mb"
+      - "|33.19Mb"
+      - "|42.24Mb"
+      - "|95.75Mb"
+      - "|97.43Mb"
+      - "|81.55Mb"
+      - "|92.37Mb"
+      - "|97.23Mb"
+      - "|77.96Mb"
+      - "|90.33Mb"
+      - "|99.28Mb"
+      - "|90.96Mb"
+      - "|78.03Mb"
+      - "|87.14Mb"
+      - "|99.54Mb"
+      - "|93.11Mb"
+      - "|89.94Mb"
+      - "|71.58Mb"
+      - "|94.72Mb"
+      - "|44.91Mb"
+      - "|37.32Mb"
+      - "|37.11Mb"
+      - "|38.04Mb"
+      - "|35.22Mb"
+      - "|32.93Mb"
+      - "|36.64Mb"
+      - "|44.49Mb"
+      - "|36.40Mb"
+      - "|33.43Mb"
+      - "|57.42Mb"
+      - "|35.22Mb 2"
+      - "|30.56Mb"
+      - "|39.61Mb"
+      - "|35.08Mb"
+      - "|31.12Mb"
+      - "|34.48Mb"
+      - "|33.41Mb"
+      - "|32.67Mb"
+      - "|35.01Mb"
+      - "|32.92Mb"
+      - "|34.96Mb 2"
+      - "|37.80Mb"
+      - "|43.15Mb 2"
+      - "|36.86Mb"
+      - "|34.34Mb"
+      - "|43.62Mb"
+      - "|43.74Mb"
+      - "|42.80Mb"
+      - "|43.88Mb"
+      - "|43.76Mb"
+      - "|37.41Mb"
+      - "|35.08Mb 2"
+      - "|43.58Mb"
+      - "|43.42Mb"
+      - "|43.24Mb"
+      - "|30.88Mb"
+      - "|30.78Mb"
+      - "|30.04Mb"
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
