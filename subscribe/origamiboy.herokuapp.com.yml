@@ -5,341 +5,453 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: AE_02 |30.83Mb, server: 217.138.193.6, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: AE_03 |32.27Mb, server: 217.138.193.6, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: AE_04 |30.89Mb, server: 217.138.193.6, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇨🇦 2022.06.24_🇨🇦CA-🇨🇦CA_15 |33.19Mb, server: 67us01.fans8.xyz, port: 443, type: trojan, password: f5362b9a-812f-4d77-89a3-09f7d0851bfb, skip-cert-verify: true, udp: true}
-  - {name: FR_31 |58.52Mb, server: 149.202.82.172, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: FR_32 |39.87Mb, server: 193.178.210.29, port: 443, type: trojan, password: iKR3Ft, skip-cert-verify: true, udp: true}
-  - {name: LT_51 |32.66Mb, server: 213.183.53.177, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj}
-  - {name: LT_54 |73.69Mb, server: 213.183.53.208, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr}
-  - {name: NL_59 |70.88Mb, server: 185.246.155.35, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
-  - {name: 🇷🇺 2022.06.24_🇷🇺RU-🇷🇺RU_84 |37.83Mb, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p}
-  - {name: 🇷🇺 2022.06.24_🇷🇺RU-🇷🇺RU_106 |38.11Mb, server: v2.ssrsub.com, port: 153, type: vmess, uuid: 57229afb-d4e4-426e-bfdc-18fc1f3267fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: d76bb35696.laowanxiang.com, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: v2.ssrsub.com}}}
-  - {name: 🇸🇬 2022.06.24_🇸🇬SG-🇸🇬SG_112 |31.34Mb, server: sg.sharecentrepro.tk, port: 443, type: trojan, password: sharecentre, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 2022.06.24_🇸🇬SG-🇸🇬SG_115 |31.31Mb, server: w13.udpgw.com, port: 443, type: trojan, password: 16877c70-e7b8-11ec-99f2-1239d0255272, skip-cert-verify: true, udp: true}
-  - {name: US_123 |33.98Mb, server: 38.68.135.19, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: US_124 |36.85Mb, server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: US_125 |36.76Mb, server: 38.68.135.19, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: US_128 |31.73Mb, server: 38.68.135.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_129 |36.06Mb, server: 38.121.43.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_130 |38.14Mb, server: 38.86.135.27, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: US_132 |43.56Mb, server: 38.86.135.27, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_134 |37.20Mb, server: 167.88.62.62, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_135 |37.03Mb, server: 38.68.135.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: US_136 |37.78Mb, server: 38.121.43.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: US_137 |41.63Mb, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: US_139 |37.92Mb, server: 142.202.48.74, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_140 |37.50Mb, server: 142.202.48.52, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: US_141 |32.03Mb, server: 167.88.61.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_143 |36.11Mb, server: 167.88.62.62, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: Pool_🇺🇸US_149 |40.83Mb, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-dallas.lvuft.com, network: ws, ws-opts: {path: /ws}}
-  - {name: US_151 |34.39Mb, server: 80.251.208.30, port: 22223, type: vmess, uuid: 5ce411c8-da98-44f5-ac1b-3b32ccdd8ce7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /echo}}
-  - {name: 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_157 |38.24Mb, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-dallas.lvuft.com, network: ws, ws-opts: {path: /ws, headers: {Host: usa-dallas.lvuft.com}}}
-  - {name: 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_159 |31.31Mb, server: tj-us01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_166 |31.11Mb, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_170 |30.13Mb, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_172 |40.99Mb, server: usfree1.jiantian.xyz, port: 23425, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_173 |31.89Mb, server: lsj02.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_176 |32.18Mb, server: tj-us02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
+  - {name: "|30.83Mb", server: 217.138.193.6, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "|32.27Mb", server: 217.138.193.6, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "|30.89Mb", server: 217.138.193.6, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "|34.87Mb", server: 138.197.166.205, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+  - {name: "|33.19Mb", server: 67us01.fans8.xyz, port: 443, type: trojan, password: f5362b9a-812f-4d77-89a3-09f7d0851bfb, skip-cert-verify: true, udp: true}
+  - {name: "|58.52Mb", server: 149.202.82.172, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: "|39.87Mb", server: 193.178.210.29, port: 443, type: trojan, password: iKR3Ft, skip-cert-verify: true, udp: true}
+  - {name: "|73.69Mb", server: 213.183.53.208, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr}
+  - {name: "|32.66Mb", server: 213.183.53.177, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj}
+  - {name: "|51.12Mb", server: 213.183.53.208, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX}
+  - {name: "|68.09Mb", server: 213.183.53.177, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn}
+  - {name: "|30.84Mb", server: 185.246.155.23, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU}
+  - {name: "|98.37Mb", server: 185.126.116.119, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq}
+  - {name: "|37.83Mb", server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p}
+  - {name: "|38.11Mb", server: v2.ssrsub.com, port: 153, type: vmess, uuid: 57229afb-d4e4-426e-bfdc-18fc1f3267fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: d76bb35696.laowanxiang.com, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: v2.ssrsub.com}}}
+  - {name: "|31.31Mb", server: w13.udpgw.com, port: 443, type: trojan, password: 16877c70-e7b8-11ec-99f2-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: "|31.34Mb", server: sg.sharecentrepro.tk, port: 443, type: trojan, password: sharecentre, skip-cert-verify: true, udp: true}
+  - {name: "|36.11Mb", server: 167.88.62.62, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: "|43.56Mb", server: 38.86.135.27, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: "|37.20Mb", server: 167.88.62.62, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: "|37.18Mb", server: 38.68.135.123, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: "|36.76Mb", server: 38.68.135.19, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: "|36.85Mb", server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: "|37.50Mb", server: 142.202.48.52, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: "|33.98Mb", server: 38.68.135.19, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: "|33.45Mb", server: 167.88.62.68, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: "|32.98Mb", server: 38.68.134.191, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: "|41.63Mb", server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: "|44.91Mb", server: 38.107.226.238, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: "|37.51Mb", server: 38.68.134.85, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: "|37.78Mb", server: 38.121.43.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: "|30.14Mb", server: 38.68.134.135, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "|45.13Mb", server: 38.107.226.146, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: "|37.88Mb", server: 38.68.135.19, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: "|32.03Mb", server: 167.88.61.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: "|37.41Mb", server: 38.68.134.85, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "|37.92Mb", server: 142.202.48.74, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: "|37.96Mb", server: 38.68.134.191, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: "|33.50Mb", server: 167.88.61.60, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: "|37.03Mb", server: 38.68.135.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: "|31.73Mb", server: 38.68.135.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: "|38.14Mb", server: 38.86.135.27, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: "|36.06Mb", server: 38.121.43.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: "|38.24Mb", server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-dallas.lvuft.com, network: ws, ws-opts: {path: /ws, headers: {Host: usa-dallas.lvuft.com}}}
+  - {name: "|34.39Mb", server: 80.251.208.30, port: 22223, type: vmess, uuid: 5ce411c8-da98-44f5-ac1b-3b32ccdd8ce7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /echo}}
+  - {name: "|40.83Mb", server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-dallas.lvuft.com, network: ws, ws-opts: {path: /ws}}
+  - {name: "|30.13Mb", server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: true, udp: true}
+  - {name: "|40.99Mb", server: usfree1.jiantian.xyz, port: 23425, type: trojan, password: 7cb64c49-2ce5-4fa6-9b79-9c02eb54735c, skip-cert-verify: true, udp: true}
+  - {name: "|31.31Mb 2", server: tj-us01.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
+  - {name: "|31.89Mb", server: lsj02.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: true, udp: true}
+  - {name: "|32.18Mb", server: tj-us02.yiyodns.xyz, port: 443, type: trojan, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - AE_02 |30.83Mb
-      - AE_03 |32.27Mb
-      - AE_04 |30.89Mb
-      - 🇨🇦 2022.06.24_🇨🇦CA-🇨🇦CA_15 |33.19Mb
-      - FR_31 |58.52Mb
-      - FR_32 |39.87Mb
-      - LT_51 |32.66Mb
-      - LT_54 |73.69Mb
-      - NL_59 |70.88Mb
-      - 🇷🇺 2022.06.24_🇷🇺RU-🇷🇺RU_84 |37.83Mb
-      - 🇷🇺 2022.06.24_🇷🇺RU-🇷🇺RU_106 |38.11Mb
-      - 🇸🇬 2022.06.24_🇸🇬SG-🇸🇬SG_112 |31.34Mb
-      - 🇸🇬 2022.06.24_🇸🇬SG-🇸🇬SG_115 |31.31Mb
-      - US_123 |33.98Mb
-      - US_124 |36.85Mb
-      - US_125 |36.76Mb
-      - US_128 |31.73Mb
-      - US_129 |36.06Mb
-      - US_130 |38.14Mb
-      - US_132 |43.56Mb
-      - US_134 |37.20Mb
-      - US_135 |37.03Mb
-      - US_136 |37.78Mb
-      - US_137 |41.63Mb
-      - US_139 |37.92Mb
-      - US_140 |37.50Mb
-      - US_141 |32.03Mb
-      - US_143 |36.11Mb
-      - Pool_🇺🇸US_149 |40.83Mb
-      - US_151 |34.39Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_157 |38.24Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_159 |31.31Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_166 |31.11Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_170 |30.13Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_172 |40.99Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_173 |31.89Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_176 |32.18Mb
+      - "|30.83Mb"
+      - "|32.27Mb"
+      - "|30.89Mb"
+      - "|34.87Mb"
+      - "|33.19Mb"
+      - "|58.52Mb"
+      - "|39.87Mb"
+      - "|73.69Mb"
+      - "|32.66Mb"
+      - "|51.12Mb"
+      - "|68.09Mb"
+      - "|30.84Mb"
+      - "|98.37Mb"
+      - "|37.83Mb"
+      - "|38.11Mb"
+      - "|31.31Mb"
+      - "|31.34Mb"
+      - "|36.11Mb"
+      - "|43.56Mb"
+      - "|37.20Mb"
+      - "|37.18Mb"
+      - "|36.76Mb"
+      - "|36.85Mb"
+      - "|37.50Mb"
+      - "|33.98Mb"
+      - "|33.45Mb"
+      - "|32.98Mb"
+      - "|41.63Mb"
+      - "|44.91Mb"
+      - "|37.51Mb"
+      - "|37.78Mb"
+      - "|30.14Mb"
+      - "|45.13Mb"
+      - "|37.88Mb"
+      - "|32.03Mb"
+      - "|37.41Mb"
+      - "|37.92Mb"
+      - "|37.96Mb"
+      - "|33.50Mb"
+      - "|37.03Mb"
+      - "|31.73Mb"
+      - "|38.14Mb"
+      - "|36.06Mb"
+      - "|38.24Mb"
+      - "|34.39Mb"
+      - "|40.83Mb"
+      - "|30.13Mb"
+      - "|40.99Mb"
+      - "|31.31Mb 2"
+      - "|31.89Mb"
+      - "|32.18Mb"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - AE_02 |30.83Mb
-      - AE_03 |32.27Mb
-      - AE_04 |30.89Mb
-      - 🇨🇦 2022.06.24_🇨🇦CA-🇨🇦CA_15 |33.19Mb
-      - FR_31 |58.52Mb
-      - FR_32 |39.87Mb
-      - LT_51 |32.66Mb
-      - LT_54 |73.69Mb
-      - NL_59 |70.88Mb
-      - 🇷🇺 2022.06.24_🇷🇺RU-🇷🇺RU_84 |37.83Mb
-      - 🇷🇺 2022.06.24_🇷🇺RU-🇷🇺RU_106 |38.11Mb
-      - 🇸🇬 2022.06.24_🇸🇬SG-🇸🇬SG_112 |31.34Mb
-      - 🇸🇬 2022.06.24_🇸🇬SG-🇸🇬SG_115 |31.31Mb
-      - US_123 |33.98Mb
-      - US_124 |36.85Mb
-      - US_125 |36.76Mb
-      - US_128 |31.73Mb
-      - US_129 |36.06Mb
-      - US_130 |38.14Mb
-      - US_132 |43.56Mb
-      - US_134 |37.20Mb
-      - US_135 |37.03Mb
-      - US_136 |37.78Mb
-      - US_137 |41.63Mb
-      - US_139 |37.92Mb
-      - US_140 |37.50Mb
-      - US_141 |32.03Mb
-      - US_143 |36.11Mb
-      - Pool_🇺🇸US_149 |40.83Mb
-      - US_151 |34.39Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_157 |38.24Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_159 |31.31Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_166 |31.11Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_170 |30.13Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_172 |40.99Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_173 |31.89Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_176 |32.18Mb
+      - "|30.83Mb"
+      - "|32.27Mb"
+      - "|30.89Mb"
+      - "|34.87Mb"
+      - "|33.19Mb"
+      - "|58.52Mb"
+      - "|39.87Mb"
+      - "|73.69Mb"
+      - "|32.66Mb"
+      - "|51.12Mb"
+      - "|68.09Mb"
+      - "|30.84Mb"
+      - "|98.37Mb"
+      - "|37.83Mb"
+      - "|38.11Mb"
+      - "|31.31Mb"
+      - "|31.34Mb"
+      - "|36.11Mb"
+      - "|43.56Mb"
+      - "|37.20Mb"
+      - "|37.18Mb"
+      - "|36.76Mb"
+      - "|36.85Mb"
+      - "|37.50Mb"
+      - "|33.98Mb"
+      - "|33.45Mb"
+      - "|32.98Mb"
+      - "|41.63Mb"
+      - "|44.91Mb"
+      - "|37.51Mb"
+      - "|37.78Mb"
+      - "|30.14Mb"
+      - "|45.13Mb"
+      - "|37.88Mb"
+      - "|32.03Mb"
+      - "|37.41Mb"
+      - "|37.92Mb"
+      - "|37.96Mb"
+      - "|33.50Mb"
+      - "|37.03Mb"
+      - "|31.73Mb"
+      - "|38.14Mb"
+      - "|36.06Mb"
+      - "|38.24Mb"
+      - "|34.39Mb"
+      - "|40.83Mb"
+      - "|30.13Mb"
+      - "|40.99Mb"
+      - "|31.31Mb 2"
+      - "|31.89Mb"
+      - "|32.18Mb"
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AE_02 |30.83Mb
-      - AE_03 |32.27Mb
-      - AE_04 |30.89Mb
-      - 🇨🇦 2022.06.24_🇨🇦CA-🇨🇦CA_15 |33.19Mb
-      - FR_31 |58.52Mb
-      - FR_32 |39.87Mb
-      - LT_51 |32.66Mb
-      - LT_54 |73.69Mb
-      - NL_59 |70.88Mb
-      - 🇷🇺 2022.06.24_🇷🇺RU-🇷🇺RU_84 |37.83Mb
-      - 🇷🇺 2022.06.24_🇷🇺RU-🇷🇺RU_106 |38.11Mb
-      - 🇸🇬 2022.06.24_🇸🇬SG-🇸🇬SG_112 |31.34Mb
-      - 🇸🇬 2022.06.24_🇸🇬SG-🇸🇬SG_115 |31.31Mb
-      - US_123 |33.98Mb
-      - US_124 |36.85Mb
-      - US_125 |36.76Mb
-      - US_128 |31.73Mb
-      - US_129 |36.06Mb
-      - US_130 |38.14Mb
-      - US_132 |43.56Mb
-      - US_134 |37.20Mb
-      - US_135 |37.03Mb
-      - US_136 |37.78Mb
-      - US_137 |41.63Mb
-      - US_139 |37.92Mb
-      - US_140 |37.50Mb
-      - US_141 |32.03Mb
-      - US_143 |36.11Mb
-      - Pool_🇺🇸US_149 |40.83Mb
-      - US_151 |34.39Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_157 |38.24Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_159 |31.31Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_166 |31.11Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_170 |30.13Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_172 |40.99Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_173 |31.89Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_176 |32.18Mb
+      - "|30.83Mb"
+      - "|32.27Mb"
+      - "|30.89Mb"
+      - "|34.87Mb"
+      - "|33.19Mb"
+      - "|58.52Mb"
+      - "|39.87Mb"
+      - "|73.69Mb"
+      - "|32.66Mb"
+      - "|51.12Mb"
+      - "|68.09Mb"
+      - "|30.84Mb"
+      - "|98.37Mb"
+      - "|37.83Mb"
+      - "|38.11Mb"
+      - "|31.31Mb"
+      - "|31.34Mb"
+      - "|36.11Mb"
+      - "|43.56Mb"
+      - "|37.20Mb"
+      - "|37.18Mb"
+      - "|36.76Mb"
+      - "|36.85Mb"
+      - "|37.50Mb"
+      - "|33.98Mb"
+      - "|33.45Mb"
+      - "|32.98Mb"
+      - "|41.63Mb"
+      - "|44.91Mb"
+      - "|37.51Mb"
+      - "|37.78Mb"
+      - "|30.14Mb"
+      - "|45.13Mb"
+      - "|37.88Mb"
+      - "|32.03Mb"
+      - "|37.41Mb"
+      - "|37.92Mb"
+      - "|37.96Mb"
+      - "|33.50Mb"
+      - "|37.03Mb"
+      - "|31.73Mb"
+      - "|38.14Mb"
+      - "|36.06Mb"
+      - "|38.24Mb"
+      - "|34.39Mb"
+      - "|40.83Mb"
+      - "|30.13Mb"
+      - "|40.99Mb"
+      - "|31.31Mb 2"
+      - "|31.89Mb"
+      - "|32.18Mb"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - AE_02 |30.83Mb
-      - AE_03 |32.27Mb
-      - AE_04 |30.89Mb
-      - 🇨🇦 2022.06.24_🇨🇦CA-🇨🇦CA_15 |33.19Mb
-      - FR_31 |58.52Mb
-      - FR_32 |39.87Mb
-      - LT_51 |32.66Mb
-      - LT_54 |73.69Mb
-      - NL_59 |70.88Mb
-      - 🇷🇺 2022.06.24_🇷🇺RU-🇷🇺RU_84 |37.83Mb
-      - 🇷🇺 2022.06.24_🇷🇺RU-🇷🇺RU_106 |38.11Mb
-      - 🇸🇬 2022.06.24_🇸🇬SG-🇸🇬SG_112 |31.34Mb
-      - 🇸🇬 2022.06.24_🇸🇬SG-🇸🇬SG_115 |31.31Mb
-      - US_123 |33.98Mb
-      - US_124 |36.85Mb
-      - US_125 |36.76Mb
-      - US_128 |31.73Mb
-      - US_129 |36.06Mb
-      - US_130 |38.14Mb
-      - US_132 |43.56Mb
-      - US_134 |37.20Mb
-      - US_135 |37.03Mb
-      - US_136 |37.78Mb
-      - US_137 |41.63Mb
-      - US_139 |37.92Mb
-      - US_140 |37.50Mb
-      - US_141 |32.03Mb
-      - US_143 |36.11Mb
-      - Pool_🇺🇸US_149 |40.83Mb
-      - US_151 |34.39Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_157 |38.24Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_159 |31.31Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_166 |31.11Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_170 |30.13Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_172 |40.99Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_173 |31.89Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_176 |32.18Mb
+      - "|30.83Mb"
+      - "|32.27Mb"
+      - "|30.89Mb"
+      - "|34.87Mb"
+      - "|33.19Mb"
+      - "|58.52Mb"
+      - "|39.87Mb"
+      - "|73.69Mb"
+      - "|32.66Mb"
+      - "|51.12Mb"
+      - "|68.09Mb"
+      - "|30.84Mb"
+      - "|98.37Mb"
+      - "|37.83Mb"
+      - "|38.11Mb"
+      - "|31.31Mb"
+      - "|31.34Mb"
+      - "|36.11Mb"
+      - "|43.56Mb"
+      - "|37.20Mb"
+      - "|37.18Mb"
+      - "|36.76Mb"
+      - "|36.85Mb"
+      - "|37.50Mb"
+      - "|33.98Mb"
+      - "|33.45Mb"
+      - "|32.98Mb"
+      - "|41.63Mb"
+      - "|44.91Mb"
+      - "|37.51Mb"
+      - "|37.78Mb"
+      - "|30.14Mb"
+      - "|45.13Mb"
+      - "|37.88Mb"
+      - "|32.03Mb"
+      - "|37.41Mb"
+      - "|37.92Mb"
+      - "|37.96Mb"
+      - "|33.50Mb"
+      - "|37.03Mb"
+      - "|31.73Mb"
+      - "|38.14Mb"
+      - "|36.06Mb"
+      - "|38.24Mb"
+      - "|34.39Mb"
+      - "|40.83Mb"
+      - "|30.13Mb"
+      - "|40.99Mb"
+      - "|31.31Mb 2"
+      - "|31.89Mb"
+      - "|32.18Mb"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - AE_02 |30.83Mb
-      - AE_03 |32.27Mb
-      - AE_04 |30.89Mb
-      - 🇨🇦 2022.06.24_🇨🇦CA-🇨🇦CA_15 |33.19Mb
-      - FR_31 |58.52Mb
-      - FR_32 |39.87Mb
-      - LT_51 |32.66Mb
-      - LT_54 |73.69Mb
-      - NL_59 |70.88Mb
-      - 🇷🇺 2022.06.24_🇷🇺RU-🇷🇺RU_84 |37.83Mb
-      - 🇷🇺 2022.06.24_🇷🇺RU-🇷🇺RU_106 |38.11Mb
-      - 🇸🇬 2022.06.24_🇸🇬SG-🇸🇬SG_112 |31.34Mb
-      - 🇸🇬 2022.06.24_🇸🇬SG-🇸🇬SG_115 |31.31Mb
-      - US_123 |33.98Mb
-      - US_124 |36.85Mb
-      - US_125 |36.76Mb
-      - US_128 |31.73Mb
-      - US_129 |36.06Mb
-      - US_130 |38.14Mb
-      - US_132 |43.56Mb
-      - US_134 |37.20Mb
-      - US_135 |37.03Mb
-      - US_136 |37.78Mb
-      - US_137 |41.63Mb
-      - US_139 |37.92Mb
-      - US_140 |37.50Mb
-      - US_141 |32.03Mb
-      - US_143 |36.11Mb
-      - Pool_🇺🇸US_149 |40.83Mb
-      - US_151 |34.39Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_157 |38.24Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_159 |31.31Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_166 |31.11Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_170 |30.13Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_172 |40.99Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_173 |31.89Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_176 |32.18Mb
+      - "|30.83Mb"
+      - "|32.27Mb"
+      - "|30.89Mb"
+      - "|34.87Mb"
+      - "|33.19Mb"
+      - "|58.52Mb"
+      - "|39.87Mb"
+      - "|73.69Mb"
+      - "|32.66Mb"
+      - "|51.12Mb"
+      - "|68.09Mb"
+      - "|30.84Mb"
+      - "|98.37Mb"
+      - "|37.83Mb"
+      - "|38.11Mb"
+      - "|31.31Mb"
+      - "|31.34Mb"
+      - "|36.11Mb"
+      - "|43.56Mb"
+      - "|37.20Mb"
+      - "|37.18Mb"
+      - "|36.76Mb"
+      - "|36.85Mb"
+      - "|37.50Mb"
+      - "|33.98Mb"
+      - "|33.45Mb"
+      - "|32.98Mb"
+      - "|41.63Mb"
+      - "|44.91Mb"
+      - "|37.51Mb"
+      - "|37.78Mb"
+      - "|30.14Mb"
+      - "|45.13Mb"
+      - "|37.88Mb"
+      - "|32.03Mb"
+      - "|37.41Mb"
+      - "|37.92Mb"
+      - "|37.96Mb"
+      - "|33.50Mb"
+      - "|37.03Mb"
+      - "|31.73Mb"
+      - "|38.14Mb"
+      - "|36.06Mb"
+      - "|38.24Mb"
+      - "|34.39Mb"
+      - "|40.83Mb"
+      - "|30.13Mb"
+      - "|40.99Mb"
+      - "|31.31Mb 2"
+      - "|31.89Mb"
+      - "|32.18Mb"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - AE_02 |30.83Mb
-      - AE_03 |32.27Mb
-      - AE_04 |30.89Mb
-      - 🇨🇦 2022.06.24_🇨🇦CA-🇨🇦CA_15 |33.19Mb
-      - FR_31 |58.52Mb
-      - FR_32 |39.87Mb
-      - LT_51 |32.66Mb
-      - LT_54 |73.69Mb
-      - NL_59 |70.88Mb
-      - 🇷🇺 2022.06.24_🇷🇺RU-🇷🇺RU_84 |37.83Mb
-      - 🇷🇺 2022.06.24_🇷🇺RU-🇷🇺RU_106 |38.11Mb
-      - 🇸🇬 2022.06.24_🇸🇬SG-🇸🇬SG_112 |31.34Mb
-      - 🇸🇬 2022.06.24_🇸🇬SG-🇸🇬SG_115 |31.31Mb
-      - US_123 |33.98Mb
-      - US_124 |36.85Mb
-      - US_125 |36.76Mb
-      - US_128 |31.73Mb
-      - US_129 |36.06Mb
-      - US_130 |38.14Mb
-      - US_132 |43.56Mb
-      - US_134 |37.20Mb
-      - US_135 |37.03Mb
-      - US_136 |37.78Mb
-      - US_137 |41.63Mb
-      - US_139 |37.92Mb
-      - US_140 |37.50Mb
-      - US_141 |32.03Mb
-      - US_143 |36.11Mb
-      - Pool_🇺🇸US_149 |40.83Mb
-      - US_151 |34.39Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_157 |38.24Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_159 |31.31Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_166 |31.11Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_170 |30.13Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_172 |40.99Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_173 |31.89Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_176 |32.18Mb
+      - "|30.83Mb"
+      - "|32.27Mb"
+      - "|30.89Mb"
+      - "|34.87Mb"
+      - "|33.19Mb"
+      - "|58.52Mb"
+      - "|39.87Mb"
+      - "|73.69Mb"
+      - "|32.66Mb"
+      - "|51.12Mb"
+      - "|68.09Mb"
+      - "|30.84Mb"
+      - "|98.37Mb"
+      - "|37.83Mb"
+      - "|38.11Mb"
+      - "|31.31Mb"
+      - "|31.34Mb"
+      - "|36.11Mb"
+      - "|43.56Mb"
+      - "|37.20Mb"
+      - "|37.18Mb"
+      - "|36.76Mb"
+      - "|36.85Mb"
+      - "|37.50Mb"
+      - "|33.98Mb"
+      - "|33.45Mb"
+      - "|32.98Mb"
+      - "|41.63Mb"
+      - "|44.91Mb"
+      - "|37.51Mb"
+      - "|37.78Mb"
+      - "|30.14Mb"
+      - "|45.13Mb"
+      - "|37.88Mb"
+      - "|32.03Mb"
+      - "|37.41Mb"
+      - "|37.92Mb"
+      - "|37.96Mb"
+      - "|33.50Mb"
+      - "|37.03Mb"
+      - "|31.73Mb"
+      - "|38.14Mb"
+      - "|36.06Mb"
+      - "|38.24Mb"
+      - "|34.39Mb"
+      - "|40.83Mb"
+      - "|30.13Mb"
+      - "|40.99Mb"
+      - "|31.31Mb 2"
+      - "|31.89Mb"
+      - "|32.18Mb"
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AE_02 |30.83Mb
-      - AE_03 |32.27Mb
-      - AE_04 |30.89Mb
-      - 🇨🇦 2022.06.24_🇨🇦CA-🇨🇦CA_15 |33.19Mb
-      - FR_31 |58.52Mb
-      - FR_32 |39.87Mb
-      - LT_51 |32.66Mb
-      - LT_54 |73.69Mb
-      - NL_59 |70.88Mb
-      - 🇷🇺 2022.06.24_🇷🇺RU-🇷🇺RU_84 |37.83Mb
-      - 🇷🇺 2022.06.24_🇷🇺RU-🇷🇺RU_106 |38.11Mb
-      - 🇸🇬 2022.06.24_🇸🇬SG-🇸🇬SG_112 |31.34Mb
-      - 🇸🇬 2022.06.24_🇸🇬SG-🇸🇬SG_115 |31.31Mb
-      - US_123 |33.98Mb
-      - US_124 |36.85Mb
-      - US_125 |36.76Mb
-      - US_128 |31.73Mb
-      - US_129 |36.06Mb
-      - US_130 |38.14Mb
-      - US_132 |43.56Mb
-      - US_134 |37.20Mb
-      - US_135 |37.03Mb
-      - US_136 |37.78Mb
-      - US_137 |41.63Mb
-      - US_139 |37.92Mb
-      - US_140 |37.50Mb
-      - US_141 |32.03Mb
-      - US_143 |36.11Mb
-      - Pool_🇺🇸US_149 |40.83Mb
-      - US_151 |34.39Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_157 |38.24Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_159 |31.31Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_166 |31.11Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_170 |30.13Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_172 |40.99Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_173 |31.89Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_176 |32.18Mb
+      - "|30.83Mb"
+      - "|32.27Mb"
+      - "|30.89Mb"
+      - "|34.87Mb"
+      - "|33.19Mb"
+      - "|58.52Mb"
+      - "|39.87Mb"
+      - "|73.69Mb"
+      - "|32.66Mb"
+      - "|51.12Mb"
+      - "|68.09Mb"
+      - "|30.84Mb"
+      - "|98.37Mb"
+      - "|37.83Mb"
+      - "|38.11Mb"
+      - "|31.31Mb"
+      - "|31.34Mb"
+      - "|36.11Mb"
+      - "|43.56Mb"
+      - "|37.20Mb"
+      - "|37.18Mb"
+      - "|36.76Mb"
+      - "|36.85Mb"
+      - "|37.50Mb"
+      - "|33.98Mb"
+      - "|33.45Mb"
+      - "|32.98Mb"
+      - "|41.63Mb"
+      - "|44.91Mb"
+      - "|37.51Mb"
+      - "|37.78Mb"
+      - "|30.14Mb"
+      - "|45.13Mb"
+      - "|37.88Mb"
+      - "|32.03Mb"
+      - "|37.41Mb"
+      - "|37.92Mb"
+      - "|37.96Mb"
+      - "|33.50Mb"
+      - "|37.03Mb"
+      - "|31.73Mb"
+      - "|38.14Mb"
+      - "|36.06Mb"
+      - "|38.24Mb"
+      - "|34.39Mb"
+      - "|40.83Mb"
+      - "|30.13Mb"
+      - "|40.99Mb"
+      - "|31.31Mb 2"
+      - "|31.89Mb"
+      - "|32.18Mb"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -362,43 +474,57 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AE_02 |30.83Mb
-      - AE_03 |32.27Mb
-      - AE_04 |30.89Mb
-      - 🇨🇦 2022.06.24_🇨🇦CA-🇨🇦CA_15 |33.19Mb
-      - FR_31 |58.52Mb
-      - FR_32 |39.87Mb
-      - LT_51 |32.66Mb
-      - LT_54 |73.69Mb
-      - NL_59 |70.88Mb
-      - 🇷🇺 2022.06.24_🇷🇺RU-🇷🇺RU_84 |37.83Mb
-      - 🇷🇺 2022.06.24_🇷🇺RU-🇷🇺RU_106 |38.11Mb
-      - 🇸🇬 2022.06.24_🇸🇬SG-🇸🇬SG_112 |31.34Mb
-      - 🇸🇬 2022.06.24_🇸🇬SG-🇸🇬SG_115 |31.31Mb
-      - US_123 |33.98Mb
-      - US_124 |36.85Mb
-      - US_125 |36.76Mb
-      - US_128 |31.73Mb
-      - US_129 |36.06Mb
-      - US_130 |38.14Mb
-      - US_132 |43.56Mb
-      - US_134 |37.20Mb
-      - US_135 |37.03Mb
-      - US_136 |37.78Mb
-      - US_137 |41.63Mb
-      - US_139 |37.92Mb
-      - US_140 |37.50Mb
-      - US_141 |32.03Mb
-      - US_143 |36.11Mb
-      - Pool_🇺🇸US_149 |40.83Mb
-      - US_151 |34.39Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_157 |38.24Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_159 |31.31Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_166 |31.11Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_170 |30.13Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_172 |40.99Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_173 |31.89Mb
-      - 🇺🇸 2022.06.24_🇺🇸US-🇺🇸US_176 |32.18Mb
+      - "|30.83Mb"
+      - "|32.27Mb"
+      - "|30.89Mb"
+      - "|34.87Mb"
+      - "|33.19Mb"
+      - "|58.52Mb"
+      - "|39.87Mb"
+      - "|73.69Mb"
+      - "|32.66Mb"
+      - "|51.12Mb"
+      - "|68.09Mb"
+      - "|30.84Mb"
+      - "|98.37Mb"
+      - "|37.83Mb"
+      - "|38.11Mb"
+      - "|31.31Mb"
+      - "|31.34Mb"
+      - "|36.11Mb"
+      - "|43.56Mb"
+      - "|37.20Mb"
+      - "|37.18Mb"
+      - "|36.76Mb"
+      - "|36.85Mb"
+      - "|37.50Mb"
+      - "|33.98Mb"
+      - "|33.45Mb"
+      - "|32.98Mb"
+      - "|41.63Mb"
+      - "|44.91Mb"
+      - "|37.51Mb"
+      - "|37.78Mb"
+      - "|30.14Mb"
+      - "|45.13Mb"
+      - "|37.88Mb"
+      - "|32.03Mb"
+      - "|37.41Mb"
+      - "|37.92Mb"
+      - "|37.96Mb"
+      - "|33.50Mb"
+      - "|37.03Mb"
+      - "|31.73Mb"
+      - "|38.14Mb"
+      - "|36.06Mb"
+      - "|38.24Mb"
+      - "|34.39Mb"
+      - "|40.83Mb"
+      - "|30.13Mb"
+      - "|40.99Mb"
+      - "|31.31Mb 2"
+      - "|31.89Mb"
+      - "|32.18Mb"
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
