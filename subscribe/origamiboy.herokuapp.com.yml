@@ -5,405 +5,277 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CA_03 |37.61Mb, server: 196.247.59.154, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: CA_04 |37.13Mb, server: 196.247.59.154, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: CA_05 |38.16Mb, server: 196.247.59.154, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: CA_06 |38.35Mb, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: CA_07 |38.03Mb, server: 196.247.59.154, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: DE_11 |59.95Mb, server: 193.108.117.75, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: DE_13 |60.02Mb, server: 193.108.117.75, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: DE_17 |60.12Mb, server: 193.108.117.75, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: FR_19 |54.79Mb, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: FR_20 |60.01Mb, server: 145.239.1.100, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: FR_23 |60.31Mb, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: FR_26 |57.34Mb, server: 54.36.174.181, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇬🇧 2022.10.01_🇬🇧GB-🇬🇧GB_32 |31.07Mb, server: aop.ssfree.ru, port: 443, type: vmess, uuid: f11f323c-40d8-11ed-a027-000017022008, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /getweather, headers: {Host: aop.ssfree.ru}}}
-  - {name: US_57 |37.31Mb, server: 167.88.62.62, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_58 |45.05Mb, server: 38.86.135.27, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: US_60 |44.97Mb, server: 38.86.135.27, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_65 |36.49Mb, server: 38.121.43.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: US_66 |36.61Mb, server: 38.68.135.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: US_67 |47.47Mb, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
-  - {name: US_71 |37.90Mb, server: 38.68.134.85, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: US_72 |55.49Mb, server: 172.99.188.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: US_73 |58.54Mb, server: 172.99.188.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_75 |59.23Mb, server: 172.99.188.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_76 |30.22Mb, server: 38.121.43.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_81 |33.16Mb, server: 167.88.61.50, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_83 |35.89Mb, server: 142.202.48.52, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: US_85 |34.15Mb, server: 38.64.138.145, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_87 |30.10Mb, server: 38.75.136.21, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: US_88 |42.95Mb, server: 38.86.135.27, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: US_89 |38.29Mb, server: 38.121.43.71, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: US_91 |36.74Mb, server: 38.64.138.145, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: US_92 |34.27Mb, server: 38.64.138.145, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: US_93 |36.44Mb, server: 38.68.134.85, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: US_94 |35.67Mb, server: 38.121.43.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: US_95 |33.29Mb, server: 167.88.63.59, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: US_96 |38.12Mb, server: 167.88.62.62, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_97 |36.44Mb, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_98 |33.54Mb, server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: US_100 |32.66Mb, server: 38.68.134.85, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_101 |37.15Mb, server: 38.86.135.27, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_103 |38.29Mb, server: 38.68.134.85, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_104 |33.24Mb, server: 167.88.61.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_106 |31.68Mb, server: 38.143.66.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_107 |33.25Mb, server: 38.143.66.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇺🇸 2022.10.01_🇺🇸US-🇺🇸US_115 |53.60Mb, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws}}
+  - {name: CA_02 |38.19Mb, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: CA_03 |38.38Mb, server: 196.247.59.154, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: CA_04 |33.47Mb, server: 138.197.166.205, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+  - {name: CA_05 |39.14Mb, server: 196.247.59.154, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: CA_06 |37.69Mb, server: 196.247.59.154, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: CA_07 |38.94Mb, server: 196.247.59.154, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: DE_11 |61.79Mb, server: 193.108.117.75, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: DE_12 |60.17Mb, server: 193.108.117.75, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: DE_13 |55.97Mb, server: 193.108.117.75, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: DE_14 |61.37Mb, server: 193.108.117.75, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: DE_15 |60.99Mb, server: 193.108.117.75, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: DE_16 |60.66Mb, server: 193.108.117.75, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: DE_17 |60.13Mb, server: 193.108.117.75, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: FR_20 |60.70Mb, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: FR_23 |53.76Mb, server: 54.36.174.181, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: FR_24 |47.83Mb, server: 145.239.1.100, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: FR_25 |45.00Mb, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_49 |34.48Mb, server: 38.68.134.85, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: US_60 |32.69Mb, server: 38.68.134.85, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: US_62 |36.02Mb, server: 38.68.134.85, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_66 |45.11Mb, server: 38.86.135.27, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: US_68 |35.39Mb, server: 38.86.135.27, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: US_70 |30.95Mb, server: 38.143.66.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_80 |58.37Mb, server: 172.99.188.71, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: US_81 |58.95Mb, server: 172.99.188.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: US_83 |58.23Mb, server: 172.99.188.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: US_84 |33.87Mb, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: US_100 |47.90Mb, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
+  - {name: US_108 |41.48Mb, server: 38.86.135.27, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CA_03 |37.61Mb
-      - CA_04 |37.13Mb
-      - CA_05 |38.16Mb
-      - CA_06 |38.35Mb
-      - CA_07 |38.03Mb
-      - DE_11 |59.95Mb
-      - DE_13 |60.02Mb
-      - DE_17 |60.12Mb
-      - FR_19 |54.79Mb
-      - FR_20 |60.01Mb
-      - FR_23 |60.31Mb
-      - FR_26 |57.34Mb
-      - 🇬🇧 2022.10.01_🇬🇧GB-🇬🇧GB_32 |31.07Mb
-      - US_57 |37.31Mb
-      - US_58 |45.05Mb
-      - US_60 |44.97Mb
-      - US_65 |36.49Mb
-      - US_66 |36.61Mb
-      - US_67 |47.47Mb
-      - US_71 |37.90Mb
-      - US_72 |55.49Mb
-      - US_73 |58.54Mb
-      - US_75 |59.23Mb
-      - US_76 |30.22Mb
-      - US_81 |33.16Mb
-      - US_83 |35.89Mb
-      - US_85 |34.15Mb
-      - US_87 |30.10Mb
-      - US_88 |42.95Mb
-      - US_89 |38.29Mb
-      - US_91 |36.74Mb
-      - US_92 |34.27Mb
-      - US_93 |36.44Mb
-      - US_94 |35.67Mb
-      - US_95 |33.29Mb
-      - US_96 |38.12Mb
-      - US_97 |36.44Mb
-      - US_98 |33.54Mb
-      - US_100 |32.66Mb
-      - US_101 |37.15Mb
-      - US_103 |38.29Mb
-      - US_104 |33.24Mb
-      - US_106 |31.68Mb
-      - US_107 |33.25Mb
-      - 🇺🇸 2022.10.01_🇺🇸US-🇺🇸US_115 |53.60Mb
+      - CA_02 |38.19Mb
+      - CA_03 |38.38Mb
+      - CA_04 |33.47Mb
+      - CA_05 |39.14Mb
+      - CA_06 |37.69Mb
+      - CA_07 |38.94Mb
+      - DE_11 |61.79Mb
+      - DE_12 |60.17Mb
+      - DE_13 |55.97Mb
+      - DE_14 |61.37Mb
+      - DE_15 |60.99Mb
+      - DE_16 |60.66Mb
+      - DE_17 |60.13Mb
+      - FR_20 |60.70Mb
+      - FR_23 |53.76Mb
+      - FR_24 |47.83Mb
+      - FR_25 |45.00Mb
+      - US_49 |34.48Mb
+      - US_60 |32.69Mb
+      - US_62 |36.02Mb
+      - US_66 |45.11Mb
+      - US_68 |35.39Mb
+      - US_70 |30.95Mb
+      - US_80 |58.37Mb
+      - US_81 |58.95Mb
+      - US_83 |58.23Mb
+      - US_84 |33.87Mb
+      - US_100 |47.90Mb
+      - US_108 |41.48Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - CA_03 |37.61Mb
-      - CA_04 |37.13Mb
-      - CA_05 |38.16Mb
-      - CA_06 |38.35Mb
-      - CA_07 |38.03Mb
-      - DE_11 |59.95Mb
-      - DE_13 |60.02Mb
-      - DE_17 |60.12Mb
-      - FR_19 |54.79Mb
-      - FR_20 |60.01Mb
-      - FR_23 |60.31Mb
-      - FR_26 |57.34Mb
-      - 🇬🇧 2022.10.01_🇬🇧GB-🇬🇧GB_32 |31.07Mb
-      - US_57 |37.31Mb
-      - US_58 |45.05Mb
-      - US_60 |44.97Mb
-      - US_65 |36.49Mb
-      - US_66 |36.61Mb
-      - US_67 |47.47Mb
-      - US_71 |37.90Mb
-      - US_72 |55.49Mb
-      - US_73 |58.54Mb
-      - US_75 |59.23Mb
-      - US_76 |30.22Mb
-      - US_81 |33.16Mb
-      - US_83 |35.89Mb
-      - US_85 |34.15Mb
-      - US_87 |30.10Mb
-      - US_88 |42.95Mb
-      - US_89 |38.29Mb
-      - US_91 |36.74Mb
-      - US_92 |34.27Mb
-      - US_93 |36.44Mb
-      - US_94 |35.67Mb
-      - US_95 |33.29Mb
-      - US_96 |38.12Mb
-      - US_97 |36.44Mb
-      - US_98 |33.54Mb
-      - US_100 |32.66Mb
-      - US_101 |37.15Mb
-      - US_103 |38.29Mb
-      - US_104 |33.24Mb
-      - US_106 |31.68Mb
-      - US_107 |33.25Mb
-      - 🇺🇸 2022.10.01_🇺🇸US-🇺🇸US_115 |53.60Mb
+      - CA_02 |38.19Mb
+      - CA_03 |38.38Mb
+      - CA_04 |33.47Mb
+      - CA_05 |39.14Mb
+      - CA_06 |37.69Mb
+      - CA_07 |38.94Mb
+      - DE_11 |61.79Mb
+      - DE_12 |60.17Mb
+      - DE_13 |55.97Mb
+      - DE_14 |61.37Mb
+      - DE_15 |60.99Mb
+      - DE_16 |60.66Mb
+      - DE_17 |60.13Mb
+      - FR_20 |60.70Mb
+      - FR_23 |53.76Mb
+      - FR_24 |47.83Mb
+      - FR_25 |45.00Mb
+      - US_49 |34.48Mb
+      - US_60 |32.69Mb
+      - US_62 |36.02Mb
+      - US_66 |45.11Mb
+      - US_68 |35.39Mb
+      - US_70 |30.95Mb
+      - US_80 |58.37Mb
+      - US_81 |58.95Mb
+      - US_83 |58.23Mb
+      - US_84 |33.87Mb
+      - US_100 |47.90Mb
+      - US_108 |41.48Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CA_03 |37.61Mb
-      - CA_04 |37.13Mb
-      - CA_05 |38.16Mb
-      - CA_06 |38.35Mb
-      - CA_07 |38.03Mb
-      - DE_11 |59.95Mb
-      - DE_13 |60.02Mb
-      - DE_17 |60.12Mb
-      - FR_19 |54.79Mb
-      - FR_20 |60.01Mb
-      - FR_23 |60.31Mb
-      - FR_26 |57.34Mb
-      - 🇬🇧 2022.10.01_🇬🇧GB-🇬🇧GB_32 |31.07Mb
-      - US_57 |37.31Mb
-      - US_58 |45.05Mb
-      - US_60 |44.97Mb
-      - US_65 |36.49Mb
-      - US_66 |36.61Mb
-      - US_67 |47.47Mb
-      - US_71 |37.90Mb
-      - US_72 |55.49Mb
-      - US_73 |58.54Mb
-      - US_75 |59.23Mb
-      - US_76 |30.22Mb
-      - US_81 |33.16Mb
-      - US_83 |35.89Mb
-      - US_85 |34.15Mb
-      - US_87 |30.10Mb
-      - US_88 |42.95Mb
-      - US_89 |38.29Mb
-      - US_91 |36.74Mb
-      - US_92 |34.27Mb
-      - US_93 |36.44Mb
-      - US_94 |35.67Mb
-      - US_95 |33.29Mb
-      - US_96 |38.12Mb
-      - US_97 |36.44Mb
-      - US_98 |33.54Mb
-      - US_100 |32.66Mb
-      - US_101 |37.15Mb
-      - US_103 |38.29Mb
-      - US_104 |33.24Mb
-      - US_106 |31.68Mb
-      - US_107 |33.25Mb
-      - 🇺🇸 2022.10.01_🇺🇸US-🇺🇸US_115 |53.60Mb
+      - CA_02 |38.19Mb
+      - CA_03 |38.38Mb
+      - CA_04 |33.47Mb
+      - CA_05 |39.14Mb
+      - CA_06 |37.69Mb
+      - CA_07 |38.94Mb
+      - DE_11 |61.79Mb
+      - DE_12 |60.17Mb
+      - DE_13 |55.97Mb
+      - DE_14 |61.37Mb
+      - DE_15 |60.99Mb
+      - DE_16 |60.66Mb
+      - DE_17 |60.13Mb
+      - FR_20 |60.70Mb
+      - FR_23 |53.76Mb
+      - FR_24 |47.83Mb
+      - FR_25 |45.00Mb
+      - US_49 |34.48Mb
+      - US_60 |32.69Mb
+      - US_62 |36.02Mb
+      - US_66 |45.11Mb
+      - US_68 |35.39Mb
+      - US_70 |30.95Mb
+      - US_80 |58.37Mb
+      - US_81 |58.95Mb
+      - US_83 |58.23Mb
+      - US_84 |33.87Mb
+      - US_100 |47.90Mb
+      - US_108 |41.48Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CA_03 |37.61Mb
-      - CA_04 |37.13Mb
-      - CA_05 |38.16Mb
-      - CA_06 |38.35Mb
-      - CA_07 |38.03Mb
-      - DE_11 |59.95Mb
-      - DE_13 |60.02Mb
-      - DE_17 |60.12Mb
-      - FR_19 |54.79Mb
-      - FR_20 |60.01Mb
-      - FR_23 |60.31Mb
-      - FR_26 |57.34Mb
-      - 🇬🇧 2022.10.01_🇬🇧GB-🇬🇧GB_32 |31.07Mb
-      - US_57 |37.31Mb
-      - US_58 |45.05Mb
-      - US_60 |44.97Mb
-      - US_65 |36.49Mb
-      - US_66 |36.61Mb
-      - US_67 |47.47Mb
-      - US_71 |37.90Mb
-      - US_72 |55.49Mb
-      - US_73 |58.54Mb
-      - US_75 |59.23Mb
-      - US_76 |30.22Mb
-      - US_81 |33.16Mb
-      - US_83 |35.89Mb
-      - US_85 |34.15Mb
-      - US_87 |30.10Mb
-      - US_88 |42.95Mb
-      - US_89 |38.29Mb
-      - US_91 |36.74Mb
-      - US_92 |34.27Mb
-      - US_93 |36.44Mb
-      - US_94 |35.67Mb
-      - US_95 |33.29Mb
-      - US_96 |38.12Mb
-      - US_97 |36.44Mb
-      - US_98 |33.54Mb
-      - US_100 |32.66Mb
-      - US_101 |37.15Mb
-      - US_103 |38.29Mb
-      - US_104 |33.24Mb
-      - US_106 |31.68Mb
-      - US_107 |33.25Mb
-      - 🇺🇸 2022.10.01_🇺🇸US-🇺🇸US_115 |53.60Mb
+      - CA_02 |38.19Mb
+      - CA_03 |38.38Mb
+      - CA_04 |33.47Mb
+      - CA_05 |39.14Mb
+      - CA_06 |37.69Mb
+      - CA_07 |38.94Mb
+      - DE_11 |61.79Mb
+      - DE_12 |60.17Mb
+      - DE_13 |55.97Mb
+      - DE_14 |61.37Mb
+      - DE_15 |60.99Mb
+      - DE_16 |60.66Mb
+      - DE_17 |60.13Mb
+      - FR_20 |60.70Mb
+      - FR_23 |53.76Mb
+      - FR_24 |47.83Mb
+      - FR_25 |45.00Mb
+      - US_49 |34.48Mb
+      - US_60 |32.69Mb
+      - US_62 |36.02Mb
+      - US_66 |45.11Mb
+      - US_68 |35.39Mb
+      - US_70 |30.95Mb
+      - US_80 |58.37Mb
+      - US_81 |58.95Mb
+      - US_83 |58.23Mb
+      - US_84 |33.87Mb
+      - US_100 |47.90Mb
+      - US_108 |41.48Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - CA_03 |37.61Mb
-      - CA_04 |37.13Mb
-      - CA_05 |38.16Mb
-      - CA_06 |38.35Mb
-      - CA_07 |38.03Mb
-      - DE_11 |59.95Mb
-      - DE_13 |60.02Mb
-      - DE_17 |60.12Mb
-      - FR_19 |54.79Mb
-      - FR_20 |60.01Mb
-      - FR_23 |60.31Mb
-      - FR_26 |57.34Mb
-      - 🇬🇧 2022.10.01_🇬🇧GB-🇬🇧GB_32 |31.07Mb
-      - US_57 |37.31Mb
-      - US_58 |45.05Mb
-      - US_60 |44.97Mb
-      - US_65 |36.49Mb
-      - US_66 |36.61Mb
-      - US_67 |47.47Mb
-      - US_71 |37.90Mb
-      - US_72 |55.49Mb
-      - US_73 |58.54Mb
-      - US_75 |59.23Mb
-      - US_76 |30.22Mb
-      - US_81 |33.16Mb
-      - US_83 |35.89Mb
-      - US_85 |34.15Mb
-      - US_87 |30.10Mb
-      - US_88 |42.95Mb
-      - US_89 |38.29Mb
-      - US_91 |36.74Mb
-      - US_92 |34.27Mb
-      - US_93 |36.44Mb
-      - US_94 |35.67Mb
-      - US_95 |33.29Mb
-      - US_96 |38.12Mb
-      - US_97 |36.44Mb
-      - US_98 |33.54Mb
-      - US_100 |32.66Mb
-      - US_101 |37.15Mb
-      - US_103 |38.29Mb
-      - US_104 |33.24Mb
-      - US_106 |31.68Mb
-      - US_107 |33.25Mb
-      - 🇺🇸 2022.10.01_🇺🇸US-🇺🇸US_115 |53.60Mb
+      - CA_02 |38.19Mb
+      - CA_03 |38.38Mb
+      - CA_04 |33.47Mb
+      - CA_05 |39.14Mb
+      - CA_06 |37.69Mb
+      - CA_07 |38.94Mb
+      - DE_11 |61.79Mb
+      - DE_12 |60.17Mb
+      - DE_13 |55.97Mb
+      - DE_14 |61.37Mb
+      - DE_15 |60.99Mb
+      - DE_16 |60.66Mb
+      - DE_17 |60.13Mb
+      - FR_20 |60.70Mb
+      - FR_23 |53.76Mb
+      - FR_24 |47.83Mb
+      - FR_25 |45.00Mb
+      - US_49 |34.48Mb
+      - US_60 |32.69Mb
+      - US_62 |36.02Mb
+      - US_66 |45.11Mb
+      - US_68 |35.39Mb
+      - US_70 |30.95Mb
+      - US_80 |58.37Mb
+      - US_81 |58.95Mb
+      - US_83 |58.23Mb
+      - US_84 |33.87Mb
+      - US_100 |47.90Mb
+      - US_108 |41.48Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CA_03 |37.61Mb
-      - CA_04 |37.13Mb
-      - CA_05 |38.16Mb
-      - CA_06 |38.35Mb
-      - CA_07 |38.03Mb
-      - DE_11 |59.95Mb
-      - DE_13 |60.02Mb
-      - DE_17 |60.12Mb
-      - FR_19 |54.79Mb
-      - FR_20 |60.01Mb
-      - FR_23 |60.31Mb
-      - FR_26 |57.34Mb
-      - 🇬🇧 2022.10.01_🇬🇧GB-🇬🇧GB_32 |31.07Mb
-      - US_57 |37.31Mb
-      - US_58 |45.05Mb
-      - US_60 |44.97Mb
-      - US_65 |36.49Mb
-      - US_66 |36.61Mb
-      - US_67 |47.47Mb
-      - US_71 |37.90Mb
-      - US_72 |55.49Mb
-      - US_73 |58.54Mb
-      - US_75 |59.23Mb
-      - US_76 |30.22Mb
-      - US_81 |33.16Mb
-      - US_83 |35.89Mb
-      - US_85 |34.15Mb
-      - US_87 |30.10Mb
-      - US_88 |42.95Mb
-      - US_89 |38.29Mb
-      - US_91 |36.74Mb
-      - US_92 |34.27Mb
-      - US_93 |36.44Mb
-      - US_94 |35.67Mb
-      - US_95 |33.29Mb
-      - US_96 |38.12Mb
-      - US_97 |36.44Mb
-      - US_98 |33.54Mb
-      - US_100 |32.66Mb
-      - US_101 |37.15Mb
-      - US_103 |38.29Mb
-      - US_104 |33.24Mb
-      - US_106 |31.68Mb
-      - US_107 |33.25Mb
-      - 🇺🇸 2022.10.01_🇺🇸US-🇺🇸US_115 |53.60Mb
+      - CA_02 |38.19Mb
+      - CA_03 |38.38Mb
+      - CA_04 |33.47Mb
+      - CA_05 |39.14Mb
+      - CA_06 |37.69Mb
+      - CA_07 |38.94Mb
+      - DE_11 |61.79Mb
+      - DE_12 |60.17Mb
+      - DE_13 |55.97Mb
+      - DE_14 |61.37Mb
+      - DE_15 |60.99Mb
+      - DE_16 |60.66Mb
+      - DE_17 |60.13Mb
+      - FR_20 |60.70Mb
+      - FR_23 |53.76Mb
+      - FR_24 |47.83Mb
+      - FR_25 |45.00Mb
+      - US_49 |34.48Mb
+      - US_60 |32.69Mb
+      - US_62 |36.02Mb
+      - US_66 |45.11Mb
+      - US_68 |35.39Mb
+      - US_70 |30.95Mb
+      - US_80 |58.37Mb
+      - US_81 |58.95Mb
+      - US_83 |58.23Mb
+      - US_84 |33.87Mb
+      - US_100 |47.90Mb
+      - US_108 |41.48Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA_03 |37.61Mb
-      - CA_04 |37.13Mb
-      - CA_05 |38.16Mb
-      - CA_06 |38.35Mb
-      - CA_07 |38.03Mb
-      - DE_11 |59.95Mb
-      - DE_13 |60.02Mb
-      - DE_17 |60.12Mb
-      - FR_19 |54.79Mb
-      - FR_20 |60.01Mb
-      - FR_23 |60.31Mb
-      - FR_26 |57.34Mb
-      - 🇬🇧 2022.10.01_🇬🇧GB-🇬🇧GB_32 |31.07Mb
-      - US_57 |37.31Mb
-      - US_58 |45.05Mb
-      - US_60 |44.97Mb
-      - US_65 |36.49Mb
-      - US_66 |36.61Mb
-      - US_67 |47.47Mb
-      - US_71 |37.90Mb
-      - US_72 |55.49Mb
-      - US_73 |58.54Mb
-      - US_75 |59.23Mb
-      - US_76 |30.22Mb
-      - US_81 |33.16Mb
-      - US_83 |35.89Mb
-      - US_85 |34.15Mb
-      - US_87 |30.10Mb
-      - US_88 |42.95Mb
-      - US_89 |38.29Mb
-      - US_91 |36.74Mb
-      - US_92 |34.27Mb
-      - US_93 |36.44Mb
-      - US_94 |35.67Mb
-      - US_95 |33.29Mb
-      - US_96 |38.12Mb
-      - US_97 |36.44Mb
-      - US_98 |33.54Mb
-      - US_100 |32.66Mb
-      - US_101 |37.15Mb
-      - US_103 |38.29Mb
-      - US_104 |33.24Mb
-      - US_106 |31.68Mb
-      - US_107 |33.25Mb
-      - 🇺🇸 2022.10.01_🇺🇸US-🇺🇸US_115 |53.60Mb
+      - CA_02 |38.19Mb
+      - CA_03 |38.38Mb
+      - CA_04 |33.47Mb
+      - CA_05 |39.14Mb
+      - CA_06 |37.69Mb
+      - CA_07 |38.94Mb
+      - DE_11 |61.79Mb
+      - DE_12 |60.17Mb
+      - DE_13 |55.97Mb
+      - DE_14 |61.37Mb
+      - DE_15 |60.99Mb
+      - DE_16 |60.66Mb
+      - DE_17 |60.13Mb
+      - FR_20 |60.70Mb
+      - FR_23 |53.76Mb
+      - FR_24 |47.83Mb
+      - FR_25 |45.00Mb
+      - US_49 |34.48Mb
+      - US_60 |32.69Mb
+      - US_62 |36.02Mb
+      - US_66 |45.11Mb
+      - US_68 |35.39Mb
+      - US_70 |30.95Mb
+      - US_80 |58.37Mb
+      - US_81 |58.95Mb
+      - US_83 |58.23Mb
+      - US_84 |33.87Mb
+      - US_100 |47.90Mb
+      - US_108 |41.48Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -426,51 +298,35 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA_03 |37.61Mb
-      - CA_04 |37.13Mb
-      - CA_05 |38.16Mb
-      - CA_06 |38.35Mb
-      - CA_07 |38.03Mb
-      - DE_11 |59.95Mb
-      - DE_13 |60.02Mb
-      - DE_17 |60.12Mb
-      - FR_19 |54.79Mb
-      - FR_20 |60.01Mb
-      - FR_23 |60.31Mb
-      - FR_26 |57.34Mb
-      - 🇬🇧 2022.10.01_🇬🇧GB-🇬🇧GB_32 |31.07Mb
-      - US_57 |37.31Mb
-      - US_58 |45.05Mb
-      - US_60 |44.97Mb
-      - US_65 |36.49Mb
-      - US_66 |36.61Mb
-      - US_67 |47.47Mb
-      - US_71 |37.90Mb
-      - US_72 |55.49Mb
-      - US_73 |58.54Mb
-      - US_75 |59.23Mb
-      - US_76 |30.22Mb
-      - US_81 |33.16Mb
-      - US_83 |35.89Mb
-      - US_85 |34.15Mb
-      - US_87 |30.10Mb
-      - US_88 |42.95Mb
-      - US_89 |38.29Mb
-      - US_91 |36.74Mb
-      - US_92 |34.27Mb
-      - US_93 |36.44Mb
-      - US_94 |35.67Mb
-      - US_95 |33.29Mb
-      - US_96 |38.12Mb
-      - US_97 |36.44Mb
-      - US_98 |33.54Mb
-      - US_100 |32.66Mb
-      - US_101 |37.15Mb
-      - US_103 |38.29Mb
-      - US_104 |33.24Mb
-      - US_106 |31.68Mb
-      - US_107 |33.25Mb
-      - 🇺🇸 2022.10.01_🇺🇸US-🇺🇸US_115 |53.60Mb
+      - CA_02 |38.19Mb
+      - CA_03 |38.38Mb
+      - CA_04 |33.47Mb
+      - CA_05 |39.14Mb
+      - CA_06 |37.69Mb
+      - CA_07 |38.94Mb
+      - DE_11 |61.79Mb
+      - DE_12 |60.17Mb
+      - DE_13 |55.97Mb
+      - DE_14 |61.37Mb
+      - DE_15 |60.99Mb
+      - DE_16 |60.66Mb
+      - DE_17 |60.13Mb
+      - FR_20 |60.70Mb
+      - FR_23 |53.76Mb
+      - FR_24 |47.83Mb
+      - FR_25 |45.00Mb
+      - US_49 |34.48Mb
+      - US_60 |32.69Mb
+      - US_62 |36.02Mb
+      - US_66 |45.11Mb
+      - US_68 |35.39Mb
+      - US_70 |30.95Mb
+      - US_80 |58.37Mb
+      - US_81 |58.95Mb
+      - US_83 |58.23Mb
+      - US_84 |33.87Mb
+      - US_100 |47.90Mb
+      - US_108 |41.48Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
